@@ -1,33 +1,342 @@
-.App {
+body {
+  background-color: #efefef;
+  color: black;
+  font-family: 'Amatic SC', cursive;
+  width: 100%;
+}
+
+/* Header */
+
+.navbar {
+  height: 190px;
+  display: block;
+  text-align: center;
+  background-image: linear-gradient(to top, #f7c5f5, #f7e1f7);
+  /* background-color: rgb(206, 136, 202); */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1
+}
+
+.navtitle {
+  font-size: 60px;
+  font-family: 'Amatic SC', cursive;
+  padding: 20px auto 0 auto;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navlinks a {
+  margin: 20px;
+  font-size: 27px;
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 4px 5px 3px 5px;
+  border-radius: 5px;
+  clear: both;
+}
+
+.navlinks a:hover {
+  background-color: #f7edf7;
+  color: #9e5299;
+}
+
+a:visited {
+  color: black
+}
+
+.navsubtitle {
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+
+/* Footer */
+
+.emily {
+  padding: 10px 0 20px 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 1;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+}
+
+
+/* Cards */
+
+.cardborder {
+  display: inline-block;
+  float: left;
+  width: 33.33%;
+}
+
+.imageborder {
+  width: 60%;
+  margin: 40px 20%;
+  height: 250px;
+  overflow: hidden;
+  border: 1px solid #d1a1cf;
+  border-radius: 5px;
+  box-shadow: 2px 4px #d1a1cf;
+}
+
+.imageborder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 80% 20%;
+}
+
+.price {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-family: "Open Sans Condensed"
+}
+
+.caption {
+  color: black;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  margin: 0 10px 20px 10px;
+  font-size: 30px;
+  padding: 20px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.noimage {
+  display: block;
+  width: 100%;
+  clear: both;
+  margin: 40px auto;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+/* Pages */
+
+.contactcontainer {
+  display: block;
+  color: black;
+  width: 40%;
+  text-align: center;
+  margin: 250px auto;
+  padding: 20px;
+  border: 1px solid #d1a1cf;
+  border-radius: 5px;
+  box-shadow: 5px 10px #d1a1cf;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bio {
+  font-size: 23px;
+  font-family: 'Molengo', sans-serif;
+  text-align: left;
+  padding: 20px;
+  line-height: 1.5em
 }
 
-.App-link {
-  color: #61dafb;
+.details {
+  font-size: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.showcontainer {
+  display: block;
+  color: black;
+  width: 90%;
+  text-align: center;
+  margin: 250px auto;
+}
+
+.aboutcontainer {
+  display: block;
+  color: black;
+  text-align: center;
+  width: 80%;
+  margin: 220px auto 40px auto;
+  border: 1px solid #d1a1cf;
+  border-radius: 5px;
+  box-shadow: 5px 10px #d1a1cf;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.aboutimage {
+  width: 25%;
+  display: inline-block;
+  float: right;
+  margin: 20px
+}
+
+.eventcard {
+  display: inline-block;
+  width: 40%;
+  border: 1px solid #d1a1cf;
+  border-radius: 5px;
+  box-shadow: 5px 10px #d1a1cf;
+  float: left;
+  margin: 4%;
+}
+
+.title {
+  font-size: 40px;
+  margin: 20px 100px
+}
+
+/* Images */
+
+img {
+  display: block;
+  width: 100%;
+}
+
+img:hover {
+  opacity: .5;
+}
+
+.gallery {
+  margin-top: 15%;
+}
+
+/*Show Pages*/
+
+.show {
+  margin: 200px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.showimage {
+  width: 50%;
+  margin: auto;
+}
+
+.showimagewide {
+  width: 80%;
+  margin: auto;
+}
+
+.backarrow, .forwardarrow {
+  font-size: 27px;
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 4px 5px 3px 5px;
+  border-radius: 5px;
+  clear: both;
+  background-color: #f7c5f5;
+  position: fixed;
+  top: 305px;
+  padding: 40px 15px;
+}
+
+.forwardarrow {
+  right: 160px;
+  padding: 40px 15px;
+}
+
+.backarrow {
+  left: 160px
+}
+
+.backarrow:hover, .forwardarrow:hover {
+  background-color: #f7d9f7;
+  color: #9e5299;
+}
+
+.show img:hover {
+  opacity: 1
+}
+
+@media only screen and (max-width: 1195px) {
+  .imageborder {
+    max-height: 180px
   }
-  to {
-    transform: rotate(360deg);
+
+  .clearfix {
+    margin: 200px 0
   }
+}
+
+@media only screen and (max-width: 900px) {
+
+  .cardborder {
+    width: 100%;
+    display: block;
+    float: none;
+  }
+
+  .gallery {
+    margin-top: 200px;
+  }
+
+  .navtitle {
+    font-size: 45px;
+    padding: 0;
+    margin: 20px 0 10px 0;
+  }
+
+  .navsubtitle {
+    font-size: 20px;
+  }
+
+  .navlinks a {
+    font-size: 23px;
+    margin: 20px 7px;
+  }
+
+  .emily {
+    font-size: 12px;
+  }
+
+  .navbar {
+    height: 180px;
+  }
+
+  .aboutimage {
+    float: none;
+    width: 80%;
+  }
+
+  .forwardarrow {
+    right: 2%;
+    margin-top: 100px;
+    padding: 7px
+  }
+
+  .backarrow {
+    left: 2%;
+    margin-top: 100px;
+    padding: 7px
+  }
+
+  .show {
+    width: 70%;
+    margin: 200px auto;
+  }
+
+  .showimage {
+    width: 100%
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .imageborder {
+    max-height: 1000px;
+    height: auto;
+    overflow: auto;
+  }
+
+
 }
