@@ -8,13 +8,12 @@ body {
 /* Header */
 
 .navbar {
-  height: 190px;
+  height: 200px;
   display: block;
   text-align: center;
-  background-image: linear-gradient(to top, #f7c5f5, #35CDD1);
-  /* background-color: rgb(206, 136, 202); */
+  background-image: linear-gradient(to top, #C4EFDA, #35CDD1);
   position: fixed;
-  width: 100%;
+  width: 70%;
   top: 0;
   z-index: 1
 }
@@ -65,8 +64,9 @@ a:visited {
   right: 0;
   padding: 10px;
   z-index: 1;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Monoton', cursive;
   color: black;
+  font-size: 12px;
 }
 
 
