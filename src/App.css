@@ -5,53 +5,65 @@ body {
   width: 100%;
 }
 
+a:visited {
+  background-color: #C4EFDA;
+}
+
 /* Header */
 
 .navbar {
-  height: 200px;
+  height: 230px;
   display: block;
   text-align: center;
-  background-image: linear-gradient(to top, #C4EFDA, #35CDD1);
+  background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
   position: fixed;
-  width: 70%;
+  width: 60%;
   top: 0;
-  z-index: 1
+  z-index: 1;
+  margin: 20px 20%;
+  border-radius: 20px;
 }
 
 .navtitle {
   font-size: 60px;
-  font-family: 'Monoton', cursive;
+  font-family: 'Monoton', serif;
   padding: 20px auto 0 auto;
 }
 
-.navbar a {
+.navbar a, a:visited {
   text-decoration: none;
+  color: #3B4548;
+}
+
+.navbar a:hover {
+  color: #35CDD1;
 }
 
 .navlinks a {
-  margin: 20px;
-  font-size: 27px;
-  color: black;
+  margin: 15px;
+  font-size: 20px;
+  background-color: #e6f7ee;
+  color: #35CDD1;
   text-decoration: none;
-  border: 1px solid black;
-  padding: 4px 5px 3px 5px;
+  padding: 9px;
   border-radius: 5px;
   clear: both;
+  font-family: 'Monoton'
 }
 
 .navlinks a:hover {
-  background-color: #f7edf7;
-  color: #9e5299;
+  background-color: #C4EFDA;
+  color: #35CDD1;
 }
 
-a:visited {
-  color: black
+.navlinks a:visited {
+  color: #35CDD1;
 }
 
 .navsubtitle {
-  font-family: 'Open Sans Condensed', sans-serif;
-  margin-bottom: 20px;
+  font-family: 'Poppins', serif;
   font-size: 30px;
+  margin-bottom: 30px
 }
 
 
@@ -65,17 +77,29 @@ a:visited {
   padding: 10px;
   z-index: 1;
   font-family: 'Monoton', cursive;
-  color: black;
+  color: #35CDD1;
   font-size: 12px;
 }
 
+.emily a:visited {
+  color: #35CDD1
+}
+
+.emily a:hover {
+  color: #C4EFDA
+}
 
 /* Cards */
+
+.clearfix {
+  margin-top: 250px
+}
 
 .cardborder {
   display: inline-block;
   float: left;
   width: 33.33%;
+  font-style:
 }
 
 .imageborder {
@@ -83,35 +107,31 @@ a:visited {
   margin: 40px 20%;
   height: 250px;
   overflow: hidden;
-  border: 1px solid #d1a1cf;
+  border: 1px solid #C4EFDA;
   border-radius: 5px;
-  box-shadow: 2px 4px #d1a1cf;
 }
 
 .imageborder img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 80% 20%;
+}
+
+.imageborder:hover {
+  box-shadow: none;
+  border: 8px solid #C4EFDA;
 }
 
 .caption {
   color: black;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Dokdo', cursive;
   text-align: center;
   margin: 0 10px 20px 10px;
   font-size: 30px;
   padding: 20px;
   height: 50px;
   overflow: hidden;
-}
-
-.noimage {
-  display: block;
-  width: 100%;
-  clear: both;
-  margin: 40px auto;
-  text-align: center;
+  color: #C4EFDA;
 }
 
 /* Pages */

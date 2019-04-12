@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
+import NavLinks from './NavLinks'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 
     return (
-      <div className="emily"><a href="https://emilyjennings.github.io">An App Made by Emily</a></div>
+        <div className="emily">
+          <Link to="/">Designed and Created by Emily</Link>
+        </div>
     );
 
 }

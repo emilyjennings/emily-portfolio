@@ -1,3 +1,6 @@
+A React app I made to showcase my abilities and personality. Enjoy!
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
