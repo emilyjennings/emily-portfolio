@@ -5,7 +5,6 @@ import Header from '../components/Header'
 
 export default class MainContainer extends Component {
 
-
   render() {
     return(
       <div classname="main">
@@ -14,4 +13,6 @@ export default class MainContainer extends Component {
       </div>
     )
   }
+
+
 }

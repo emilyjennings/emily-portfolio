@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
+import $ from 'jquery'
 
 import './App.css';
 
@@ -13,6 +14,15 @@ import GalleryCards from './components/GalleryCards'
 
 
 class App extends Component {
+  slideLeft = () => {
+    $(document).ready(function(){
+      $(".app").click(function(){
+        $(".cardborder").slideUp(8000);
+      });
+    });
+  }
+
+
   render() {
     return (
       <BrowserRouter>
@@ -29,6 +39,11 @@ class App extends Component {
       </BrowserRouter>
     );
   }
+
+
+    componentDidMount(){
+      {this.slideLeft()}
+    }
 }
 
 export default App;
