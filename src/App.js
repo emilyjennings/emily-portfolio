@@ -22,6 +22,20 @@ class App extends Component {
     });
   }
 
+  hoverFancy = () => {
+    $( ".navbar" ).hover(
+      function() {
+        $( '.navbar' ).css({
+          "border": "1px dotted red"
+        });
+      }, function() {
+        $( '.navbar' ).css({
+          "border": "1px solid red"
+        });
+      }
+    );
+  }
+
 
   render() {
     return (
