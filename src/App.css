@@ -39,10 +39,6 @@ a:visited {
   color: #35CDD1;
 }
 
-.navbar:hover {
-  border: 6px dotted purple;
-}
-
 .navlinks a {
   margin: 15px;
   font-size: 20px;
@@ -65,7 +61,7 @@ a:visited {
 }
 
 .navsubtitle {
-  font-family: 'Fjalla One', serif;
+  font-family: 'Dokdo', serif;
   font-size: 30px;
   margin-bottom: 30px
 }
@@ -137,6 +133,12 @@ a:visited {
   height: 50px;
   overflow: hidden;
   color: #C4EFDA;
+}
+
+.showpage img {
+  width: 70%;
+  display: block;
+  margin: 300px auto;
 }
 
 /* Pages */

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
-import $ from 'jquery'
 
 import './App.css';
 
@@ -10,32 +9,19 @@ import Projects from './components/About'
 import History from './components/History'
 import Contact from './components/Contact'
 import GalleryCards from './components/GalleryCards'
+import Katie from './components/Katie'
 
 
 
 class App extends Component {
-  slideLeft = () => {
-    $(document).ready(function(){
-      $(".app").click(function(){
-        $(".cardborder").slideUp(8000);
-      });
-    });
-  }
 
-  hoverFancy = () => {
-    $( ".navbar" ).hover(
-      function() {
-        $( '.navbar' ).css({
-          "border": "1px dotted red"
-        });
-      }, function() {
-        $( '.navbar' ).css({
-          "border": "1px solid red"
-        });
-      }
-    );
+  displayShowImage = (clicked) => {
+    return(
+      <div className="showpage">
+        clicked
+      </div>
+    )
   }
-
 
   render() {
     return (
@@ -48,6 +34,7 @@ class App extends Component {
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/growth" component={Projects} />
           <Route exact path="/empathy" component={History} />
+          <Route exact path="/katie" component={Katie} />
 
         </div>
       </BrowserRouter>
@@ -55,9 +42,6 @@ class App extends Component {
   }
 
 
-    componentDidMount(){
-      {this.slideLeft()}
-    }
 }
 
 export default App;

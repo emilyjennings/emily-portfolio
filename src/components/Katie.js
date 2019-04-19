@@ -5,7 +5,7 @@ import $ from 'jquery'
 import register from '../img/register.png'
 import katie from '../img/katie-paints-portraits.png'
 
-export default class Show extends Component {
+export default class Katie extends Component {
 
   state = {
     cards: {
@@ -29,29 +29,13 @@ export default class Show extends Component {
   }
 
   changeHeader = () => {
-    $('.navsubtitle').text("This project is cool")
-  }
-
-  // handleClickImage = (image) => {
-  //   this.props.displayShowImage(image)
-  // }
-
-  displayCards = () => {
-    return Object.values(this.state.cards).map(card =>
-      <div className="clearfix">
-        <Link to={card.url}><div className="cardborder">
-          <div className="imageborder">
-            <img src={card.image} alt="" />
-          </div>
-          <div className="caption">{card.title}</div>
-        </div></Link>
-      </div>)
+    $('.navsubtitle').text(this.state.cards.katiepaintsportraits.title)
   }
 
   render() {
     return (
-      <div className="gallery">
-        {this.displayCards()}
+      <div className="showpage">
+        <img src={this.state.cards.katiepaintsportraits.image} />
       </div>
     );
   };
