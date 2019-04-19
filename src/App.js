@@ -5,11 +5,11 @@ import './App.css';
 
 import MainContainer from './containers/MainContainer'
 import About from './components/About'
-import Projects from './components/About'
 import History from './components/History'
 import Contact from './components/Contact'
-import GalleryCards from './components/GalleryCards'
+import Projects from './components/Projects'
 import Katie from './components/Katie'
+import Home from './components/Home'
 
 
 
@@ -29,10 +29,10 @@ class App extends Component {
         <div className="app">
           <MainContainer />
 
-          <Route exact path="/" component={GalleryCards} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/growth" component={Projects} />
           <Route exact path="/authenticity" component={About} />
           <Route exact path="/contact" component={Contact} />
-          <Route exact path="/growth" component={Projects} />
           <Route exact path="/empathy" component={History} />
           <Route exact path="/katie" component={Katie} />
 
