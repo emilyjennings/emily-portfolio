@@ -15,12 +15,12 @@ import Home from './components/Home'
 
 class App extends Component {
 
-  displayShowImage = (clicked) => {
-    return(
-      <div className="showpage">
-        clicked
-      </div>
-    )
+  state = {
+    clicked: ""
+  }
+
+  setProject = () => {
+    this.setState({clicked: this.props.clicked})
   }
 
   render() {
@@ -30,11 +30,13 @@ class App extends Component {
           <MainContainer />
 
           <Route exact path="/" component={Home} />
-          <Route exact path="/growth" component={Projects} />
           <Route exact path="/authenticity" component={About} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/empathy" component={History} />
-          <Route exact path="/katie" component={Katie} />
+          <Route exact path="/katie"
+          render={(props) => < Katie {...props} displayProject={this.props.clicked} />}
+          />
+          <Route exact path="/projects" component={Projects} />
 
         </div>
       </BrowserRouter>

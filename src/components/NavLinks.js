@@ -6,7 +6,7 @@ const NavLinks = () => {
     return (
         <div className="navlinks">
           <Link to="/authenticity">Authenticity</Link>
-          <Link to="/growth">Growth</Link>
+          <Link to="/projects">Growth</Link>
           <Link to="/empathy">Empathy</Link>
         </div>
     );

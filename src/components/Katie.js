@@ -7,19 +7,16 @@ import katie from '../img/katie-paints-portraits.png'
 
 export default class Katie extends Component {
 
-  setProject = () => {
-
-  }
-
   changeHeader = () => {
     $('.navsubtitle').text("project")
   }
 
   render() {
-    const clicked = this.props.clicked;
     debugger
+    const clicked = this.props.clicked;
     return (
       <div className="showpage">
+        this
         {clicked}
       </div>
     );

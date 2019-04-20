@@ -36,16 +36,17 @@ export default class Projects extends Component {
     $('.navsubtitle').text("Stuff I Made")
   }
 
-// needs to be used in refactor
-  handleClickImage = (event) => {
-    this.setState({ clicked: event.currentTarget.innerText })
-  }
+// // needs to be used in refactor
+//   handleClickImage = event => {
+//     this.setState({clicked: event.currentTarget.name})
+//     debugger
+//   }
 
   // Used to render the gallery images
   displayCards = () => {
     return Object.values(this.state.cards).map(card =>
-      <div className="clearfix" onClick={this.handleClickImage}>
-        <Link to={card.url}><div className="cardborder" >
+      <div className="clearfix">
+        <Link to={card.url}><div className="cardborder" onClick={this.props.setProject} id={card.name}>
           <div className="imageborder">
             <img src={card.image} alt="" />
           </div>
