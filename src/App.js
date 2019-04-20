@@ -7,21 +7,23 @@ import MainContainer from './containers/MainContainer'
 import About from './components/About'
 import History from './components/History'
 import Contact from './components/Contact'
-import Projects from './components/Projects'
 import Katie from './components/Katie'
 import Home from './components/Home'
+import Projects from './components/Projects'
 
 
 
 class App extends Component {
 
-  state = {
-    clicked: ""
-  }
+    state = {
+      projectclicked: ""
+    }
 
-  setProject = () => {
-    this.setState({clicked: this.props.clicked})
-  }
+    setProject(value) {
+      this.setState({
+        projectclicked: value
+      })
+    }
 
   render() {
     return (
@@ -33,10 +35,14 @@ class App extends Component {
           <Route exact path="/authenticity" component={About} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/empathy" component={History} />
-          <Route exact path="/katie"
-          render={(props) => < Katie {...props} displayProject={this.props.clicked} />}
+          <Route
+          path="/projects"
+          render={(props) => <Projects {...props} setProject={this.setProject}/>}
           />
-          <Route exact path="/projects" component={Projects} />
+          <Route
+          path="/katie"
+          render={(props) => <Katie {...props} projectclicked={this.state.projectclicked}/>}
+          />
 
         </div>
       </BrowserRouter>

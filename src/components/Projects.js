@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import $ from 'jquery'
 
+import Katie from './Katie'
+
 import register from '../img/register.png'
 import katie from '../img/katie-paints-portraits.png'
 
@@ -31,22 +33,23 @@ export default class Projects extends Component {
     clicked: ""
   }
 
+
 //changes the subtitle
   changeHeader = () => {
     $('.navsubtitle').text("Stuff I Made")
   }
 
-// // needs to be used in refactor
-//   handleClickImage = event => {
-//     this.setState({clicked: event.currentTarget.name})
-//     debugger
-//   }
+// needs to be used in refactor
+  handleClickImage = event => {
+      event.preventDefault()
+      this.props.setProject(this.state.clicked)
+  }
 
   // Used to render the gallery images
   displayCards = () => {
     return Object.values(this.state.cards).map(card =>
       <div className="clearfix">
-        <Link to={card.url}><div className="cardborder" onClick={this.props.setProject} id={card.name}>
+        <Link to={card.url} onClick={event => this.setState({clicked: event.currentTarget.id})}><div className="cardborder" onClick={this.handleClickImage} id={card.name}>
           <div className="imageborder">
             <img src={card.image} alt="" />
           </div>
@@ -55,7 +58,7 @@ export default class Projects extends Component {
       </div>)
   }
 
-//I want the cards to float in
+//I want the cards to float in - later
   // slideLeft = () => {
   //     $("body").click(function(){
   //       $(".cardborder").slideUp(8000);
@@ -64,12 +67,11 @@ export default class Projects extends Component {
 
   componentDidMount(){
     {this.changeHeader()}
-    // {this.slideLeft()}
   }
 
   render() {
     return (
-      <div className="gallery">
+      <div>
         {this.displayCards()}
       </div>
     );

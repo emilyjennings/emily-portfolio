@@ -1,23 +1,20 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import $ from 'jquery'
+import { PropTypes } from 'react'
 
-import register from '../img/register.png'
-import katie from '../img/katie-paints-portraits.png'
+import Projects from './Projects'
 
-export default class Katie extends Component {
+class Katie extends Component {
 
   changeHeader = () => {
-    $('.navsubtitle').text("project")
+    $('.navsubtitle').text("project page")
   }
 
   render() {
-    debugger
-    const clicked = this.props.clicked;
     return (
-      <div className="showpage">
-        this
-        {clicked}
+      <div>
+        <h1>{this.props.projectclicked}</h1>
       </div>
     );
   };
@@ -26,5 +23,6 @@ export default class Katie extends Component {
     {this.changeHeader()}
   }
 
-
 }
+
+export default Katie
