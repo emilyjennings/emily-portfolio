@@ -37,15 +37,15 @@ export default class Projects extends Component {
   }
 
 // needs to be used in refactor
-  handleClickImage = event => {
-    // this.props.displayShowImage(this.state.clicked)
+  handleClickImage = (event) => {
+    this.setState({ clicked: event.currentTarget.innerText })
   }
 
   // Used to render the gallery images
   displayCards = () => {
     return Object.values(this.state.cards).map(card =>
       <div className="clearfix" onClick={this.handleClickImage}>
-        <Link to={card.url}><div className="cardborder" onClick={event => this.setState({clicked: card.name})}>
+        <Link to={card.url}><div className="cardborder" >
           <div className="imageborder">
             <img src={card.image} alt="" />
           </div>
@@ -53,6 +53,7 @@ export default class Projects extends Component {
         </div></Link>
       </div>)
   }
+
 //I want the cards to float in
   // slideLeft = () => {
   //     $("body").click(function(){
