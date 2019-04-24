@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import $ from 'jquery'
 
-import Katie from './Katie'
+import ProjectShow from './ProjectShow'
 
 import register from '../img/register.png'
 import katie from '../img/katie-paints-portraits.png'
@@ -30,7 +30,7 @@ export default class Projects extends Component {
         name: 'katie'
       }
     },
-    clicked: ""
+    clicked: []
   }
 
 
@@ -39,17 +39,17 @@ export default class Projects extends Component {
     $('.navsubtitle').text("Stuff I Made")
   }
 
-// needs to be used in refactor
-  handleClickImage = event => {
-      event.preventDefault()
-      this.props.setProject(this.state.clicked)
+// to p[ass props so that the project show page knows which one was clicked
+  handleClickImage = (cardname) => {
+      this.setState({clicked: cardname})
+      debugger
   }
 
   // Used to render the gallery images
   displayCards = () => {
     return Object.values(this.state.cards).map(card =>
       <div className="clearfix">
-        <Link to={card.url} onClick={event => this.setState({clicked: event.currentTarget.id})}><div className="cardborder" onClick={this.handleClickImage} id={card.name}>
+        <Link to={card.url} onClick={() => this.handleClick(card.name)}><div className="cardborder" id={card.name}>
           <div className="imageborder">
             <img src={card.image} alt="" />
           </div>
