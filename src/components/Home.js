@@ -18,7 +18,7 @@ export default class Home extends Component {
     return (
       <div className="home">
         <img src={profile} />
-        <div className="homecaption">Born to be alive.</div>
+        <div className="homecaption">Until I found my true calling in programming, I was always trying to be something I wasn't. Now I feel set free. That's why this website is unapologetically me. I get to pick whatever colors, images, and designs I think look cool, and say anything I want. World: this is the real me.</div>
       </div>
     );
   };

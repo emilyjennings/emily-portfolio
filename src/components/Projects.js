@@ -13,38 +13,38 @@ export default class Projects extends Component {
     super(props);
     this.state = {
       cards: {
-        registeryourkid: {
+        0: {
+          index: 0,
           link: 'https://obscure-river-92932.herokuapp.com/',
           desc: "A Ruby on Rails app to help parents register their kids for art classes",
           github: "https://github.com/emilyjennings/register-your-kid",
           url: "/register",
           image: register,
           title: 'Register Your Kid',
-          name: 'register'
         },
-        katiepaintsportraits: {
+        1: {
+          index: 1,
           link: 'https://katie-paints-portraits.herokuapp.com/',
           desc: "A simple art gallery site for my daughter's art teacher to showcase ands sell her art",
           github: "https://github.com/emilyjennings/katies-art",
           url: "/katie",
           image: katie,
           title: 'Katie Paints Portraits',
-          name: 'katie'
         },
       },
-      clickvalue: null,
+      index: null,
     }
   };
 
 
 //changes the subtitle
   changeHeader = () => {
-    $('.navsubtitle').text("Stuff I Made")
+      $('.navsubtitle').text("Stuff I Made")
   }
 
-  // renderProjectShow = (cardname) => {
-  //   return <ProjectShow value={cardname} />;
-  // }
+  handleClick = (index) => {
+    this.setState({index: index})
+  }
 
 // to pass props so that the project show page knows which one was clicked
   // handleClickImage = (card) => {
@@ -55,14 +55,12 @@ export default class Projects extends Component {
   displayCards = () => {
     return Object.values(this.state.cards).map(card =>
       <div className="clearfix">
-        <Link to={card.url}>
-          <div className="cardborder" id={card.name} onClick={() => this.setState({clickvalue: card.name})}>
+          <div className="cardborder" id={card.name} onClick={() => this.handleClick(card.index)}>
             <div className="imageborder">
               <img src={card.image} alt="" />
             </div>
             <div className="caption">{card.title}</div>
           </div>
-        </Link>
       </div>)
   }
 
@@ -80,8 +78,7 @@ export default class Projects extends Component {
   render() {
     return (
       <div>
-        {this.displayCards()}
-        <ProjectShow name={this.state.clickvalue} />
+        {this.state.index != null ? <ProjectShow index={this.state.index} cards={this.state.cards} /> : this.displayCards()}
       </div>
     );
   };

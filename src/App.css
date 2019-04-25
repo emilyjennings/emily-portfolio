@@ -145,7 +145,17 @@ a:visited {
   width: 100%;
 }
 
-.home img {
+.homecaption {
+  display: block;
+  text-align: center;
+  background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
+  width: auto;
+  z-index: 1;
+  margin: 20px 5%;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: 'Fjalla One', serif;
+  font-size: 20px;
 }
 
 
@@ -155,12 +165,50 @@ a:visited {
 
 /*Show Pages*/
 
-.showpage img {
-  width: 70%;
+.showimg img {
+  width: 50%;
   display: block;
-  margin: 300px auto;
+  margin: 300px auto 10px auto;
 }
 
+.desc {
+  display: block;
+  text-align: center;
+  background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
+  width: auto;
+  z-index: 1;
+  margin: 20px 5%;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: 'Fjalla One', serif;
+  font-size: 20px;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
+  width: auto;
+  z-index: 1;
+  margin: 20px 5%;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: 'Fjalla One', serif;
+  font-size: 20px;
+}
+
+.github {
+  display: block;
+  text-align: center;
+  background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
+  width: auto;
+  z-index: 1;
+  margin: 20px 5%;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: 'Fjalla One', serif;
+  font-size: 20px;
+}
 
 
 @media only screen and (max-width: 1195px) {
