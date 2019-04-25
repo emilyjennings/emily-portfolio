@@ -9,29 +9,32 @@ import katie from '../img/katie-paints-portraits.png'
 
 export default class Projects extends Component {
 
-  state = {
-    cards: {
-      registeryourkid: {
-        link: 'https://obscure-river-92932.herokuapp.com/',
-        desc: "A Ruby on Rails app to help parents register their kids for art classes",
-        github: "https://github.com/emilyjennings/register-your-kid",
-        url: "/register",
-        image: register,
-        title: 'Register Your Kid',
-        name: 'register'
+  constructor(props) {
+    super(props);
+    this.state = {
+      cards: {
+        registeryourkid: {
+          link: 'https://obscure-river-92932.herokuapp.com/',
+          desc: "A Ruby on Rails app to help parents register their kids for art classes",
+          github: "https://github.com/emilyjennings/register-your-kid",
+          url: "/register",
+          image: register,
+          title: 'Register Your Kid',
+          name: 'register'
+        },
+        katiepaintsportraits: {
+          link: 'https://katie-paints-portraits.herokuapp.com/',
+          desc: "A simple art gallery site for my daughter's art teacher to showcase ands sell her art",
+          github: "https://github.com/emilyjennings/katies-art",
+          url: "/katie",
+          image: katie,
+          title: 'Katie Paints Portraits',
+          name: 'katie'
+        },
       },
-      katiepaintsportraits: {
-        link: 'https://katie-paints-portraits.herokuapp.com/',
-        desc: "A simple art gallery site for my daughter's art teacher to showcase ands sell her art",
-        github: "https://github.com/emilyjennings/katies-art",
-        url: "/katie",
-        image: katie,
-        title: 'Katie Paints Portraits',
-        name: 'katie'
-      }
-    },
-    clicked: []
-  }
+      clickvalue: null,
+    }
+  };
 
 
 //changes the subtitle
@@ -39,22 +42,27 @@ export default class Projects extends Component {
     $('.navsubtitle').text("Stuff I Made")
   }
 
-// to p[ass props so that the project show page knows which one was clicked
-  handleClickImage = (cardname) => {
-      this.setState({clicked: cardname})
-      debugger
-  }
+  // renderProjectShow = (cardname) => {
+  //   return <ProjectShow value={cardname} />;
+  // }
+
+// to pass props so that the project show page knows which one was clicked
+  // handleClickImage = (card) => {
+  //   )
+  // }
 
   // Used to render the gallery images
   displayCards = () => {
     return Object.values(this.state.cards).map(card =>
       <div className="clearfix">
-        <Link to={card.url} onClick={() => this.handleClick(card.name)}><div className="cardborder" id={card.name}>
-          <div className="imageborder">
-            <img src={card.image} alt="" />
+        <Link to={card.url}>
+          <div className="cardborder" id={card.name} onClick={() => this.setState({clickvalue: card.name})}>
+            <div className="imageborder">
+              <img src={card.image} alt="" />
+            </div>
+            <div className="caption">{card.title}</div>
           </div>
-          <div className="caption">{card.title}</div>
-        </div></Link>
+        </Link>
       </div>)
   }
 
@@ -73,6 +81,7 @@ export default class Projects extends Component {
     return (
       <div>
         {this.displayCards()}
+        <ProjectShow name={this.state.clickvalue} />
       </div>
     );
   };

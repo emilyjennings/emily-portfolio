@@ -9,7 +9,7 @@ export default class MainContainer extends Component {
 
   render() {
     return(
-      <div classname="main">
+      <div className="main">
         <Header />
         <Footer />
       </div>
