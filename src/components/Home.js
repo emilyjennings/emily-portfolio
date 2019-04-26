@@ -10,7 +10,8 @@ export default class Home extends Component {
   }
 
   changeHeader = () => {
-    $('.navsubtitle').text("Adventurer, Builder, Mom")
+    $('.navtitle').text("Emily")
+    $('.navsubtitle').text("Adventurer, Engineer, Mom")
   }
 
 

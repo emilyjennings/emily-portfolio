@@ -64,13 +64,6 @@ export default class Projects extends Component {
       </div>)
   }
 
-//I want the cards to float in - later
-  // slideLeft = () => {
-  //     $("body").click(function(){
-  //       $(".cardborder").slideUp(8000);
-  //     });
-  // }
-
   componentDidMount(){
     {this.changeHeader()}
   }

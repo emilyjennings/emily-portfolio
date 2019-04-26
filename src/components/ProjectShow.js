@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
+import { Link } from "react-router-dom";
 
 import register from '../img/register.png'
 import katie from '../img/katie-paints-portraits.png'
@@ -11,6 +12,7 @@ class ProjectShow extends Component {
   changeHeader = () => {
     $('.navtitle').text("Projects")
     $('.navsubtitle').text(this.props.cards[this.props.index].title)
+
   }
 
   render() {
@@ -22,6 +24,7 @@ class ProjectShow extends Component {
         <div className="desc">{cards[index].desc}</div>
         <div className="link"><a href={cards[index].link}>Try it out</a></div>
         <div className="github"><a href={cards[index].github}>See the code</a></div>
+        <div className="goback" onClick={() => window.location.reload()}>Go Back</div>
       </div>
     );
   };

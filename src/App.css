@@ -210,6 +210,17 @@ a:visited {
   font-size: 20px;
 }
 
+.goback {
+  color: #C4EFDA;
+  border: 1px solid #C4EFDA;
+  border-radius: 3px;
+  display: block;
+  margin: auto;
+  width: 100px;
+  text-align: center;
+  padding: 10px
+}
+
 
 @media only screen and (max-width: 1195px) {
   .imageborder {
