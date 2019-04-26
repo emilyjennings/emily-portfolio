@@ -6,6 +6,9 @@ import ProjectShow from './ProjectShow'
 
 import register from '../img/register.png'
 import katie from '../img/katie-paints-portraits.png'
+import marvel from '../img/marvel.png'
+import nasa from '../img/nasastuff2.png'
+import philosophy from '../img/philosophy.png'
 
 export default class Projects extends Component {
 
@@ -30,6 +33,33 @@ export default class Projects extends Component {
           url: "/katie",
           image: katie,
           title: 'Katie Paints Portraits',
+        },
+        2: {
+          index: 2,
+          link: 'https://marvel-combat-arena.herokuapp.com/',
+          desc: 'Marvel Text Combat Arena calls the Marvel API in Rails and gives you the winning character based on user input parameters and the data results in the API call. A thrilling game and great way to pass hours away!',
+          github: 'https://github.com/emilyjennings/marvel-combat-arena',
+          url: "/marvel",
+          image: marvel,
+          title: 'Marvel Combat Arena',
+        },
+        3: {
+          index: 3,
+          link: "https://nasa-stuff.herokuapp.com/",
+          desc: 'A React app that I am still building on, NASA stuff searches the universe...ahem...NASA API to display images the user queries.',
+          github: "https://github.com/emilyjennings/nasa-stuff-react-project",
+          url: "/nasa",
+          image: nasa,
+          title: 'NASA stuff',
+        },
+        4: {
+          index: 4,
+          link: "https://nasa-stuff.herokuapp.com/",
+          desc: 'This Sinatra project allows users to log in and submit thought experiment stories as part of a community. I made this because I have a strong interest and academic background in philosophy and one of my favorite parts of studying it was considering thought experiments to illustrate a point/argument. This was made in memory of Josh Parsons, my Master\'\s thesis supervisor and friend, Josh Parsons.',
+          github: "https://github.com/emilyjennings/Philosophy-Thought-Experiments-Sinatra-Project",
+          url: "/philosophy",
+          image: philosophy,
+          title: 'Philosophy Thought Experiments',
         },
       },
       index: null,
