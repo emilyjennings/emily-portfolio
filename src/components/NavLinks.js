@@ -5,9 +5,9 @@ const NavLinks = () => {
 
     return (
         <div className="navlinks">
-          <Link to="/authenticity">Authenticity</Link>
+          <Link to="/about">Authenticity</Link>
           <Link to="/projects">Growth</Link>
-          <Link to="/empathy">Empathy</Link>
+          <Link to="/contact">Empathy</Link>
         </div>
     );
 

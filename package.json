@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "emailjs": "^2.2.0",
+    "emailjs-com": "^2.3.2",
     "jquery": "^3.4.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

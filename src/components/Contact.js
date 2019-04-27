@@ -24,7 +24,7 @@ export default class Contact extends Component {
     return (
       <div className="contactcontainer">
         <div className="formcaption">Leave me your name and what you're looking for! I'll be in touch soon.</div>
-        <form id="contact-form" >
+        <form id="emily-contact" >
           <input type="hidden" name="contact_number" />
           email: <input type="email" name="user_email" className="email_field" />
           name: <input type="text" name="user_name" className="name_field" />

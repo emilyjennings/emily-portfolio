@@ -4,10 +4,31 @@
     <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/css?family=Monoton|Dokdo|Fjalla+One|" rel="stylesheet">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_uh0pzROtKWy2ThFfDBjkd");
+       })();
+    </script>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+
+    <link rel="shortcut icon" href="favicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('emily-contact').addEventListener('submit', function(event) {
+                event.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('gmail', 'emily_contact', this);
+            });
+        }
+    </script>
+
+
     <title>Emily</title>
   </head>
   <body>

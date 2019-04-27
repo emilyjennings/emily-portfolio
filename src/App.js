@@ -23,9 +23,8 @@ class App extends Component {
           <MainContainer />
 
           <Route exact path="/" component={Home} />
-          <Route exact path="/authenticity" component={About} />
+          <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
-          <Route exact path="/empathy" component={History} />
           <Route path="/projects" component={Projects} />
 
         </div>
