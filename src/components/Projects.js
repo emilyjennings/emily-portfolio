@@ -9,6 +9,7 @@ import katie from '../img/katie-paints-portraits.png'
 import marvel from '../img/marvel.png'
 import nasa from '../img/nasastuff2.png'
 import philosophy from '../img/philosophy.png'
+import quote from '../img/quote.png'
 
 export default class Projects extends Component {
 
@@ -62,7 +63,6 @@ export default class Projects extends Component {
           desc: 'I created this blog site for personal use and to practice Ruby on Rails. I was tired of making Ruby apps that no one would ever really use - I wanted a practical project. I used associations to make a dynamic experience for users to log in with authentication, create posts, and to allow comments and category tags.',
           github: "https://github.com/emilyjennings/emily-blog",
           url: "/blog",
-          image: blog,
           title: 'My Blog',
           created: 'April 2019',
         },

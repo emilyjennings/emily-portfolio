@@ -1,27 +1,43 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import $ from 'jquery'
 
 export default class Contact extends Component {
 
-  state = {
-  }
 
+// changes the header subtitle
   changeHeader = () => {
-    $('.navsubtitle').text("Get to know my 'why'")
+    $('.navsubtitle').text("contact me")
+  }
+
+// gives a confirmation that the email was sent
+
+  emailForm = () => {
+    $('.submit').click(function() {
+      alert( "email submitted!" );
+    });
+
   }
 
 
+// contact form as per code given by EmailJS, thwe library used for this form
   render() {
     return (
-      <div className="gallery">
-
+      <div className="contactcontainer">
+        <div className="formcaption">Leave me your name and what you're looking for! I'll be in touch soon.</div>
+        <form id="contact-form" >
+          <input type="hidden" name="contact_number" />
+          email: <input type="email" name="user_email" className="email_field" />
+          name: <input type="text" name="user_name" className="name_field" />
+          message: <textarea name="text" className="message_field" />
+          <input type="submit" value="Send" className="submit" />
+        </form>
       </div>
     );
   };
 
   componentDidMount(){
     {this.changeHeader()}
+    {this.emailForm()}
   }
 
 

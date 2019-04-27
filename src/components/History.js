@@ -8,7 +8,7 @@ export default class Contact extends Component {
   }
 
   changeHeader = () => {
-    $('.navsubtitle').text("Get to know my 'why'")
+    $('.navsubtitle').text("I want to find out your story")
   }
 
 
