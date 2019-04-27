@@ -10,6 +10,8 @@ import marvel from '../img/marvel.png'
 import nasa from '../img/nasastuff2.png'
 import philosophy from '../img/philosophy.png'
 import quote from '../img/quote.png'
+import emilyjennings from '../img/emilyjennings.png'
+import blog from '../img/blog.png'
 
 export default class Projects extends Component {
 
@@ -63,6 +65,7 @@ export default class Projects extends Component {
           desc: 'I created this blog site for personal use and to practice Ruby on Rails. I was tired of making Ruby apps that no one would ever really use - I wanted a practical project. I used associations to make a dynamic experience for users to log in with authentication, create posts, and to allow comments and category tags.',
           github: "https://github.com/emilyjennings/emily-blog",
           url: "/blog",
+          image: blog,
           title: 'My Blog',
           created: 'April 2019',
         },
@@ -76,8 +79,8 @@ export default class Projects extends Component {
           title: 'Philosophy Thought Experiments',
           created: 'November 2018',
         },
-        4: {
-          index: 4,
+        6: {
+          index: 6,
           link: "https://www.youtube.com/embed/ereSf1HHi9Q",
           desc: 'This is a game I made as a CLI Ruby Gem project that asks you to guess the author of a quote scraped from another website!',
           github: "https://github.com/emilyjennings/Quote_Guesser",
@@ -85,6 +88,16 @@ export default class Projects extends Component {
           image: quote,
           title: 'Quote Guesser',
           created: 'September 2018',
+        },
+        7: {
+          index: 7,
+          link: "https://emilyjennings.github.io",
+          desc: 'This was my first creation trhat I made as the final project for a front end course I did in Fall 2017, and I had been iterating on it ever since until I created this site as my new portfolio.',
+          github: "https://github.com/emilyjennings/emilyjennings.github.io",
+          url: "/emilyjennings",
+          image: emilyjennings,
+          title: 'Emily Jennings Portfolio',
+          created: 'December 2017 - April 2019',
         },
       },
       index: null,
@@ -109,13 +122,11 @@ export default class Projects extends Component {
   // Used to render the gallery images
   displayCards = () => {
     return Object.values(this.state.cards).map(card =>
-      <div className="clearfix">
-          <div className="cardborder" id={card.name} onClick={() => this.handleClick(card.index)}>
-            <div className="imageborder">
-              <img src={card.image} alt="" />
-            </div>
-            <div className="caption">{card.title}</div>
-          </div>
+      <div className="cardborder" id={card.name} onClick={() => this.handleClick(card.index)}>
+        <div className="imageborder">
+          <img src={card.image} alt="" />
+        </div>
+        <div className="caption">{card.title}</div>
       </div>)
   }
 
@@ -125,8 +136,11 @@ export default class Projects extends Component {
 
   render() {
     return (
-      <div>
-        {this.state.index != null ? <ProjectShow index={this.state.index} cards={this.state.cards} /> : this.displayCards()}
+      <div className="projectspage">
+        <div className="clearfix">
+          <div className="caption">The projects that chronicle my growth as a developer start with a basic HTML/CSS/jQuery site and a Ruby CLI game. I then created a Ruby app and React App or two. It's sure been fun.</div>
+          {this.state.index != null ? <ProjectShow index={this.state.index} cards={this.state.cards} /> : this.displayCards()}
+          </div>
       </div>
     );
   };

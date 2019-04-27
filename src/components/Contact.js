@@ -15,9 +15,13 @@ export default class Contact extends Component {
     $('.submit').click(function() {
       alert( "email submitted!" );
     });
-
   }
 
+  componentDidMount(){
+    {this.changeHeader()}
+    {this.emailForm()}
+    const ScrollReveal = require('scrollreveal').default
+  }
 
 // contact form as per code given by EmailJS, thwe library used for this form
   render() {
@@ -27,18 +31,16 @@ export default class Contact extends Component {
         <form id="emily-contact" >
           <input type="hidden" name="contact_number" />
           email: <input type="email" name="user_email" className="email_field" />
+          <br></br>
           name: <input type="text" name="user_name" className="name_field" />
+          <br></br>
           message: <textarea name="text" className="message_field" />
+          <br></br>
           <input type="submit" value="Send" className="submit" />
         </form>
       </div>
     );
   };
-
-  componentDidMount(){
-    {this.changeHeader()}
-    {this.emailForm()}
-  }
 
 
 }

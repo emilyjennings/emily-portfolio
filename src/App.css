@@ -61,7 +61,7 @@ a:visited {
 }
 
 .navsubtitle {
-  font-family: 'Fjalla One', serif;
+  font-family: 'Patua One', serif;
   font-size: 30px;
   margin-bottom: 30px
 }
@@ -125,7 +125,7 @@ a:visited {
 
 .caption {
   color: black;
-  font-family: 'Dokdo', cursive;
+  font-family: 'Patua One', cursive;
   text-align: center;
   margin: 0 10px 20px 10px;
   font-size: 30px;
@@ -154,8 +154,23 @@ a:visited {
   margin: 20px 5%;
   border-radius: 20px;
   padding: 20px;
-  font-family: 'Fjalla One', serif;
+  font-family: 'Patua One', serif;
   font-size: 20px;
+}
+
+/* Aboutpage */
+
+.story {
+  display: block;
+  text-align: center;
+  background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
+  width: auto;
+  z-index: 1;
+  margin: 300px 5%;
+  border-radius: 20px;
+  padding: 60px;
+  font-family: 'Patua One', serif;
+  font-size: 30px;
 }
 
 
@@ -176,7 +191,7 @@ a:visited {
   margin: 20px 5%;
   border-radius: 20px;
   padding: 20px;
-  font-family: 'Fjalla One', serif;
+  font-family: 'Patua One', serif;
   font-size: 20px;
 }
 
@@ -189,7 +204,7 @@ a:visited {
   margin: 20px 5%;
   border-radius: 20px;
   padding: 20px;
-  font-family: 'Fjalla One', serif;
+  font-family: 'Patua One', serif;
   font-size: 20px;
 }
 
@@ -202,7 +217,7 @@ a:visited {
   margin: 20px 5%;
   border-radius: 20px;
   padding: 20px;
-  font-family: 'Fjalla One', serif;
+  font-family: 'Patua One', serif;
   font-size: 20px;
 }
 
@@ -223,13 +238,39 @@ a:visited {
   display: block;
   text-align: center;
   background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
-  width: auto;
+  width: 40%;
   z-index: 1;
-  margin: 300px 5% 20px 5%;
+  margin: 300px auto 20px auto;
   border-radius: 20px;
   padding: 20px;
-  font-family: 'Fjalla One', serif;
+  font-family: 'Patua One', serif;
   font-size: 20px;
+}
+
+.formcaption {
+  display: block;
+  width: 70%;
+  margin: 20px auto 20px auto;
+}
+
+.emily-contact {
+  display: inline-block;
+}
+
+.email_field, .name_field {
+  display: inline-block;
+  margin: 10px auto;
+}
+
+.message_field {
+  display: block;
+  width: 60%;
+  height: 100px;
+  margin: auto;
+}
+
+input.submit {
+  font-size: 60px;
 }
 
 
