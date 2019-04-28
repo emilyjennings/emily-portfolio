@@ -85,7 +85,8 @@ hr {
   padding: 10px 0 20px 0;
   position: fixed;
   bottom: 0;
-  right: 0;
+  width: 100%;
+  text-align: center;
   padding: 10px;
   z-index: 1;
   font-family: 'Monoton', cursive;
@@ -99,6 +100,47 @@ hr {
 
 .emily a:hover {
   color: #C4EFDA
+}
+
+.socialmedia {
+  width: 100%;
+  margin: 0 auto 10px auto;
+  text-align: center;
+}
+
+.socialmedia a {
+  padding: 10px;
+  font-size: 30px;
+  color: #35CDD1;
+}
+
+.socialmedia i:hover {
+  color: black
+}
+
+i {
+  color: #35CDD1;
+}
+
+#top {
+  padding: 10px;
+  display: block;
+  margin: 30px auto;
+  font-size: 20px;
+  border: 3px solid #23C6B3;
+  border-radius: 80px;
+  background: #C4EFDA;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 100;
+  opacity: 0;
+}
+
+.top:hover {
+  background-color: #f7edf7;
+  color: #9e5299;
+  opacity: .5;
 }
 
 /* Project Cards */

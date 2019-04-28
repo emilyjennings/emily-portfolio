@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
+import $ from 'jquery'
 
 import './App.css';
 
@@ -15,6 +16,16 @@ import Projects from './components/Projects'
 
 
 class App extends Component {
+
+  top = () => {
+    $("#top").click(function(event){
+      $.scrollTo(0, 1000);
+    });
+  }
+
+  componentDidMount(){
+    {this.top()}
+  }
 
 
   render() {
