@@ -6,11 +6,12 @@ import { Link } from "react-router-dom";
 
 export default class Header extends Component {
 
+//changing the navbar to a long thin line when scrolled
   navStick = () => {
 
     $(window).scroll(function(){
       var scrollTop = $(window).scrollTop()
-      if (scrollTop > 130) {
+      if (scrollTop >= 140) {
         $(".navbar").css(
           {
             "width": "100%",
@@ -22,13 +23,13 @@ export default class Header extends Component {
         )
         $(".navtitle").css(
           {
-            "font-size": "20px",
-            "display" : "inline-block",
+            "display" : "none",
           }
         )
         $('.navlinks a').css(
           {
             "font-size": "15px",
+            "display": "inline-block",
           }
         )
         $('hr').css(
@@ -36,7 +37,7 @@ export default class Header extends Component {
             "display": "none",
           }
         )
-      } else if (scrollTop <= 130) {
+      } else if (scrollTop < 140){
         $(".navbar").css(
           {
             "height": "230px",
@@ -49,11 +50,19 @@ export default class Header extends Component {
         $(".navtitle").css(
           {
             "font-size": "60px",
+            "display": "block",
           }
         )
         $('hr').css(
           {
             "display": "block",
+            "margin-top": "10px",
+            "margin-bottom": "20px",
+          }
+        )
+        $('.navlinks a').css(
+          {
+            "font-size": "20px",
           }
         )
       }

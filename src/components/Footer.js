@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import NavLinks from './NavLinks'
 import { Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
 import $ from 'jquery'

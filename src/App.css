@@ -1,5 +1,5 @@
 body {
-  background-color: #3B4548;
+  background-color: #262c2d;
   color: black;
   font-family: 'Roboto Slab', serif;
   width: 100%;
@@ -8,6 +8,7 @@ body {
 a:visited {
   background-color: #C4EFDA;
 }
+
 
 /* Header */
 
@@ -40,14 +41,14 @@ a:visited {
 
 .navlinks a {
   margin: 15px;
-  font-size: 20px;
   background-color: #e6f7ee;
   color: #35CDD1;
   text-decoration: none;
-  padding: 9px;
+  padding: 10px;
   border-radius: 5px;
   clear: both;
   font-family: 'Monoton', serif;
+  font-size: 20px;
 }
 
 .navlinks a:hover {
@@ -66,6 +67,7 @@ a:visited {
 }
 
 hr {
+  display: block;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -115,7 +117,7 @@ hr {
 }
 
 .socialmedia i:hover {
-  color: black
+  color: #C4EFDA
 }
 
 i {
