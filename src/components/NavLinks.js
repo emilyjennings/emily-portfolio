@@ -5,9 +5,11 @@ const NavLinks = () => {
 
     return (
         <div className="navlinks">
-          <Link to="/about">Authenticity</Link>
-          <Link to="/projects">Growth</Link>
-          <Link to="/contact">Empathy</Link>
+          <div className="navlinks-wrapper">
+            <Link to="/about">Authenticity</Link>
+            <Link to="/projects">Growth</Link>
+            <Link to="/contact">Empathy</Link>
+          </div>
         </div>
     );
 

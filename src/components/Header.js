@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <div className="navbar">
           <Link to="/"><div className="navtitle">Hi, I'm Emily</div></Link>
-          <div className="navsubtitle"></div>
+          <hr></hr>
           <NavLinks />
         </div>
     );

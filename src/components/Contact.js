@@ -20,7 +20,6 @@ export default class Contact extends Component {
   componentDidMount(){
     {this.changeHeader()}
     {this.emailForm()}
-    const ScrollReveal = require('scrollreveal').default
   }
 
 // contact form as per code given by EmailJS, thwe library used for this form

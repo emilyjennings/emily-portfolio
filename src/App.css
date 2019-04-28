@@ -27,7 +27,6 @@ a:visited {
 .navtitle {
   font-size: 60px;
   font-family: 'Monoton', serif;
-  padding: 20px auto 0 auto;
 }
 
 .navbar a, a:visited {
@@ -48,7 +47,7 @@ a:visited {
   padding: 9px;
   border-radius: 5px;
   clear: both;
-  font-family: 'Monoton'
+  font-family: 'Monoton', serif;
 }
 
 .navlinks a:hover {
@@ -64,6 +63,19 @@ a:visited {
   font-family: 'Patua One', serif;
   font-size: 30px;
   margin-bottom: 30px
+}
+
+hr {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #2ec4f2;
+  height: 3px;
+  background-color: #2ec4f2;
+  border: 0 none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 3px
 }
 
 
@@ -146,16 +158,32 @@ a:visited {
 }
 
 .homecaption {
-  display: block;
+  color: black;
+  font-family: 'Patua One', cursive;
   text-align: center;
-  background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
-  width: auto;
-  z-index: 1;
-  margin: 20px 5%;
-  border-radius: 20px;
+  margin: 0 10px 20px 10px;
+  font-size: 30px;
   padding: 20px;
-  font-family: 'Patua One', serif;
-  font-size: 20px;
+  height: 50px;
+  overflow: hidden;
+  color: #C4EFDA;
+}
+
+.homecaption2 {
+  color: black;
+  font-family: 'Patua One', cursive;
+  text-align: center;
+  margin: 400px 10px;
+  font-size: 30px;
+  padding: 20px;
+  height: 50px;
+  overflow: hidden;
+  color: #C4EFDA;
+}
+
+.home img {
+  margin: 50px auto;
+  width: 30%
 }
 
 /* Aboutpage */
@@ -282,6 +310,7 @@ input.submit {
   .clearfix {
     margin: 200px 0
   }
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -297,9 +326,9 @@ input.submit {
   }
 
   .navtitle {
+    width: 200px;
     font-size: 45px;
-    padding: 0;
-    margin: 20px 0 10px 0;
+    margin: 20px auto 10px auto;
   }
 
   .navsubtitle {
@@ -307,8 +336,12 @@ input.submit {
   }
 
   .navlinks a {
-    font-size: 23px;
-    margin: 20px 7px;
+    float: left;
+    display: inline-block;
+    padding: 12px;
+    margin: 10px auto;
+    font-size: 20px;
+    width: 90%
   }
 
   .emily {
@@ -316,7 +349,13 @@ input.submit {
   }
 
   .navbar {
-    height: 180px;
+    height: 400px;
+  }
+
+  .navlinks-wrapper {
+    width: 50%;
+    text-align: center;
+    margin: auto;
   }
 
   .aboutimage {

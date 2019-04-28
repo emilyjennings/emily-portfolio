@@ -12,11 +12,6 @@ export default class About extends Component {
     $('.navsubtitle').text("100% Authentic.")
   }
 
-  fadeInPlace = () => {
-    // the element should never move, so all elements are on top of each other. when the scroll gets to a certain point, it appears. then is disappears on another point, and then another one is queued to appear
-    //I need a way for the elements to be queued up - maybe by element children
-  }
-
 
   render() {
     return (
@@ -33,8 +28,6 @@ export default class About extends Component {
           </ScrollAnimation>
           <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
           <div className="story">I realized I no longer needed to emphasize parts of me I wouldn't normally emphasize in order to become something I am not naturally.</div>
-          </ScrollAnimation>
-          <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
           </ScrollAnimation>
           <div className="story">I'm a person who does the unexpected. I move myself past percieved boundaries. So here I am, a female programmer who never got a computer science degree.</div>
           <div className="homecaption">What have I been and what personas come with me into this new career?</div>

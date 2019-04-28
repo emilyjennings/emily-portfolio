@@ -3,14 +3,15 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 import './App.css';
 
-import MainContainer from './containers/MainContainer'
+import Footer from './components/Footer'
+import Header from './components/Header'
+
 import About from './components/About'
 import History from './components/History'
 import Contact from './components/Contact'
 import ProjectShow from './components/ProjectShow'
 import Home from './components/Home'
 import Projects from './components/Projects'
-
 
 
 class App extends Component {
@@ -20,7 +21,8 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="app">
-          <MainContainer />
+          <Footer />
+          <Header />
 
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
