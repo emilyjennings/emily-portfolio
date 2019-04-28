@@ -73,8 +73,8 @@ hr {
   height: 3px;
   background-color: #2ec4f2;
   border: 0 none;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 40px;
   border-radius: 3px
 }
 
@@ -206,8 +206,6 @@ i {
   margin: 0 10px 20px 10px;
   font-size: 30px;
   padding: 20px;
-  height: 50px;
-  overflow: hidden;
   color: #C4EFDA;
 }
 
@@ -302,7 +300,7 @@ i {
   padding: 10px
 }
 
-/* contact */
+/* Contact Page (Empathy) */
 
 .contactcontainer {
   display: block;
@@ -310,7 +308,7 @@ i {
   background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
   width: 40%;
   z-index: 1;
-  margin: 300px auto 20px auto;
+  margin: 300px auto 200px auto;
   border-radius: 20px;
   padding: 20px;
   font-family: 'Patua One', serif;

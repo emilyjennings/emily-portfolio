@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import $ from 'jquery'
 
 import ProjectShow from './ProjectShow'
@@ -107,7 +106,7 @@ export default class Projects extends Component {
 
 //changes the subtitle
   changeHeader = () => {
-      $('.navsubtitle').text("Stuff I Made")
+    $('.navtitle').text("Stuff I Made")
   }
 
   handleClick = (index) => {

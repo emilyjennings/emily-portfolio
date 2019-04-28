@@ -1,18 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
+import $ from 'jquery'
 import { Link } from "react-router-dom";
 
-const NavLinks = () => {
+export default class NavLinks extends Component {
 
+  render() {
     return (
-        <div className="navlinks">
-          <div className="navlinks-wrapper">
-            <Link to="/about">Authenticity</Link>
-            <Link to="/projects">Growth</Link>
-            <Link to="/contact">Empathy</Link>
-          </div>
+      <div className="navlinks">
+        <div className="navlinks-wrapper">
+          <Link to="/about">Authenticity</Link>
+          <Link to="/projects">Growth</Link>
+          <Link to="/contact">Empathy</Link>
         </div>
+      </div>
     );
+  }
 
 }
-
-export default NavLinks

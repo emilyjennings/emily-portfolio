@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import $ from 'jquery'
 import ScrollAnimation from 'react-animate-on-scroll';
 

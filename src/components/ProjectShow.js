@@ -2,18 +2,11 @@ import React, { Component } from 'react';
 import $ from 'jquery'
 import { Link } from "react-router-dom";
 
-import register from '../img/register.png'
-import katie from '../img/katie-paints-portraits.png'
-
 class ProjectShow extends Component {
 
-
-
   changeHeader = () => {
-    $('.navtitle').text("Projects")
-    $('.navsubtitle').text(this.props.cards[this.props.index].title)
-    $('.navsubtitle').text(this.props.cards[this.props.index].created)
-
+    $('.navtitle').text(this.props.cards[this.props.index].title)
+    $('.navlinks').hide()
   }
 
   render() {
