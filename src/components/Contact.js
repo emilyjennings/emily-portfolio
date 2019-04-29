@@ -6,7 +6,9 @@ export default class Contact extends Component {
 
 // changes the header subtitle
   changeHeader = () => {
-    $('.navsubtitle').text("contact me")
+    $('.navsubtitle, .navsubtitlestick').text("This is Me")
+    $('.navtitle').text("Contact Me")
+    $('.navsubtitle, .navsubtitlestick').show()
   }
 
 // gives a confirmation that the email was sent

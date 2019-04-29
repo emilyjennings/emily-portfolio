@@ -107,6 +107,8 @@ export default class Projects extends Component {
 //changes the subtitle
   changeHeader = () => {
     $('.navtitle').text("Stuff I Made")
+    $('.navsubtitle, .navsubtitlestick').text("This is Emily")
+    $('.navsubtitle, .navsubtitlestick').show()
   }
 
   handleClick = (index) => {

@@ -8,7 +8,9 @@ export default class About extends Component {
   }
 
   changeHeader = () => {
-    $('.navsubtitle').text("100% Authentic.")
+    $('.navtitle').text("About Emily")
+    $('.navsubtitle, .navsubtitlestick').text("100% Authentic.")
+    $('.navsubtitle, .navsubtitlestick').show()
   }
 
 

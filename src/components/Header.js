@@ -31,7 +31,11 @@ export default class Header extends Component {
             <hr></hr>
             <NavLinks />
           </div>
-          <div className="navstick"><NavLinks /></div>
+          <div className="navstick">
+            <NavLinks />
+            <Link to="/"><div className="navsubtitlestick"></div></Link>
+          </div>
+          <Link to="/"><div className="navsubtitle"></div></Link>
         </div>
     );
   }

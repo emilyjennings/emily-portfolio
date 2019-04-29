@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
 
-import ScrollAnimation from 'react-animate-on-scroll';
-
 import profile from './img/profile.jpg'
 
 export default class Home extends Component {
 
   changeHeader = () => {
     $('.navtitle').text("Hi, I'm Emily")
+    $('.navsubtitle, .navsubtitlestick').hide()
   }
 
   scrollFade = () => {
@@ -29,9 +28,8 @@ export default class Home extends Component {
     return (
       <div className="home">
         <img src={profile} alt=" "/>
-          <div class="homecaption">I spent a year and a half with a small child and a full time job teaching myself to code. I deserve to make this representation of me as wacky and wild as I deem necessary.</div>
-          <div class="homecaption2">This is me, world. This is real.</div>
-
+          <div class="homecaption">I spent a year and a half with a small child and a full time job teaching myself to code. I think I deserve to make this website however I like.</div>
+          <div class="homecaption2">It's okay if you don't like my fonts. This is me.</div>
       </div>
     );
   };
