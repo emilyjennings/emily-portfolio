@@ -115,11 +115,6 @@ export default class Projects extends Component {
     this.setState({index: index})
   }
 
-// to pass props so that the project show page knows which one was clicked
-  // handleClickImage = (card) => {
-  //   )
-  // }
-
   // Used to render the gallery images
   displayCards = () => {
     return Object.values(this.state.cards).map(card =>
@@ -138,10 +133,7 @@ export default class Projects extends Component {
   render() {
     return (
       <div className="projectspage">
-        <div className="clearfix">
-          <div className="caption">The projects that chronicle my growth as a developer start with a basic HTML/CSS/jQuery site and a Ruby CLI game. I then created a Ruby app and React App or two. It's sure been fun.</div>
           {this.state.index != null ? <ProjectShow index={this.state.index} cards={this.state.cards} /> : this.displayCards()}
-          </div>
       </div>
     );
   };

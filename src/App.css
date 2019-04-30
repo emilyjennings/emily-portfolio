@@ -193,8 +193,8 @@ i {
 
 /* Project Cards */
 
-.clearfix {
-  margin-top: 250px
+.projectspage {
+  margin: 280px 0;
 }
 
 .cardborder {
@@ -217,7 +217,6 @@ i {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
 }
 
 .imageborder:hover {
@@ -227,7 +226,7 @@ i {
 
 .caption {
   color: black;
-  font-family: 'Patua One', cursive;
+  font-family: 'Wendy One', cursive;
   text-align: center;
   margin: 0 10px 20px 10px;
   font-size: 30px;
@@ -249,7 +248,7 @@ i {
 
 .homecaption {
   color: black;
-  font-family: 'Patua One', cursive;
+  font-family: 'Wendy One', cursive;
   text-align: center;
   margin: 0 10px 20px 10px;
   font-size: 30px;
@@ -259,7 +258,7 @@ i {
 
 .homecaption2 {
   color: black;
-  font-family: 'Patua One', cursive;
+  font-family: 'Wendy One', cursive;
   text-align: center;
   margin: 400px 10px;
   font-size: 30px;
@@ -286,7 +285,7 @@ i {
   margin: 300px 5%;
   border-radius: 20px;
   padding: 60px;
-  font-family: 'Patua One', serif;
+  font-family: 'Wendy One', serif;
   font-size: 30px;
 }
 
@@ -308,7 +307,7 @@ i {
   margin: 20px 5%;
   border-radius: 20px;
   padding: 20px;
-  font-family: 'Patua One', serif;
+  font-family: 'Wendy One', serif;
   font-size: 20px;
 }
 
@@ -321,7 +320,7 @@ i {
   margin: 20px 5%;
   border-radius: 20px;
   padding: 20px;
-  font-family: 'Patua One', serif;
+  font-family: 'Wendy One', serif;
   font-size: 20px;
 }
 
@@ -334,7 +333,7 @@ i {
   margin: 20px 5%;
   border-radius: 20px;
   padding: 20px;
-  font-family: 'Patua One', serif;
+  font-family: 'Wendy One', serif;
   font-size: 20px;
 }
 
@@ -360,7 +359,7 @@ i {
   margin: 300px auto 400px auto;
   border-radius: 20px;
   padding: 20px;
-  font-family: 'Patua One', serif;
+  font-family: 'Wendy One', serif;
   font-size: 20px;
 }
 
@@ -391,17 +390,6 @@ input.submit {
 }
 
 
-@media only screen and (max-width: 1195px) {
-  .imageborder {
-    max-height: 180px
-  }
-
-  .clearfix {
-    margin: 200px 0
-  }
-
-}
-
 @media only screen and (max-width: 900px) {
 
   .cardborder {
@@ -416,7 +404,7 @@ input.submit {
 
   .navtitle {
     width: 200px;
-    font-size: 45px;
+    font-size: 35px;
     margin: 20px auto 10px auto;
   }
 
@@ -424,13 +412,16 @@ input.submit {
     font-size: 20px;
   }
 
+  hr {
+    margin-bottom: 12px
+  }
+
   .navlinks a {
-    float: left;
     display: inline-block;
-    padding: 12px;
-    margin: 10px auto;
-    font-size: 20px;
-    width: 90%
+    padding: 5px;
+    margin: 5px auto;
+    font-size: 15px;
+    width: 50%
   }
 
   .emily {
@@ -438,7 +429,8 @@ input.submit {
   }
 
   .navbar {
-    height: 400px;
+    height: 300px;
+    margin-top: 50px
   }
 
   .navlinks-wrapper {
@@ -477,10 +469,13 @@ input.submit {
     text-decoration: none;
   }
 
-  .imageborder {
-    max-height: 1000px;
-    height: auto;
-    overflow: auto;
+  #navstickline a {
+    display: inline-block;
+    width: 40px;
+  }
+
+  .projectspage {
+    margin: 550px auto;
   }
 
 
