@@ -17,16 +17,6 @@ import Projects from './components/Projects'
 
 class App extends Component {
 
-  top = () => {
-    $("#top").click(function(event){
-      $.scrollTo(0, 1000);
-    });
-  }
-
-  componentDidMount(){
-    {this.top()}
-  }
-
 
   render() {
     return (

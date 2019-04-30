@@ -126,6 +126,72 @@ hr {
   color: #2ec4f2;
 }
 
+button.top {
+  text-align: center;
+  padding: 10px;
+  display: block;
+  margin: 30px auto;
+  font-size: 20px;
+  border: 3px solid #23C6B3;
+  border-radius: 80px;
+  background: #C4EFDA;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 100;
+  opacity: 0;
+}
+
+.cross {
+  text-decoration: none;
+  font-size: 19px;
+  display: none
+}
+
+.hamburger {
+  background-color: #3B4548;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-radius: 5px 5px 5px 5px;
+  margin: 20px;
+  border: 1px solid #35CDD1;
+  line-height: 2.5em;
+  font-family: monospace;
+  font-size: 20px;
+  padding: 1px 13px;
+  opacity: 0.8;
+  color: #C4EFDA;
+  z-index: 100;
+  display: none;
+}
+
+.mobile-nav {
+  overflow: hidden;
+  background-color: #3B4548;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-radius: 5px 5px 5px 5px;
+  margin: 10px;
+  border: 1px solid #35CDD1;
+  display: none;
+  line-height: 2.5em;
+  font-family: monospace;
+  font-size: 16px;
+  padding: 8px;
+  opacity: 0.8;
+  z-index: 100;
+}
+
+.mobile-nav a {
+  display: none;
+}
+
+.desktop-nav a {
+  display: inline-block;
+}
+
 
 /* Footer */
 
@@ -469,14 +535,14 @@ input.submit {
     text-decoration: none;
   }
 
-  #navstickline a {
-    display: inline-block;
-    width: 40px;
-  }
-
   .projectspage {
     margin: 550px auto;
   }
+
+  .nav, .hamburger, .cross, .mobile-nav, .mobile-nav a {
+    display: block;
+  }
+
 
 
 }

@@ -18,23 +18,73 @@ export default class Header extends Component {
     });
   }
 
+  hamMenu = () => {
+    //hides the hamburger menu at first until clicked
+    $(".mobile-nav").hide();
+    $(".hamburger").click(function(){
+      $(".mobile-nav").slideToggle("slow", function(){
+        $(".hamburger").hide();
+        $(".mobile-nav").show();
+        $(".cross").show();
+      });
+    });
+
+    //on click, the menu displays
+    $(".cross").click(function(event){
+      event.preventDefault();
+      //click event that takes information from the event and prevents refresh
+      if ($(".cross").is(":visible")){
+        $(".mobile-nav").slideToggle("slow", function(){
+          $(".cross").hide();
+          $(".hamburger").show();
+        });
+      }
+    });
+  }
+
+  //scrolls to top when clicked
+  top = () => {
+    $("button.top").click(function(event){
+      $("html").animate({ scrollTop: 0 }, "slow")
+    });
+  }
+
   componentDidMount(){
+    {this.top()}
     {this.navStick()}
     {this.scrollFade()}
+    {this.hamMenu()}
   }
 
   render() {
     return (
         <div className="headercontainer">
+
           <div className="navbar">
             <Link to="/"><div className="navtitle">Hi, I'm Emily</div></Link>
             <hr></hr>
             <NavLinks />
           </div>
+
           <div className="navstick">
-            <NavLinks />
+
+            <button className="hamburger">&#9776;</button>
+
+            <div classname="desktop-nav">
+              <NavLinks />
+              <Link to="" className="cross">&#735;</Link>
+            </div>
+
+            <div className="mobile-nav">
+              <NavLinks />
+              <Link to="" className="cross">&#735;</Link>
+            </div>
+
             <Link to="/"><div className="navsubtitlestick"></div></Link>
+            <button className="top">&#8593;</button>
+
           </div>
+
           <Link to="/"><div className="navsubtitle"></div></Link>
         </div>
     );
