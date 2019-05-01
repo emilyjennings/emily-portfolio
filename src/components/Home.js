@@ -7,7 +7,9 @@ export default class Home extends Component {
 
   changeHeader = () => {
     $('.navtitle').text("Hi, I'm Emily")
-    $('.navsubtitle, .navsubtitlestick').hide()
+    $('.navsubtitle').hide()
+    $('.navsubtitlestick').text("This is me")
+    $('.navlinks').show()
   }
 
   scrollFade = () => {

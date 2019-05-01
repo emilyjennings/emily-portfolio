@@ -9,6 +9,10 @@ a:visited {
   background-color: #C4EFDA;
 }
 
+a {
+  text-decoration: none
+}
+
 
 /* Header */
 
@@ -365,59 +369,67 @@ i {
 /*Show Pages*/
 
 .showimg img {
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.showimg {
+  float: left;
+  display: inline-block;
+  margin: 20px 4%;
   width: 50%;
-  display: block;
-  margin: 300px auto 10px auto;
+}
+
+.desc-cont {
+  float: left;
+  display: inline-block;
+  margin: 20px 4%;
+  width: 30%;
 }
 
 .desc {
-  display: block;
-  text-align: center;
+  text-align: left;
   background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
-  width: auto;
   z-index: 1;
-  margin: 20px 5%;
-  border-radius: 20px;
-  padding: 20px;
-  font-family: 'Wendy One', serif;
+  border-radius: 10px;
+  padding: 30px;
+  font-family: 'Patrick Hand', serif;
   font-size: 20px;
-}
-
-.link {
-  display: block;
-  text-align: center;
-  background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
-  width: auto;
-  z-index: 1;
-  margin: 20px 5%;
-  border-radius: 20px;
-  padding: 20px;
-  font-family: 'Wendy One', serif;
-  font-size: 20px;
-}
-
-.github {
-  display: block;
-  text-align: center;
-  background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
-  width: auto;
-  z-index: 1;
-  margin: 20px 5%;
-  border-radius: 20px;
-  padding: 20px;
-  font-family: 'Wendy One', serif;
-  font-size: 20px;
-}
-
-.goback {
-  color: #C4EFDA;
-  border: 1px solid #C4EFDA;
-  border-radius: 3px;
-  display: block;
+  width: 100%;
   margin: auto;
+}
+
+.projectborder {
+  height: 500px;
+  overflow: scroll;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.buttons {
+  width: 100%;
+  clear: both;
+  margin: 40px auto 600px auto;
+  text-align: center;
+}
+
+.github, .link, .goback {
+  font-family: 'Wendy One', serif;
+  color: #C4EFDA;
+  border: 3px solid #C4EFDA;
+  background: #35CDD1;
+  border-radius: 3px;
+  display: inline-block;
   width: 100px;
   text-align: center;
-  padding: 10px
+  padding: 10px;
+  text-decoration: none;
+  margin: 10px
+}
+
+.goback:hover, .github:hover, .link:hover {
+  background-color: #262c2d;
 }
 
 /* Contact Page (Empathy) */
@@ -608,6 +620,20 @@ i {
 
   a.cross {
     font-size: 40px
+  }
+
+  .desc-cont, .showimg {
+    display: block;
+    float: none;
+    width: 90%
+  }
+
+  .desc {
+    width: 400px
+  }
+
+  .projectborder {
+    height: auto;
   }
 
 

@@ -6,7 +6,7 @@ export default class Contact extends Component {
 
 // changes the header subtitle
   changeHeader = () => {
-    $('.navsubtitle, .navsubtitlestick').text("This is Me")
+    $('.navsubtitle, .navsubtitlestick').text("Hello out there")
     $('.navtitle').text("Contact Me")
     $('.navsubtitle, .navsubtitlestick').show()
   }
