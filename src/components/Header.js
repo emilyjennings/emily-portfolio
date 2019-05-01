@@ -2,29 +2,30 @@ import React, { Component } from 'react';
 import $ from 'jquery'
 
 import NavLinks from './NavLinks'
+import MobileNav from './MobileNav'
 import { Link } from "react-router-dom";
 
 export default class Header extends Component {
 
   scrollFade = () => {
     $(window).scroll(function(){
-      $(".navbar").css("opacity", 1 - $(window).scrollTop() / 250);
+      $(".navbar").css("opacity", 1 - $(window).scrollTop() / 150);
     });
   }
 
   navStick = () => {
     $(window).scroll(function(){
-      $(".navstick").css("opacity", 0 + $(window).scrollTop() / 250)
+      $(".navstick, .hamburger").css("opacity", 0 + $(window).scrollTop() / 250)
+      $(".navstick").css("width", $(window).scrollTop() * 3)
     });
   }
 
   hamMenu = () => {
     //hides the hamburger menu at first until clicked
-    $(".mobile-nav").hide();
+    $(".mobile-navlinks").hide();
     $(".hamburger").click(function(){
-      $(".mobile-nav").slideToggle("slow", function(){
-        $(".hamburger").hide();
-        $(".mobile-nav").show();
+      $(".mobile-navlinks").slideToggle("slow", function(){
+        $(".mobile-navlinks").show();
         $(".cross").show();
       });
     });
@@ -34,9 +35,8 @@ export default class Header extends Component {
       event.preventDefault();
       //click event that takes information from the event and prevents refresh
       if ($(".cross").is(":visible")){
-        $(".mobile-nav").slideToggle("slow", function(){
-          $(".cross").hide();
-          $(".hamburger").show();
+        $(".mobile-navlinks").slideToggle("slow", function(){
+          $(".mobile-navlinks").hide();
         });
       }
     });
@@ -45,7 +45,7 @@ export default class Header extends Component {
   //scrolls to top when clicked
   top = () => {
     $("button.top").click(function(event){
-      $("html").animate({ scrollTop: 0 }, "slow")
+      $("app").animate({ scrollTop: 0 }, "slow")
     });
   }
 
@@ -67,22 +67,9 @@ export default class Header extends Component {
           </div>
 
           <div className="navstick">
-
-            <button className="hamburger">&#9776;</button>
-
-            <div classname="desktop-nav">
-              <NavLinks />
-              <Link to="" className="cross">&#735;</Link>
-            </div>
-
-            <div className="mobile-nav">
-              <NavLinks />
-              <Link to="" className="cross">&#735;</Link>
-            </div>
-
+            <MobileNav />
             <Link to="/"><div className="navsubtitlestick"></div></Link>
             <button className="top">&#8593;</button>
-
           </div>
 
           <Link to="/"><div className="navsubtitle"></div></Link>

@@ -52,7 +52,7 @@ a:visited {
   color: #2ec4f2;
 }
 
-.navlinks a {
+.navlinks a, .mobile-navlinks a {
   margin: 15px;
   background-color: #e6f7ee;
   color: #35CDD1;
@@ -64,12 +64,12 @@ a:visited {
   font-size: 20px;
 }
 
-.navlinks a:hover {
+.navlinks a:hover, .mobile-navlinks a:hover {
   background-color: #C4EFDA;
   color: #35CDD1;
 }
 
-.navlinks a:visited {
+.navlinks a:visited, .mobile-navlinks a:hover {
   color: #35CDD1;
 }
 
@@ -118,7 +118,7 @@ hr {
 }
 
 .navstick a:visited {
-  color: #262c2d
+  color: #2ec4f2
 }
 
 .navstick a:hover {
@@ -142,13 +142,7 @@ button.top {
   opacity: 0;
 }
 
-.cross {
-  text-decoration: none;
-  font-size: 19px;
-  display: none
-}
-
-.hamburger {
+button.hamburger {
   background-color: #3B4548;
   position: fixed;
   top: 0;
@@ -160,13 +154,13 @@ button.top {
   font-family: monospace;
   font-size: 20px;
   padding: 1px 13px;
-  opacity: 0.8;
+  opacity: 0;
   color: #C4EFDA;
   z-index: 100;
-  display: none;
 }
 
-.mobile-nav {
+.mobile-navlinks {
+  display: block;
   overflow: hidden;
   background-color: #3B4548;
   position: fixed;
@@ -175,21 +169,53 @@ button.top {
   border-radius: 5px 5px 5px 5px;
   margin: 10px;
   border: 1px solid #35CDD1;
-  display: none;
   line-height: 2.5em;
-  font-family: monospace;
-  font-size: 16px;
   padding: 8px;
-  opacity: 0.8;
+  opacity: 1;
   z-index: 100;
 }
 
-.mobile-nav a {
-  display: none;
+.mobile-navlinks a {
+  color: #35CDD1;
+  text-align: center;
+  background: none;
+  display: block;
 }
 
-.desktop-nav a {
-  display: inline-block;
+.mobile-navlinks a:hover {
+  background: none;
+  color: #C4EFDA
+}
+
+a.cross {
+  margin: auto;
+  text-align: center;
+  font-size: 45px
+}
+
+button.top {
+  padding: 10px;
+  display: block;
+  margin: 30px auto;
+  font-size: 20px;
+  border: 3px solid #35CDD1;
+  border-radius: 80px;
+  background: #C4EFDA;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 100;
+  opacity: 0;
+}
+
+button.top:hover {
+  background-color: #35CDD1;
+  color: #C4EFDA;
+  opacity: .5;
+}
+
+button#top {
+  visibility: hidden;
 }
 
 
@@ -234,27 +260,6 @@ button.top {
 
 i {
   color: #35CDD1;
-}
-
-#top {
-  padding: 10px;
-  display: block;
-  margin: 30px auto;
-  font-size: 20px;
-  border: 3px solid #23C6B3;
-  border-radius: 80px;
-  background: #C4EFDA;
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  z-index: 100;
-  opacity: 0;
-}
-
-.top:hover {
-  background-color: #f7edf7;
-  color: #9e5299;
-  opacity: .5;
 }
 
 /* Project Cards */
@@ -536,13 +541,24 @@ input.submit {
   }
 
   .projectspage {
-    margin: 550px auto;
+    margin: 400px auto;
   }
 
-  .nav, .hamburger, .cross, .mobile-nav, .mobile-nav a {
+  .nav, button.hamburger, .mobile-navlinks, .mobile-navlinks a, .cross {
     display: block;
   }
 
+  .contactcontainer {
+    margin: 500px auto;
+  }
+
+  .aboutpage, .home {
+    margin: 390px auto;
+  }
+
+  .home img {
+    width: 80%
+  }
 
 
 }

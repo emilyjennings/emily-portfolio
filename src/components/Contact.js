@@ -28,7 +28,7 @@ export default class Contact extends Component {
   render() {
     return (
       <div className="contactcontainer">
-        <div className="formcaption">Leave me your name and what you're looking for! I'll be in touch soon.</div>
+        <div className="formcaption">I want to connect with you and exchange stories. I'm not kidding. I live to have conversations with new people. So, leave me a message here. I'll be in touch soon.</div>
         <form id="emily-contact" >
           <input type="hidden" name="contact_number" />
           email: <input type="email" name="user_email" className="email_field" />
