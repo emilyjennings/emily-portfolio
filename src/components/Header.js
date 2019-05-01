@@ -16,7 +16,7 @@ export default class Header extends Component {
   navStick = () => {
     $(window).scroll(function(){
       $(".navstick, .hamburger").css("opacity", 0 + $(window).scrollTop() / 250)
-      $(".navstick").css("width", $(window).scrollTop() * 3)
+      $(".navstick").css("width", $(window).scrollTop() * 4)
     });
   }
 
@@ -27,16 +27,16 @@ export default class Header extends Component {
       $(".mobile-navlinks").slideToggle("slow", function(){
         $(".mobile-navlinks").show();
         $(".cross").show();
+        $(".hamburger").fadeOut()
       });
     });
 
     //on click, the menu displays
     $(".cross").click(function(event){
       event.preventDefault();
-      //click event that takes information from the event and prevents refresh
       if ($(".cross").is(":visible")){
         $(".mobile-navlinks").slideToggle("slow", function(){
-          $(".mobile-navlinks").hide();
+          $(".hamburger").fadeIn()
         });
       }
     });
@@ -45,7 +45,7 @@ export default class Header extends Component {
   //scrolls to top when clicked
   top = () => {
     $("button.top").click(function(event){
-      $("app").animate({ scrollTop: 0 }, "slow")
+       $(window).scrollTop(0);
     });
   }
 

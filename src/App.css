@@ -160,26 +160,29 @@ button.hamburger {
 }
 
 .mobile-navlinks {
-  display: block;
+  display: inline-block;
   overflow: hidden;
   background-color: #3B4548;
   position: fixed;
   top: 0;
   right: 0;
   border-radius: 5px 5px 5px 5px;
-  margin: 10px;
+  margin: 1px 10px;
   border: 1px solid #35CDD1;
-  line-height: 2.5em;
-  padding: 8px;
+  line-height: 2.4em;
+  padding: 1px;
   opacity: 1;
   z-index: 100;
 }
 
 .mobile-navlinks a {
+  display: inline-block;
   color: #35CDD1;
   text-align: center;
   background: none;
-  display: block;
+  padding: 0 20px;
+  margin: 0;
+  font-size: 15px
 }
 
 .mobile-navlinks a:hover {
@@ -188,9 +191,7 @@ button.hamburger {
 }
 
 a.cross {
-  margin: auto;
-  text-align: center;
-  font-size: 45px
+
 }
 
 button.top {
@@ -427,7 +428,7 @@ i {
   background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
   width: 40%;
   z-index: 1;
-  margin: 300px auto 400px auto;
+  margin: 30px auto 400px auto;
   border-radius: 20px;
   padding: 20px;
   font-family: 'Wendy One', serif;
@@ -437,7 +438,7 @@ i {
 .formcaption {
   display: block;
   width: 70%;
-  margin: 20px auto 20px auto;
+  margin: 20px auto 30px auto;
 }
 
 .emily-contact {
@@ -452,12 +453,21 @@ i {
 .message_field {
   display: block;
   width: 60%;
-  height: 100px;
+  height: 300px;
   margin: auto;
 }
 
-input.submit {
-  font-size: 60px;
+.empathy {
+  display: block;
+  text-align: center;
+  background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
+  width: 40%;
+  z-index: 1;
+  margin: 300px auto 10px auto;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: 'Wendy One', serif;
+  font-size: 25px;
 }
 
 
@@ -501,13 +511,8 @@ input.submit {
 
   .navbar {
     height: 300px;
-    margin-top: 50px
-  }
-
-  .navlinks-wrapper {
-    width: 50%;
-    text-align: center;
-    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 20px
   }
 
   .aboutimage {
@@ -558,6 +563,51 @@ input.submit {
 
   .home img {
     width: 80%
+  }
+
+  .contactcontainer, .empathy {
+    width: 80%
+  }
+
+  .empathy {
+    margin-top: 400px
+  }
+
+  .contactcontainer {
+    margin-top: 30px
+  }
+
+  .submit {
+    font-size: 60px
+  }
+
+  .mobile-navlinks {
+    display: block;
+    overflow: hidden;
+    background-color: #3B4548;
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-radius: 5px 5px 5px 5px;
+    margin: 10px;
+    border: 1px solid #35CDD1;
+    line-height: 2.5em;
+    padding: 8px;
+    opacity: 1;
+    z-index: 100;
+  }
+
+  .mobile-navlinks a {
+    color: #35CDD1;
+    text-align: center;
+    background: none;
+    display: block;
+    font-size: 25px;
+    padding: 9px
+  }
+
+  a.cross {
+    font-size: 40px
   }
 
 

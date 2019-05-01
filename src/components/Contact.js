@@ -27,8 +27,10 @@ export default class Contact extends Component {
 // contact form as per code given by EmailJS, thwe library used for this form
   render() {
     return (
+      <div>
+      <div className="empathy">I want to connect with you and exchange stories. I'm not kidding. I live to have conversations with new people. So, leave me a message here.</div>
       <div className="contactcontainer">
-        <div className="formcaption">I want to connect with you and exchange stories. I'm not kidding. I live to have conversations with new people. So, leave me a message here. I'll be in touch soon.</div>
+        <div className="formcaption">I'll be in touch soon.</div>
         <form id="emily-contact" >
           <input type="hidden" name="contact_number" />
           email: <input type="email" name="user_email" className="email_field" />
@@ -39,6 +41,7 @@ export default class Contact extends Component {
           <br></br>
           <input type="submit" value="Send" className="submit" />
         </form>
+      </div>
       </div>
     );
   };
