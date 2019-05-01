@@ -1,5 +1,32 @@
 A React app I made to showcase my abilities and personality. Enjoy!
 
+### 5.1 notes :
+“I feel like I am in whole new chapter of my life and I am not even trying to be who I was. It’s beautiful that children do that to you.” - Beyonce
+
+Home page: intro text, 7 long cards side by side with background images that are tinted. On hover or click, they say a fact about me:
+
+Ruby on rails and javascript
+
+Masters in philosophy
+
+Was a singer in a band
+
+Was a teacher in Korea
+
+2nd dan blackbelt in taekwondo
+
+Beach lover
+
+Mom
+
+
+About page:
+
+Interactive timeline with testimonials, depending on p[lace in timeline it takes you to a photo and a map side by side, and a quote or description. Three boxes side by side with the timeline on top.
+
+Sectioned off area at bottom with skills and levels, “learning, not bad, okay, pretty good, as good as it gets right now”, hover gives an animated level with a line
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
