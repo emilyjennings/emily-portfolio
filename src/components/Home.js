@@ -13,9 +13,9 @@ export default class Home extends Component {
 
   scrollFade = () => {
     $(window).scroll(function(){
-      var scrollBottom = $(window).height() - $(window).scrollTop();
-      if (scrollBottom < 10) {
-        $(".homecaption2").animate({'opacity':'1'},5000)
+      const scrollTop = $(window).scrollTop();
+      if (scrollTop > 400) {
+        $(".homecaption").animate({'opacity':'1'},1000)
       }
     });
   }

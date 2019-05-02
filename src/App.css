@@ -324,23 +324,33 @@ i {
 .homeimage {
   opacity: 0.4;
   margin: 50px auto;
+  position: sticky;
+  top: 100px;
 }
 
 .home img {
-  width: 30%
+  width: 30%;
+  margin: 0
+}
+
+.homecaptions {
+  width: 100%;
 }
 
 .homecaption, .homecaption2, .homecaption3, .homecaption4 {
   font-family: 'Wendy One', cursive;
-  text-align: center;
-  margin: 0 auto 20px auto;
   font-size: 30px;
-  padding: 20px;
+  padding: 40px;
   color: #C4EFDA;
-  width: 50%;
+  opacity: 0;
+  display: block;
+  position: sticky;
+  margin: 200px 20%;
+  top: 200px;
 }
 
-.homecaptions {
+.homecaption {
+
 }
 
 /* Aboutpage */
