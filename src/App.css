@@ -316,38 +316,31 @@ i {
 
 .home {
   display: block;
-  position: absolute;
-  margin: 260px auto 0 auto;
+  margin: 250px auto 200px auto;
   text-align: center;
   width: 100%;
 }
 
-.homecaption {
-  color: black;
-  font-family: 'Wendy One', cursive;
-  text-align: center;
-  margin: 0 10px 20px 10px;
-  font-size: 30px;
-  padding: 20px;
-  color: #C4EFDA;
-}
-
-.homecaption2 {
-  color: black;
-  font-family: 'Wendy One', cursive;
-  text-align: center;
-  margin: 400px 10px;
-  font-size: 30px;
-  padding: 20px;
-  height: 50px;
-  overflow: hidden;
-  color: #C4EFDA;
-  opacity: 0;
+.homeimage {
+  opacity: 0.4;
+  margin: 50px auto;
 }
 
 .home img {
-  margin: 50px auto;
   width: 30%
+}
+
+.homecaption, .homecaption2, .homecaption3, .homecaption4 {
+  font-family: 'Wendy One', cursive;
+  text-align: center;
+  margin: 0 auto 20px auto;
+  font-size: 30px;
+  padding: 20px;
+  color: #C4EFDA;
+  width: 50%;
+}
+
+.homecaptions {
 }
 
 /* Aboutpage */

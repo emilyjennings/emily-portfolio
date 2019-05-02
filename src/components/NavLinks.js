@@ -6,9 +6,9 @@ export default class NavLinks extends Component {
   render() {
     return (
       <div className="navlinks">
-        <Link to="/about">Authenticity</Link>
-        <Link to="/projects">Growth</Link>
-        <Link to="/contact">Empathy</Link>
+        <Link to="/about" id="a">Authenticity</Link>
+        <Link to="/projects" id="g">Growth</Link>
+        <Link to="/contact" id="e">Empathy</Link>
       </div>
     );
   }
