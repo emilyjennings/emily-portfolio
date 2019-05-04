@@ -316,14 +316,14 @@ i {
 
 .home {
   display: block;
-  margin: 250px auto 200px auto;
+  margin: 250px auto 0 auto;
   text-align: center;
   width: 100%;
+  height: 1000px
 }
 
 .homeimage {
-  opacity: 0.4;
-  margin: 50px auto;
+  opacity: 0.3;
   position: sticky;
   top: 100px;
 }
@@ -344,13 +344,18 @@ i {
   color: #C4EFDA;
   opacity: 0;
   display: block;
-  position: sticky;
-  margin: 200px 20%;
-  top: 200px;
+  position: fixed;
+  margin: 20px 20%;
+  top: 100px;
+  text-align: left;
 }
 
-.homecaption {
+.homecaption2 {
+  top: 220px
+}
 
+.homecaption3 {
+  top: 310px
 }
 
 /* Aboutpage */
