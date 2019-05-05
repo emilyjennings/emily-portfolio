@@ -23,14 +23,14 @@ export default class Home extends Component {
             $('.homecaption3').animate({
               opacity: 1,
             }, 4000, function(){
-              $('.homecaption, .homeimage, .homecaption2, .homecaption3, .homecaption').fadeOut("slow")
+              $('.homeimage, .homecaption3, .homecaption2, .homecaption, .homecaptions').fadeOut("slow")
               $('.tiles, .tile, .homecaption4').animate({
                   opacity: 1,
                 }, 1000)
             })
           })
         });
-      } else if ($(window).scrollTop() === 0) {
+      } else if ($(window).scrollTop() < 20) {
         $('.homecaption4').hide()
       }
     });
@@ -63,7 +63,6 @@ export default class Home extends Component {
           <div className="homecaption">I spent a year and a half with a small child and a full time job learning to code.</div>
           <div className="homecaption2">It was exhausting and wonderful.</div>
           <div className="homecaption3">At this point, I think I deserve to make this website however I like.</div>
-          <div className="homecaption4">It's okay if you don't like my fonts. This is me.</div>
         </div>
         <div className="tiles">
           <div className="tile">Coding</div>
@@ -73,6 +72,7 @@ export default class Home extends Component {
           <div className="tile">Creative</div>
           <div className="tile">Mom</div>
         </div>
+        <div className="homecaption4">It's okay if you don't like my fonts. This is me.</div>
       </div>
     );
   };

@@ -31,7 +31,7 @@ export default class Contact extends Component {
       <div className="empathy">I want to connect with you and exchange stories. I'm not kidding. I live to have conversations with new people. So, leave me a message here.</div>
       <div className="contactcontainer">
         <div className="formcaption">I'll be in touch soon.</div>
-        <form name="emily-contact" method="POST" data-netlify="true" action="/">
+        <form name="emily-contact" method="POST" netlify action="/">
           email: <input name="email" type="email" name="user_email" className="email_field" />
           <br></br>
           name: <input name="name" type="text" name="user_name" className="name_field" />
