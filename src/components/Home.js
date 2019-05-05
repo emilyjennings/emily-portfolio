@@ -16,17 +16,22 @@ export default class Home extends Component {
       if ($(window).scrollTop() > 200) {
         $('.homecaption').animate({
           opacity: 1,
-        }, 2000, function(){
+        }, 1000, function(){
           $('.homecaption2').animate({
             opacity: 1,
-          }, 1500, function(){
+          }, 2000, function(){
             $('.homecaption3').animate({
               opacity: 1,
-            }, 1500, function(){
-              $('.homeimage, .homecaption, .homecaption2, .homecaption3').fadeOut("slow")
+            }, 4000, function(){
+              $('.homecaption, .homeimage, .homecaption2, .homecaption3, .homecaption').fadeOut("slow")
+              $('.tiles, .tile, .homecaption4').animate({
+                  opacity: 1,
+                }, 1000)
             })
           })
         });
+      } else if ($(window).scrollTop() === 0) {
+        $('.homecaption4').hide()
       }
     });
   }
@@ -55,10 +60,18 @@ export default class Home extends Component {
           <img src={profile} alt=" "/><img src={profile} alt=" "/>
         </div>
         <div className="homecaptions">
-          <div class="homecaption">I spent a year and a half with a small child and a full time job learning to code.</div>
-          <div class="homecaption2">It was exhausting and wonderful.</div>
-          <div class="homecaption3">At this point, I think I deserve to make this website however I like.</div>
-          <div class="homecaption4">It's okay if you don't like my fonts. This is me.</div>
+          <div className="homecaption">I spent a year and a half with a small child and a full time job learning to code.</div>
+          <div className="homecaption2">It was exhausting and wonderful.</div>
+          <div className="homecaption3">At this point, I think I deserve to make this website however I like.</div>
+          <div className="homecaption4">It's okay if you don't like my fonts. This is me.</div>
+        </div>
+        <div className="tiles">
+          <div className="tile">Coding</div>
+          <div className="tile">Philosophy</div>
+          <div className="tile">Teaching</div>
+          <div className="tile">Adventure</div>
+          <div className="tile">Creative</div>
+          <div className="tile">Mom</div>
         </div>
       </div>
     );

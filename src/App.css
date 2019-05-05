@@ -1,7 +1,7 @@
 body {
   background-color: #262c2d;
   color: black;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Monoton', serif;
   width: 100%;
 }
 
@@ -356,6 +356,36 @@ i {
 
 .homecaption3 {
   top: 310px
+}
+
+.homecaption4 {
+  top: 400px
+}
+
+.tiles {
+  display: block;
+  position: sticky;
+  width: 1000px;
+  top: 100px;
+  margin: 0 auto;
+  opacity: 0;
+  padding-top: 5px
+}
+
+.tile {
+  display: inline-block;
+  color: #262c2d;
+  width: 15%;
+  height: 280px;
+  float: left;
+  font-size: 15px;
+  text-align: left;
+  padding: 5px;
+  background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
+  z-index: 1;
+  border-radius: 5px;
+  margin: 2px;
+  opacity: 0;
 }
 
 /* Aboutpage */
