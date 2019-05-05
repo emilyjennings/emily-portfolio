@@ -31,11 +31,10 @@ export default class Contact extends Component {
       <div className="empathy">I want to connect with you and exchange stories. I'm not kidding. I live to have conversations with new people. So, leave me a message here.</div>
       <div className="contactcontainer">
         <div className="formcaption">I'll be in touch soon.</div>
-        <form name="emily-contact" method="POST" data-netlify="true" action="/" netlify>
-          <input type="hidden" name="contact_number" />
-          email: <input type="email" name="user_email" className="email_field" />
+        <form name="emily-contact" method="POST" data-netlify="true" action="/">
+          email: <input name="email" type="email" name="user_email" className="email_field" />
           <br></br>
-          name: <input type="text" name="user_name" className="name_field" />
+          name: <input name="name" type="text" name="user_name" className="name_field" />
           <br></br>
           message: <textarea name="text" className="message_field" />
           <br></br>
