@@ -232,7 +232,6 @@ button#top {
   bottom: 0;
   width: 100%;
   text-align: center;
-  padding: 10px;
   z-index: 1;
   font-family: 'Monoton', cursive;
   color: #35CDD1;
@@ -316,7 +315,7 @@ i {
 
 .home {
   display: block;
-  margin: 250px auto 0 auto;
+  margin: 0 auto;
   text-align: center;
   width: 100%;
   height: 1000px
@@ -324,8 +323,8 @@ i {
 
 .homeimage {
   opacity: 0.3;
-  position: sticky;
-  top: 100px;
+  position: fixed;
+  top: 270px;
 }
 
 .home img {
@@ -339,53 +338,56 @@ i {
 
 .homecaption, .homecaption2, .homecaption3, .homecaption4 {
   font-family: 'Wendy One', cursive;
-  font-size: 30px;
-  padding: 40px;
+  font-size: 1.5em;
+  padding: 10%;
   color: #C4EFDA;
   opacity: 0;
   display: block;
   position: fixed;
-  margin: 20px 20%;
-  top: 100px;
+  margin: 0 20%;
+  top: 200px;
   text-align: left;
 }
 
 .homecaption2 {
-  top: 220px
+  top: 300px
 }
 
 .homecaption3 {
-  top: 310px
+  top: 400px
 }
 
 .homecaption4 {
   top: 400px
 }
 
-.tiles {
+.tile-container {
+  position: fixed;
   display: block;
-  position: sticky;
-  width: 1000px;
-  top: 100px;
+  width: 100%;
   margin: 0 auto;
+  top: 260px;
+}
+
+.tiles {
   opacity: 0;
-  padding-top: 5px
 }
 
 .tile {
   display: inline-block;
   color: #262c2d;
-  width: 15%;
-  height: 280px;
+  height: 230px;
   float: left;
   font-size: 15px;
   text-align: left;
-  padding: 5px;
   background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
   z-index: 1;
-  border-radius: 5px;
-  margin: 2px;
+  border-radius: 3px;
   opacity: 0;
+  width: 16.45%;
+  text-indent: 10px;
+  margin: 0.1%;
+  padding-top: 10px;
 }
 
 /* Aboutpage */

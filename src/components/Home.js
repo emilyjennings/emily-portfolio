@@ -64,13 +64,15 @@ export default class Home extends Component {
           <div className="homecaption2">It was exhausting and wonderful.</div>
           <div className="homecaption3">At this point, I think I deserve to make this website however I like.</div>
         </div>
-        <div className="tiles">
-          <div className="tile">Coding</div>
-          <div className="tile">Philosophy</div>
-          <div className="tile">Teaching</div>
-          <div className="tile">Adventure</div>
-          <div className="tile">Creative</div>
-          <div className="tile">Mom</div>
+        <div className="tile-container">
+          <div className="tiles">
+            <div className="tile">Coding</div>
+            <div className="tile">Philosophy</div>
+            <div className="tile">Teaching</div>
+            <div className="tile">Adventure</div>
+            <div className="tile">Creative</div>
+            <div className="tile">Mom</div>
+          </div>
         </div>
         <div className="homecaption4">It's okay if you don't like my fonts. This is me.</div>
       </div>
