@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import $ from 'jquery'
 
 import profile from './img/profile.jpg'
+import Tiles from './Tiles'
 
 export default class Home extends Component {
 
@@ -23,7 +24,8 @@ export default class Home extends Component {
             $('.homecaption3').animate({
               opacity: 1,
             }, 4000, function(){
-              $('.homeimage, .homecaption3, .homecaption2, .homecaption, .homecaptions').fadeOut("slow")
+              $(".homeimage").animate({opacity: 0}, 1000)
+              $('.homecaption3, .homecaption2, .homecaption, .homecaptions').fadeOut("slow")
               $('.tiles, .tile, .homecaption4').animate({
                   opacity: 1,
                 }, 1000)
@@ -33,6 +35,20 @@ export default class Home extends Component {
       }
     });
   }
+
+  // scrollImageSize = () => {
+  //   $(window).scroll(function(){
+  //     $(".homeimage").css(
+  //       "margin-top", $(window).scrollTop() * -0.4,
+  //     );
+  //     $(".homeimage").css(
+  //       "margin-left", $(window).scrollTop() / 5,
+  //     );
+  //     $(".homeimage").css("width", "400" + $(window).scrollTop() * 100 + "px");
+  //     $(".homeimage").css("max-width", "1500px");
+  //
+  //   });
+  // }
 
   fadeButtons = () => {
     setInterval(function(){
@@ -49,6 +65,7 @@ export default class Home extends Component {
     {this.changeHeader()}
     {this.scrollFadeText()}
     {this.fadeButtons()}
+    // {this.scrollImageSize()}
   }
 
   render() {
@@ -62,16 +79,7 @@ export default class Home extends Component {
           <div className="homecaption2">It was exhausting and wonderful.</div>
           <div className="homecaption3">At this point, I think I deserve to make this website however I like.</div>
         </div>
-        <div className="tile-container">
-          <div className="tiles">
-            <div className="tile">Coding</div>
-            <div className="tile">Philosophy</div>
-            <div className="tile">Teaching</div>
-            <div className="tile">Adventure</div>
-            <div className="tile">Creative</div>
-            <div className="tile">Mom</div>
-          </div>
-        </div>
+        < Tiles />
         <div className="homecaption4">It's okay if you don't like my fonts. This is me.</div>
       </div>
     );
