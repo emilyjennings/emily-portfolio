@@ -15,6 +15,7 @@ export default class Home extends Component {
   scrollFadeText = () => {
     $(window).scroll(function(){
       if ($(window).scrollTop() > 200) {
+        $('.homeimage').animate({opacity: 1}, 1000)
         $('.homecaption').animate({
           opacity: 1,
         }, 1000, function(){
@@ -24,11 +25,11 @@ export default class Home extends Component {
             $('.homecaption3').animate({
               opacity: 1,
             }, 4000, function(){
-              $(".homeimage").animate({opacity: 0}, 1000)
-              $('.homecaption3, .homecaption2, .homecaption, .homecaptions').fadeOut("slow")
+              $('.homecaption3, .homecaption2, .homecaption, .homecaptions, .homeimage').fadeOut("slow")
               $('.tiles, .tile, .homecaption4').animate({
                   opacity: 1,
                 }, 1000)
+              $('.homeimage').hide()
             })
           })
         });
@@ -36,19 +37,6 @@ export default class Home extends Component {
     });
   }
 
-  // scrollImageSize = () => {
-  //   $(window).scroll(function(){
-  //     $(".homeimage").css(
-  //       "margin-top", $(window).scrollTop() * -0.4,
-  //     );
-  //     $(".homeimage").css(
-  //       "margin-left", $(window).scrollTop() / 5,
-  //     );
-  //     $(".homeimage").css("width", "400" + $(window).scrollTop() * 100 + "px");
-  //     $(".homeimage").css("max-width", "1500px");
-  //
-  //   });
-  // }
 
   fadeButtons = () => {
     setInterval(function(){
@@ -61,11 +49,29 @@ export default class Home extends Component {
     });
   }
 
+  // For later if I want the cards to cascade in, needs tweaking
+  // cardTurn = () => {
+  //   setInterval(function(){
+  //     $('#tile-1').fadeIn(200, function(){
+  //       $('#tile-2').fadeIn(200, function(){
+  //         $('tile-3').fadeIn(200, function(){
+  //           $('tile-4').fadeIn(200, function(){
+  //             $('tile-5').fadeIn(200, function(){
+  //               $('tile-6').fadeIn(200, function(){
+  //               });
+  //             });
+  //           });
+  //         });
+  //       });
+  //     });
+  //   });
+  // }
+
   componentDidMount(){
     {this.changeHeader()}
     {this.scrollFadeText()}
     {this.fadeButtons()}
-    // {this.scrollImageSize()}
+    // {this.cardTurn()}
   }
 
   render() {

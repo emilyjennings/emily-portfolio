@@ -355,7 +355,7 @@ i {
 }
 
 .homecaption3 {
-  top: 180px
+  top: 185px
 }
 
 .homecaption4 {
@@ -375,7 +375,7 @@ i {
 }
 
 .tiles {
-  opacity: 0;
+  opacity: 0
 }
 
 .tile {
@@ -388,11 +388,46 @@ i {
   background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
   z-index: 1;
   border-radius: 3px;
-  opacity: 0;
   width: 16.45%;
   text-indent: 10px;
   margin: 0.1%;
   padding-top: 10px;
+}
+
+#tile-6:hover {
+  background-image: url("../src/components/img/Kali-and-mama.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #35CDD1;
+}
+#tile-1:hover {
+  background-image: url("../src/components/img/candles.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #C4EFDA;
+}
+#tile-5:hover {
+  background-image: url("../src/components/img/goseong.JPG");
+  background-position: center;
+  background-size: cover;
+}
+#tile-4:hover {
+  background-image: url("../src/components/img/adventure2.JPG");
+  background-position: center;
+  background-size: cover;
+  color: #C4EFDA;
+}
+#tile-3:hover {
+  background-image: url("../src/components/img/teacher.JPG");
+  background-position: center;
+  background-size: cover;
+  color: #35CDD1;
+}
+#tile-2:hover {
+  background-image: url("../src/components/img/otago.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #35CDD1;
 }
 
 /* Aboutpage */
@@ -439,7 +474,7 @@ i {
   z-index: 1;
   border-radius: 10px;
   padding: 30px;
-  font-family: 'Patrick Hand', serif;
+  font-family: 'Wendy One', serif;
   font-size: 20px;
   width: 100%;
   margin: auto;

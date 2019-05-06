@@ -91,7 +91,7 @@ export default class Projects extends Component {
         7: {
           index: 7,
           link: "https://emilyjennings.github.io",
-          desc: 'This was my first creation trhat I made as the final project for a front end course I did in Fall 2017, and I had been iterating on it ever since until I created this site as my new portfolio.',
+          desc: 'This was my first creation that I made as the final project for a front end course I did in Fall 2017, and I had been iterating on it ever since until I created this site as my new portfolio.',
           github: "https://github.com/emilyjennings/emilyjennings.github.io",
           url: "/emilyjennings",
           image: emilyjennings,
