@@ -318,33 +318,30 @@ i {
   margin: 0 auto;
   text-align: center;
   width: 100%;
-  height: 1000px
+  height: 2000px
 }
 
 .homeimage {
   opacity: 0.3;
   position: fixed;
   top: 270px;
+  width: 100%
 }
 
 .home img {
-  width: 30%;
-  margin: 0
+  width: 50%;
 }
 
 .homecaptions {
-  width: 100%;
 }
 
 .homecaption, .homecaption2, .homecaption3, .homecaption4 {
   font-family: 'Wendy One', cursive;
   font-size: 1.5em;
-  padding: 10%;
   color: #C4EFDA;
   opacity: 0;
   display: block;
   position: fixed;
-  margin: 0 20%;
   top: 200px;
   text-align: left;
 }
@@ -358,7 +355,7 @@ i {
 }
 
 .homecaption4 {
-  top: 400px
+  font-size: 1.8em;
 }
 
 .tile-container {

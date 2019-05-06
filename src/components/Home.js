@@ -30,8 +30,6 @@ export default class Home extends Component {
             })
           })
         });
-      } else if ($(window).scrollTop() < 20) {
-        $('.homecaption4').hide()
       }
     });
   }
