@@ -395,7 +395,7 @@ i {
 
 #tile-6 {
   background-image: url("../src/components/img/mom.jpg");
-  background-position: center;
+  background-position: top;
   background-size: cover;
   color: #35CDD1;
 }
@@ -406,7 +406,7 @@ i {
 }
 #tile-4 {
   background-image: url("../src/components/img/adventure2.JPG");
-  background-position: center;
+  background-position: top;
   background-size: cover;
   color: #C4EFDA;
 }
