@@ -394,7 +394,7 @@ i {
 
 
 #tile-6 {
-  background-image: url("../src/components/img/Kali-and-mama.jpg");
+  background-image: url("../src/components/img/mom.jpg");
   background-position: center;
   background-size: cover;
   color: #35CDD1;
@@ -575,6 +575,10 @@ i {
   padding: 20px;
   font-family: 'Montserrat', serif;
   font-size: 25px;
+}
+
+form {
+  z-index: 5
 }
 
 
