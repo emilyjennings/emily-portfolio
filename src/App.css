@@ -333,29 +333,36 @@ i {
   width: 50%;
 }
 
-.homecaptions {
-
-}
-
 .homecaption, .homecaption2, .homecaption3, .homecaption4 {
-  font-family: 'Wendy One', cursive;
-  font-size: 1.6em;
+  font-family: 'Wendy One', serif;
+  font-size: 1.4em;
   color: #C4EFDA;
-  opacity: 0;
+  border: 1px solid #C4EFDA;
+  padding: 10px;
+  border-radius: 4px;
   display: block;
   position: fixed;
   top: 80px;
   text-align: left;
-  width: 60%;
-  margin: 0 20%;
+  width: 30%;
+  margin-left: 20%;
+  text-indent: 15px;
+  background-color: #262c2d;
+  opacity: 0;
 }
 
 .homecaption2 {
-  top: 145px
+  top: 120px;
+  margin-left: 50%;
+  width: 20%;
+  z-index: 1
 }
 
 .homecaption3 {
-  top: 185px
+  top: 180px;
+  margin-left: 30%;
+  width: 50%;
+  z-index: 2
 }
 
 .homecaption4 {
@@ -364,18 +371,19 @@ i {
   width: 50%;
   margin: 0 25%;
   top: 100px;
+  border: none
 }
 
 .tile-container {
-  position: fixed;
   display: block;
   width: 100%;
   margin: 0 auto;
   top: 260px;
+  position: fixed;
 }
 
 .tiles {
-  opacity: 0
+  opacity: 0;
 }
 
 .tile {
@@ -385,8 +393,6 @@ i {
   float: left;
   font-size: 15px;
   text-align: left;
-  background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
-  z-index: 1;
   border-radius: 3px;
   width: 16.45%;
   text-indent: 10px;
@@ -394,41 +400,59 @@ i {
   padding-top: 10px;
 }
 
-#tile-6:hover {
+
+#tile-6 {
   background-image: url("../src/components/img/Kali-and-mama.jpg");
   background-position: center;
   background-size: cover;
   color: #35CDD1;
 }
-#tile-1:hover {
-  background-image: url("../src/components/img/candles.jpg");
-  background-position: center;
-  background-size: cover;
-  color: #C4EFDA;
-}
-#tile-5:hover {
+#tile-5 {
   background-image: url("../src/components/img/goseong.JPG");
   background-position: center;
   background-size: cover;
 }
-#tile-4:hover {
+#tile-4 {
   background-image: url("../src/components/img/adventure2.JPG");
   background-position: center;
   background-size: cover;
   color: #C4EFDA;
 }
-#tile-3:hover {
+#tile-3 {
   background-image: url("../src/components/img/teacher.JPG");
   background-position: center;
   background-size: cover;
   color: #35CDD1;
 }
-#tile-2:hover {
+
+#tile-2 {
   background-image: url("../src/components/img/otago.jpg");
   background-position: center;
   background-size: cover;
   color: #35CDD1;
 }
+
+#tile-1 {
+  background-image: url("../src/components/img/candles.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #C4EFDA;
+}
+
+#tile-1:hover, #tile-2:hover, #tile-3:hover, #tile-4:hover, #tile-5:hover, #tile-6:hover {
+  background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
+  color: inherit;
+  font-size: 1.2em;
+}
+.tile-1-text, .tile-2-text, .tile-3-text, .tile-4-text, .tile-5-text, .tile-6-text {
+  padding: 15px;
+  padding-top: 60px;
+  font-size: 1.1em;
+  display: none;
+  text-indent: 0px;
+  word-spacing: 0.2em
+}
+
 
 /* Aboutpage */
 
