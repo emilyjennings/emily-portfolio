@@ -63,7 +63,7 @@ export default class Tiles extends Component {
           </div>
           <div className="tile" id="tile-4">
             <div className="tile-4-title">Adventure</div>
-            <div className="tile-4-text">New experiences are my jam</div>
+            <div className="tile-4-text">New places and people</div>
           </div>
           <div className="tile" id="tile-5">
             <div className="tile-5-title">Creative</div>

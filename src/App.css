@@ -301,7 +301,7 @@ i {
 
 .caption {
   color: black;
-  font-family: 'Wendy One', cursive;
+  font-family: 'Montserrat', cursive;
   text-align: center;
   margin: 0 10px 20px 10px;
   font-size: 30px;
@@ -334,34 +334,26 @@ i {
 }
 
 .homecaption, .homecaption2, .homecaption3, .homecaption4 {
-  font-family: 'Wendy One', serif;
+  font-family: 'Montserrat', serif;
   font-size: 1.4em;
   color: #C4EFDA;
-  border: 1px solid #C4EFDA;
-  padding: 10px;
-  border-radius: 4px;
   display: block;
   position: fixed;
   top: 80px;
   text-align: left;
-  width: 30%;
-  margin-left: 20%;
-  text-indent: 15px;
+  width: 70%;
+  margin-left: 15%;
   background-color: #262c2d;
   opacity: 0;
 }
 
 .homecaption2 {
-  top: 120px;
-  margin-left: 50%;
-  width: 20%;
+  top: 145px;
   z-index: 1
 }
 
 .homecaption3 {
   top: 180px;
-  margin-left: 30%;
-  width: 50%;
   z-index: 2
 }
 
@@ -424,14 +416,12 @@ i {
   background-size: cover;
   color: #35CDD1;
 }
-
 #tile-2 {
   background-image: url("../src/components/img/otago.jpg");
   background-position: center;
   background-size: cover;
   color: #35CDD1;
 }
-
 #tile-1 {
   background-image: url("../src/components/img/candles.jpg");
   background-position: center;
@@ -444,6 +434,7 @@ i {
   color: inherit;
   font-size: 1.2em;
 }
+
 .tile-1-text, .tile-2-text, .tile-3-text, .tile-4-text, .tile-5-text, .tile-6-text {
   padding: 15px;
   padding-top: 60px;
@@ -465,7 +456,7 @@ i {
   margin: 300px 5%;
   border-radius: 20px;
   padding: 60px;
-  font-family: 'Wendy One', serif;
+  font-family: 'Montserrat', serif;
   font-size: 30px;
 }
 
@@ -498,7 +489,7 @@ i {
   z-index: 1;
   border-radius: 10px;
   padding: 30px;
-  font-family: 'Wendy One', serif;
+  font-family: 'Montserrat', serif;
   font-size: 20px;
   width: 100%;
   margin: auto;
@@ -519,7 +510,7 @@ i {
 }
 
 .github, .link, .goback {
-  font-family: 'Wendy One', serif;
+  font-family: 'Montserrat', serif;
   color: #C4EFDA;
   border: 3px solid #C4EFDA;
   background: #35CDD1;
@@ -547,7 +538,7 @@ i {
   margin: 30px auto 400px auto;
   border-radius: 20px;
   padding: 20px;
-  font-family: 'Wendy One', serif;
+  font-family: 'Montserrat', serif;
   font-size: 20px;
 }
 
@@ -582,7 +573,7 @@ i {
   margin: 300px auto 10px auto;
   border-radius: 20px;
   padding: 20px;
-  font-family: 'Wendy One', serif;
+  font-family: 'Montserrat', serif;
   font-size: 25px;
 }
 
