@@ -9,14 +9,36 @@ export default class About extends Component {
     $('.navsubtitle, .navsubtitlestick').show()
   }
 
+  parallaxBackground = () => {
+    $(window).scroll(function(){
+      $(".story, .origin-image").css("background-position", "0% "  + (($(window).scrollTop() / 20) + 20) + "%");
+    });
+  }
+
+  mapbox = () => {
+    mapboxgl.accessToken = 'pk.eyJ1IjoiamVuZW01ODMiLCJhIjoiY2pzMGxwOHJyMWwzeDQzcGlta2c1ODJ2YSJ9.x4VK6JYLigcauO3Vw9eDAw';
+    const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/jenem583/cjs0lsxnn02hs1fqhjnrvxlsd',
+    center: [126.598491, 33.403293],
+    zoom: 9.36
+    });
+  }
+
 
   render() {
     return (
       <div className="aboutpage">
         <div className="story">In 2019 I became a software engineer.</div>
         <div className="origin">
-          <div className="text">I am from D.C. but lived quite a few places. Most recently, I lived in South Korea for 5 years and taught.</div>
+          <div className="origin-text">I am from D.C. but lived quite a few places. Most recently, I lived in South Korea for 5 years and taught.</div>
+          <div className="origin-image"></div>
         </div>
+
+        <div className="mapbox">
+          {this.mapbox()}
+        </div>
+
         <div className="skills">
           <div className="skill-text">My skills</div>
           <div className="skills-container">
@@ -42,6 +64,7 @@ export default class About extends Component {
 
   componentDidMount(){
     {this.changeHeader()}
+    {this.parallaxBackground()}
   }
 
 

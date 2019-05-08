@@ -9,7 +9,7 @@ export default class Header extends Component {
 
   scrollFade = () => {
     $(window).scroll(function(){
-      $(".navbar, hr").css("opacity", 1 - $(window).scrollTop() / 150);
+      $(".navbar, .navbar hr").css("opacity", 1 - $(window).scrollTop() / 150);
     });
   }
 

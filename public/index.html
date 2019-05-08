@@ -5,6 +5,10 @@
     <link href="https://fonts.googleapis.com/css?family=Monoton|Dokdo|Noto+Serif" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -19,6 +23,19 @@
   </head>
   <body>
     <div id="root">
+      <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiamVuZW01ODMiLCJhIjoiY2pzMGxwOHJyMWwzeDQzcGlta2c1ODJ2YSJ9.x4VK6JYLigcauO3Vw9eDAw';
+        const map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/jenem583/cjs0lsxnn02hs1fqhjnrvxlsd',
+          center: [-85.113192, 39.385946],
+          zoom: 1.3
+        });
+
+        var nav = new mapboxgl.NavigationControl();
+          map.addControl(nav, 'bottom-right');
+
+      </script>
 
     </div>
   </body>
