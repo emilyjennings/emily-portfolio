@@ -46,7 +46,7 @@ export default class Contact extends Component {
     const { name, email, message } = this.state;
     return (
       <div className="contactpage">
-        <div className="empathy">I want to connect with you and exchange stories. I'm not kidding. I live to have conversations with new people. So, leave me a message here.</div>
+        <div className="empathy">I want to connect with you and exchange stories. I'm not kidding. Contact me and let's talk.</div>
         <div className="contactcontainer">
           <div className="formcaption">I'll be in touch soon.</div>
           <form onSubmit={this.handleSubmit}>
@@ -66,7 +66,7 @@ export default class Contact extends Component {
               </label>
             </p>
             <p>
-              <button type="submit">Send</button>
+              <button id="submit" type="submit">Send</button>
             </p>
           </form>
 

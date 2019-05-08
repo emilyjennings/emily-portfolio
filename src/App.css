@@ -325,45 +325,45 @@ i {
   opacity: 0.3;
   position: fixed;
   top: 280px;
-  width: 70%;
-  margin: 0 15%
+  width: 100%;
+  z-index: 2
 }
 
 .home img {
   width: 50%;
+  margin: 0 auto;
 }
 
-.homecaption, .homecaption2, .homecaption3, .homecaption4 {
-  font-family: 'Montserrat', serif;
-  font-size: 1.4em;
+.homecaption {
+  opacity: 0;
+  top: 250px;
+  margin-left: 50%;
+  font-size: 1.9em;
   color: #C4EFDA;
-  display: block;
   position: fixed;
-  top: 80px;
+  width: 30%;
+  font-family: 'Noto Serif', serif;
+  font-weight: bold;
+}
+
+.homecaptionlast {
+  position: fixed;
   text-align: left;
-  width: 70%;
-  margin-left: 15%;
-  background-color: #262c2d;
+  width: 50%;
+  margin: 0 25%;
+  top: 70px;
+  font-size: 2em;
+  color: #C4EFDA;
+  font-family: 'Noto Serif', serif;
+  font-weight: bold;
+}
+
+#okay, #me {
   opacity: 0;
 }
 
-.homecaption2 {
-  top: 145px;
-  z-index: 1
-}
-
-.homecaption3 {
-  top: 180px;
-  z-index: 2
-}
-
-.homecaption4 {
-  text-align: center;
-  font-size: 1.8em;
-  width: 50%;
-  margin: 0 25%;
-  top: 100px;
-  border: none
+#me {
+  color: #35CDD1
 }
 
 .tile-container {
@@ -438,10 +438,11 @@ i {
 .tile-1-text, .tile-2-text, .tile-3-text, .tile-4-text, .tile-5-text, .tile-6-text {
   padding: 15px;
   padding-top: 60px;
-  font-size: 1.1em;
+  font-size: 1.2em;
   display: none;
   text-indent: 0px;
-  word-spacing: 0.2em
+  font-family: 'Noto Serif', serif;
+  font-weight: bold;
 }
 
 
@@ -552,16 +553,24 @@ i {
   display: inline-block;
 }
 
-.email_field, .name_field {
-  display: inline-block;
-  margin: 10px auto;
-}
-
-.message_field {
+textarea {
   display: block;
   width: 60%;
   height: 300px;
   margin: auto;
+}
+
+button#submit {
+  font-size: 30px;
+  background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
+  font-family: 'Monoton', serif;
+  color: #262c2d;
+  border: none;
+  border-radius: 10px
+}
+
+button#submit:hover {
+  color: #2ec4f2
 }
 
 .empathy {

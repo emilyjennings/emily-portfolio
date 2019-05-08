@@ -51,11 +51,11 @@ export default class Tiles extends Component {
         <div className="tiles">
           <div className="tile" id="tile-1">
             <div className="tile-1-title">Coding</div>
-            <div className="tile-1-text">I'm addicted</div>
+            <div className="tile-1-text">love in the learning</div>
           </div>
           <div className="tile" id="tile-2">
             <div className="tile-2-title">Philosophy</div>
-            <div className="tile-2-text">Has led to all this</div>
+            <div className="tile-2-text">has led to all this</div>
           </div>
           <div className="tile" id="tile-3">
             <div className="tile-3-title">Teaching</div>
@@ -63,11 +63,11 @@ export default class Tiles extends Component {
           </div>
           <div className="tile" id="tile-4">
             <div className="tile-4-title">Adventure</div>
-            <div className="tile-4-text">New places and people</div>
+            <div className="tile-4-text">new places and people</div>
           </div>
           <div className="tile" id="tile-5">
             <div className="tile-5-title">Creative</div>
-            <div className="tile-5-text">Sewing, writing, designing</div>
+            <div className="tile-5-text">sewing, writing, solutions</div>
           </div>
           <div className="tile" id="tile-6">
             <div className="tile-6-title">Mom</div>

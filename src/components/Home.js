@@ -15,24 +15,27 @@ export default class Home extends Component {
   scrollFadeText = () => {
     $(window).scroll(function(){
       if ($(window).scrollTop() > 200) {
-        $('.homeimage').animate({opacity: 1}, 1000)
+        $('.homeimage').animate({
+          opacity: 1,
+          top: '100px',
+          width: '60%'
+        }, 1000)
         $('.homecaption').animate({
           opacity: 1,
-        }, 1000, function(){
-          $('.homecaption2').animate({
-            opacity: 1,
-          }, 2000, function(){
-            $('.homecaption3').animate({
+        }, 4000, function(){
+          $('.homecaption, .homeimage, .homeimage img').fadeOut("slow")
+          $('.homecaption').hide()
+          $('.tiles, .tile').animate({
               opacity: 1,
-            }, 4000, function(){
-              $('.homecaption3, .homecaption2, .homecaption, .homecaptions, .homeimage').fadeOut("slow")
-              $('.tiles, .tile, .homecaption4').animate({
-                  opacity: 1,
-                }, 1000)
-              $('.homeimage').hide()
-            })
+            }, 2000)
+          $('#okay').animate({
+            opacity: 1,
+          }, 3000, function(){
+            $('#me').animate({
+              opacity: 1,
+            }, 2000)
           })
-        });
+        })
       }
     });
   }
@@ -49,44 +52,23 @@ export default class Home extends Component {
     });
   }
 
-  // For later if I want the cards to cascade in, needs tweaking
-  // cardTurn = () => {
-  //   setInterval(function(){
-  //     $('#tile-1').fadeIn(200, function(){
-  //       $('#tile-2').fadeIn(200, function(){
-  //         $('tile-3').fadeIn(200, function(){
-  //           $('tile-4').fadeIn(200, function(){
-  //             $('tile-5').fadeIn(200, function(){
-  //               $('tile-6').fadeIn(200, function(){
-  //               });
-  //             });
-  //           });
-  //         });
-  //       });
-  //     });
-  //   });
-  // }
-
   componentDidMount(){
     {this.changeHeader()}
     {this.scrollFadeText()}
     {this.fadeButtons()}
-    // {this.cardTurn()}
   }
 
   render() {
     return (
       <div className="home">
         <div className="homeimage">
-          <img src={profile} alt=" "/><img src={profile} alt=" "/>
+          <img src={profile} alt=" "/>
         </div>
-        <div className="homecaptions">
-          <div className="homecaption">I spent a year and a half with a small child and a full time job learning to code.</div>
-          <div className="homecaption2">It was exhausting and wonderful.</div>
-          <div className="homecaption3">At this point, I think I deserve to make this website however I like.</div>
-        </div>
+
+        <div className="homecaption">I made this.</div>
+        <div className="homecaptionlast"><span id="okay">It's okay if you don't like my fonts.</span><span id="me"> This is me.</span></div>
+
         < Tiles />
-        <div className="homecaption4">It's okay if you don't like my fonts. This is me.</div>
       </div>
     );
   };
