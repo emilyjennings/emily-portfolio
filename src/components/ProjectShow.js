@@ -19,9 +19,9 @@ class ProjectShow extends Component {
           <div className="desc-cont"><div className="desc">{cards[index].desc}</div></div>
         </div>
         <div className="buttons">
-          <div className="link"><a href={cards[index].link}>Try it out</a></div>
-          <div className="github"><a href={cards[index].github}>See the code</a></div>
-          <div className="goback" onClick={() => window.location.reload()}>Go Back</div>
+          <div className="link"><a href={cards[index].link}>see it</a></div>
+          <div className="github"><a href={cards[index].github}>the code</a></div>
+          <div className="goback" onClick={() => window.location.reload()}><a href="">go back</a></div>
         </div>
       </div>
     );

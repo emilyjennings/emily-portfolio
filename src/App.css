@@ -85,7 +85,8 @@ a {
   width: 300px;
   position: fixed;
   top: 0;
-  padding: 5px 10px
+  padding: 5px 10px;
+  word-spacing: 0.1em
 }
 
 .navsubtitlestick {
@@ -99,6 +100,7 @@ a {
   top: 0;
   text-align: left;
   margin: 5px 10px;
+  word-spacing: 0.1em
 }
 
 hr {
@@ -301,10 +303,11 @@ i {
 
 .caption {
   color: black;
-  font-family: 'Montserrat', cursive;
+  font-family: 'Noto Serif', serif;
+  font-weight: bold;
   text-align: center;
   margin: 0 10px 20px 10px;
-  font-size: 30px;
+  font-size: 20px;
   padding: 20px;
   height: 50px;
   overflow: hidden;
@@ -448,17 +451,44 @@ i {
 
 /* Aboutpage */
 
-.story {
+.story, .origin, .skills {
   display: block;
   text-align: center;
-  background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
-  width: auto;
+  background-image: url("../src/components/img/bus.jpg");
+  background-position: 10% 35%;
+  background-size: cover;
   z-index: 1;
-  margin: 300px 5%;
+  margin: 300px 20%;
   border-radius: 20px;
   padding: 60px;
-  font-family: 'Montserrat', serif;
+  font-family: 'Noto Serif', serif;
   font-size: 30px;
+  font-weight: bold;
+  color: #C4EFDA;
+  background-color: black;
+}
+
+.origin, .skills {
+  background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
+  color: inherit;
+}
+
+.skills {
+  margin: 10%;
+  height: 400px;
+  padding-top: 20px
+}
+
+.skill-text {
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.skill-levels, .skill-names {
+  display: inline-block;
+  width: 50%;
+  float: left;
+  clear: both;
 }
 
 
@@ -490,7 +520,8 @@ i {
   z-index: 1;
   border-radius: 10px;
   padding: 30px;
-  font-family: 'Montserrat', serif;
+  font-family: 'Noto Serif', serif;
+  font-weight: bold;
   font-size: 20px;
   width: 100%;
   margin: auto;
@@ -511,9 +542,8 @@ i {
 }
 
 .github, .link, .goback {
-  font-family: 'Montserrat', serif;
+  font-family: 'Monoton', serif;
   color: #C4EFDA;
-  border: 3px solid #C4EFDA;
   background: #35CDD1;
   border-radius: 3px;
   display: inline-block;
@@ -521,11 +551,12 @@ i {
   text-align: center;
   padding: 10px;
   text-decoration: none;
-  margin: 10px
+  margin: 10px;
+  word-spacing: 0.2em
 }
 
-.goback:hover, .github:hover, .link:hover {
-  background-color: #262c2d;
+.buttons a:hover{
+  color: #C4EFDA;
 }
 
 /* Contact Page (Empathy) */
@@ -539,14 +570,17 @@ i {
   margin: 30px auto 400px auto;
   border-radius: 20px;
   padding: 20px;
-  font-family: 'Montserrat', serif;
-  font-size: 20px;
+  font-family: 'Noto Serif', serif;
+  font-size: 1.4em;
+  font-weight: bold
 }
 
 .formcaption {
   display: block;
   width: 70%;
   margin: 20px auto 30px auto;
+  font-size: 1.4em;
+  font-weight: bold
 }
 
 .emily-contact {
@@ -582,8 +616,9 @@ button#submit:hover {
   margin: 300px auto 10px auto;
   border-radius: 20px;
   padding: 20px;
-  font-family: 'Montserrat', serif;
-  font-size: 25px;
+  font-family: 'Noto Serif', serif;
+  font-size: 1.4em;
+  font-weight: bold
 }
 
 form {
