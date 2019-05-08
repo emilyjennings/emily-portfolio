@@ -298,7 +298,8 @@ i {
 
 .imageborder:hover {
   transform: rotate(15deg);
-  filter: brightness(1.4);
+  -webkit-filter: sepia(1);
+  filter: sepia(1);
 }
 
 .caption {
@@ -471,8 +472,12 @@ i {
 
 .origin {
   text-align: center;
-  background: linear-gradient(to left, rgba(44, 195, 242), rgba(51, 204, 209));
-  font-family: 'Noto Serif', serif;
+  background: #C4EFDA;
+  background-image:
+    radial-gradient(#35CDD1 6%, transparent 0),
+    radial-gradient(#35CDD1 6%, transparent 0);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;  font-family: 'Noto Serif', serif;
   font-size: 20px;
   font-weight: bold;
   padding: 100px 0;
@@ -487,6 +492,10 @@ i {
   display: inline-block;
   float: left;
   font-size: 1.3em
+}
+
+p#indent {
+  text-indent: 15px
 }
 
 .origin-image {

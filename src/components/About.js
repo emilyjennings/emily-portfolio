@@ -1,7 +1,21 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
 
+// import 'mapbox-gl/dist/mapbox-gl.css';
+//
+// import ReactMapGL from 'react-map-gl';
+
 export default class About extends Component {
+
+  // state = {
+  //   viewport: {
+  //     width: 400,
+  //     height: 400,
+  //     latitude: 126.598491,
+  //     longitude: 33.403293,
+  //     zoom: 9
+  //   }
+  // };
 
   changeHeader = () => {
     $('.navtitle').text("About Emily")
@@ -15,28 +29,28 @@ export default class About extends Component {
     });
   }
 
-  mapbox = () => {
-    mapboxgl.accessToken = 'pk.eyJ1IjoiamVuZW01ODMiLCJhIjoiY2pzMGxwOHJyMWwzeDQzcGlta2c1ODJ2YSJ9.x4VK6JYLigcauO3Vw9eDAw';
-    const map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/jenem583/cjs0lsxnn02hs1fqhjnrvxlsd',
-    center: [126.598491, 33.403293],
-    zoom: 9.36
-    });
-  }
-
 
   render() {
     return (
       <div className="aboutpage">
         <div className="story">In 2019 I became a software engineer.</div>
         <div className="origin">
-          <div className="origin-text">I am from D.C. but lived quite a few places. Most recently, I lived in South Korea for 5 years and taught.</div>
+          <div className="origin-text">
+            <p>From: D.C.</p>
+            <p>Lived in:</p>
+            <p>
+              <ul>
+                <li>Korea, 2011-2016</li>
+                <li>New Zealand, 2002-2007</li>
+                <li>Ukraine, 1998</li>
+              </ul>
+            </p>
+          </div>
           <div className="origin-image"></div>
         </div>
 
         <div className="mapbox">
-          {this.mapbox()}
+
         </div>
 
         <div className="skills">
