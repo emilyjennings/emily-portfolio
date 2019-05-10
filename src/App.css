@@ -357,7 +357,7 @@ i {
   height: 2000px
 }
 
-.homeimage {
+/* .homeimage {
   opacity: 0.3;
   position: fixed;
   top: 280px;
@@ -368,12 +368,12 @@ i {
 .home img {
   width: 50%;
   margin: 0 auto;
-}
+} */
 
 .homecaption {
   opacity: 0;
   top: 250px;
-  margin-left: 50%;
+  margin: auto;
   font-size: 1.9em;
   color: #C4EFDA;
   position: fixed;

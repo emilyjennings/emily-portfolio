@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import ScrollAnimation from 'react-animate-on-scroll';
 import $ from 'jquery'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 export default class Footer extends Component {
 
@@ -29,16 +31,14 @@ export default class Footer extends Component {
     return (
         <div className="emily">
           <div className="socialmedia">
-            <a href="https://twitter.com/Phillylosophy"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/emily-jennings-profile/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/emilyjennings"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/Phillylosophy"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
+            <a href="https://www.linkedin.com/in/emily-jennings-profile/"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a>
+            <a href="https://github.com/emilyjennings"><FontAwesomeIcon icon={['fab', 'github']} /></a>
           </div>
-          <Link to="/">Designed and Created by Emily</Link>
-          <ScrollAnimation animateIn='fadeIn'>
+          <Link to="/about">Designed and Created by Emily</Link>
             <div className="top">
               <button id="top">&#8593;</button>
             </div>
-          </ScrollAnimation>
         </div>
     );
   }
