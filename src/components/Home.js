@@ -4,9 +4,6 @@ import $ from 'jquery'
 import profile from './img/profile.jpg'
 import Tiles from './Tiles'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-
 export default class Home extends Component {
 
   changeHeader = () => {
@@ -18,32 +15,22 @@ export default class Home extends Component {
   scrollFadeText = () => {
     $(window).scroll(function(){
       if ($(window).scrollTop() > 200) {
-        $('.homecaption').animate({
+        $('#okay').animate({
           opacity: 1,
-        }, 4000, function(){
-          $('.homecaption').fadeOut("slow")
-          $('.homecaption').hide()
-          $('.tiles, .tile').animate({
-              opacity: 1,
-            }, 2000)
-          $('#okay').animate({
+        }, 1000, function(){
+          $('#me').animate({
             opacity: 1,
-          }, 3000, function(){
-            $('#me').animate({
-              opacity: 1,
-            }, 2000)
-          })
+          }, 2000)
         })
       }
     });
   }
 
-
   fadeButtons = () => {
     setInterval(function(){
-      $('a#a').fadeIn(1000, function(){
-        $('a#g').fadeIn(1000, function(){
-          $('a#e').fadeIn(1000, function(){
+      $('a#a').fadeIn(0, function(){
+        $('a#g').fadeIn(0, function(){
+          $('a#e').fadeIn(0, function(){
           });
         });
       });
@@ -59,8 +46,6 @@ export default class Home extends Component {
   render() {
     return (
       <div className="home">
-        <FontAwesomeIcon icon={'laptop-code'} />
-        <div className="homecaption">I made this.</div>
         <div className="homecaptionlast"><span id="okay">It's okay if you don't like my fonts.</span><span id="me"> This is me.</span></div>
 
         < Tiles />

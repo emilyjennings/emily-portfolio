@@ -37,7 +37,7 @@ export default class Footer extends Component {
           </div>
           <Link to="/about">Designed and Created by Emily</Link>
             <div className="top">
-              <button id="top">&#8593;</button>
+              <button id="top"><FontAwesomeIcon icon={'arrow-up'} /></button>
             </div>
         </div>
     );

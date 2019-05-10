@@ -17,9 +17,9 @@ import Projects from './components/Projects'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
+import { faLaptopCode, faLightbulb, faSchool, faGlobeAsia, faPencilRuler, faBabyCarriage, faHandHoldingHeart, faSeedling, faLockOpen, faArrowUp } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faTwitter, faLinkedin, faGithub, faLaptopCode)
+library.add(faTwitter, faLinkedin, faGithub, faLaptopCode, faLightbulb, faSchool, faGlobeAsia, faPencilRuler, faBabyCarriage, faHandHoldingHeart, faSeedling, faArrowUp, faLockOpen)
 
 class App extends Component {
 

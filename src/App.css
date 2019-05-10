@@ -54,13 +54,6 @@ a {
 
 .navbar a:hover, .navsubtitle:hover {
   color: #2ec4f2;
-  background: #C4EFDA;
-  background-image:
-    radial-gradient(#35CDD1 9%, transparent 0),
-    radial-gradient(#35CDD1 9%, transparent 0);
-  background-size: 10px 10px;
-  background-position: 0 0, 15px 15px;  font-family: 'Noto Serif', serif;
-
 }
 
 .navlinks a, .mobile-navlinks a {
@@ -78,6 +71,13 @@ a {
 .navlinks a:hover, .mobile-navlinks a:hover {
   background-color: #C4EFDA;
   color: #35CDD1;
+  background: #C4EFDA;
+  background-image:
+    radial-gradient(#35CDD1 9%, transparent 0),
+    radial-gradient(#35CDD1 9%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 15px 15px;  font-family: 'Monoton', serif;
+
 }
 
 .navlinks a:visited, .mobile-navlinks a:hover {
@@ -174,7 +174,7 @@ button.hamburger {
     radial-gradient(#35CDD1 9%, transparent 0),
     radial-gradient(#35CDD1 9%, transparent 0);
   background-size: 10px 10px;
-  background-position: 0 0, 15px 15px;  font-family: 'Noto Serif', serif;
+  background-position: 0 0, 15px 15px;  font-family: 'Monoton', serif;
 
 }
 
@@ -201,8 +201,7 @@ button.hamburger:hover {
     radial-gradient(#35CDD1 9%, transparent 0),
     radial-gradient(#35CDD1 9%, transparent 0);
   background-size: 10px 10px;
-  background-position: 0 0, 15px 15px;  font-family: 'Noto Serif', serif;
-
+  background-position: 0 0, 15px 15px;  font-family: 'Monoton', serif;
 }
 
 .mobile-navlinks a {
@@ -218,10 +217,6 @@ button.hamburger:hover {
 .mobile-navlinks a:hover {
   background: none;
   color: #262c2d;
-}
-
-a.cross {
-
 }
 
 button.top {
@@ -267,7 +262,7 @@ button#top {
   width: 100%;
   text-align: center;
   z-index: 1;
-  font-family: 'Monoton', cursive;
+  font-family: 'Pacifico', cursive;
   color: #35CDD1;
   font-size: 12px;
 }
@@ -357,30 +352,27 @@ i {
   height: 2000px
 }
 
-/* .homeimage {
-  opacity: 0.3;
-  position: fixed;
-  top: 280px;
-  width: 100%;
-  z-index: 2
-}
-
-.home img {
-  width: 50%;
-  margin: 0 auto;
-} */
-
-.homecaption {
-  opacity: 0;
+/* .homecaption {
   top: 250px;
   margin: auto;
   font-size: 1.9em;
   color: #C4EFDA;
-  position: fixed;
-  width: 30%;
   font-family: 'Noto Serif', serif;
   font-weight: bold;
-}
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  top: 260px;
+  position: fixed;
+  color: #262c2d;
+  height: 242px;
+  background: #C4EFDA;
+  background-image:
+    radial-gradient(#35CDD1 10%, transparent 0),
+    radial-gradient(#35CDD1 10%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 15px 15px;  font-family: 'Noto Serif', serif;
+} */
 
 .homecaptionlast {
   position: fixed;
@@ -399,7 +391,8 @@ i {
 }
 
 #me {
-  color: #35CDD1
+  color: #35CDD1;
+  font-family: 'Pacifico', cursive
 }
 
 .tile-container {
@@ -411,7 +404,6 @@ i {
 }
 
 .tiles {
-  opacity: 0;
 }
 
 .tile {
@@ -461,9 +453,9 @@ i {
   background: linear-gradient(rgba(195, 239, 217, 0.55), rgba(51, 204, 209, 0.5)), url("../src/components/img/candles.jpg");
   background-position: center;
   background-size: cover;
-
 }
 
+/*This allows the tile to toggle the background and font size just for the title */
 #tile-1:hover, #tile-2:hover, #tile-3:hover, #tile-4:hover, #tile-5:hover, #tile-6:hover {
   background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
   color: inherit;
@@ -471,13 +463,19 @@ i {
 }
 
 .tile-1-text, .tile-2-text, .tile-3-text, .tile-4-text, .tile-5-text, .tile-6-text {
-  padding: 15px;
   padding-top: 60px;
-  font-size: 1.2em;
-  display: none;
+  margin: 0;
+  font-size: 1.3em;
   text-indent: 0px;
   font-family: 'Noto Serif', serif;
   font-weight: bold;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  display: none
+}
+
+.tile svg {
+  font-size: 2em
 }
 
 
@@ -502,29 +500,23 @@ i {
   background-size: cover;
 }
 
-.origin {
+/* .origin {
   text-align: center;
-  background: #C4EFDA;
-  background-image:
-    radial-gradient(#35CDD1 6%, transparent 0),
-    radial-gradient(#35CDD1 6%, transparent 0);
-  background-size: 30px 30px;
-  background-position: 0 0, 15px 15px;  font-family: 'Noto Serif', serif;
   font-size: 20px;
   font-weight: bold;
   padding: 100px 0;
   height: 800px;
   padding: 5%
-}
+} */
 
-.origin-text, .origin-image {
+/* .origin-text, .origin-image {
   text-align: left;
   width: 45%;
   margin: 0 2.5%;
   display: inline-block;
   float: left;
   font-size: 1.3em
-}
+} */
 
 p#indent {
   text-indent: 15px
@@ -540,7 +532,7 @@ p#indent {
   border-radius: 5px;
 }
 
-/* .aboutpage hr {
+ .aboutpage hr {
   display: block;
   width: 100%;
   margin-left: auto;
@@ -548,7 +540,7 @@ p#indent {
   color: #2ec4f2;
   height: 3px;
   background-color: #2ec4f2;
-} */
+}
 
 .skills {
   margin: 10%;
@@ -842,6 +834,10 @@ form {
     display: block;
     font-size: 25px;
     padding: 9px
+  }
+
+  .mobile-navlinks a:hover {
+    color: #35CDD1
   }
 
   a.cross {

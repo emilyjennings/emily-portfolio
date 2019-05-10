@@ -15,29 +15,46 @@ export default class About extends Component {
     });
   }
 
+  backgroundChange = () => {
+    $(window).scroll(function(){
+      if ($(window).scrollTop() > 30) {
+        $("body").animate({
+          'background-color': '#C4EFDA',
+          'background-image':
+            `radial-gradient(#35CDD1 6%, transparent 0),
+            radial-gradient(#35CDD1 6%, transparent 0)`,
+          'background-size': '30px 30px',
+          'background-position': '0 0, 15px 15px'
+
+        });
+      }
+    });
+  }
+
+  test = () => {
+    $(window).scroll(function(){
+      var scrollTop = $(window).scrollTop()
+      if (scrollTop > 180) {
+        $('.app').animate({
+          'background-color': 'blue',
+        }, 1000)
+      };
+    });
+  }
+
+  componentDidMount(){
+    {this.changeHeader()}
+    {this.parallaxBackground()}
+    {this.test()}
+  }
+
 
   render() {
     return (
       <div className="aboutpage">
         <div className="story">In 2019 I became a software engineer.</div>
-        <div className="origin">
-          <div className="origin-text">
-            <p>From: D.C.</p>
-            <p>Lived in:</p>
-            <p>
-              <ul>
-                <li>Korea, 2011-2016</li>
-                <li>New Zealand, 2002-2007</li>
-                <li>Ukraine, 1998</li>
-              </ul>
-            </p>
-          </div>
-          <div className="origin-image"></div>
-        </div>
-
-        <div className="mapbox">
-
-        </div>
+        <div className="timeline-title">Before that<span id="1">.</span><span id="2">.</span><span id="3">.</span></div>
+        <div className="timeline"></div>
 
         <div className="skills">
           <div className="skill-text">My skills</div>
@@ -61,11 +78,6 @@ export default class About extends Component {
       </div>
     );
   };
-
-  componentDidMount(){
-    {this.changeHeader()}
-    {this.parallaxBackground()}
-  }
 
 
 }
