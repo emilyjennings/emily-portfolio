@@ -54,6 +54,13 @@ a {
 
 .navbar a:hover, .navsubtitle:hover {
   color: #2ec4f2;
+  background: #C4EFDA;
+  background-image:
+    radial-gradient(#35CDD1 9%, transparent 0),
+    radial-gradient(#35CDD1 9%, transparent 0);
+  background-size: 10px 10px;
+  background-position: 0 0, 15px 15px;  font-family: 'Noto Serif', serif;
+
 }
 
 .navlinks a, .mobile-navlinks a {
@@ -169,6 +176,10 @@ button.hamburger {
   background-size: 10px 10px;
   background-position: 0 0, 15px 15px;  font-family: 'Noto Serif', serif;
 
+}
+
+button.hamburger:hover {
+  background: #35CDD1
 }
 
 .mobile-navlinks {
