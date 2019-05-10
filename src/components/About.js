@@ -1,21 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
 
-// import 'mapbox-gl/dist/mapbox-gl.css';
-//
-// import ReactMapGL from 'react-map-gl';
-
 export default class About extends Component {
-
-  // state = {
-  //   viewport: {
-  //     width: 400,
-  //     height: 400,
-  //     latitude: 126.598491,
-  //     longitude: 33.403293,
-  //     zoom: 9
-  //   }
-  // };
 
   changeHeader = () => {
     $('.navtitle').text("About Emily")
