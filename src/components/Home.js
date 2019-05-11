@@ -12,6 +12,17 @@ export default class Home extends Component {
     $('.navsubtitlestick').text("This is me")
   }
 
+  backgroundChange = () => {
+    $("body").css({
+      'background-color': '#262c2d',
+      'background-image':
+        `radial-gradient(#35CDD1 3%, transparent 0),
+        radial-gradient(#35CDD1 3%, transparent 0)`,
+      'background-size': '30px 30px',
+      'background-position': '0 0, 15px 15px'
+    });
+  }
+
   scrollFadeText = () => {
     $(window).scroll(function(){
       if ($(window).scrollTop() > 200) {
@@ -41,6 +52,7 @@ export default class Home extends Component {
     {this.changeHeader()}
     {this.scrollFadeText()}
     {this.fadeButtons()}
+    {this.backgroundChange()}
   }
 
   render() {

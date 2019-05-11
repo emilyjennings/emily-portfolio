@@ -115,6 +115,14 @@ export default class Projects extends Component {
     this.setState({index: index})
   }
 
+  backgroundChange = () => {
+    $("body").css({
+      'background-color': '#262c2d',
+      'background-image':
+        `none`,
+    });
+  }
+
   // Used to render the gallery images
   displayCards = () => {
     return Object.values(this.state.cards).map(card =>
@@ -128,6 +136,7 @@ export default class Projects extends Component {
 
   componentDidMount(){
     {this.changeHeader()}
+    {this.backgroundChange()}
   }
 
   render() {

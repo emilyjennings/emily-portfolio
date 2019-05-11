@@ -22,8 +22,17 @@ export default class Contact extends Component {
     $('.navsubtitle, .navsubtitlestick').show()
   }
 
+  backgroundChange = () => {
+    $("body").css({
+      'background-color': '#262c2d',
+      'background-image':
+        `none`,
+    });
+  }
+
   componentDidMount(){
     {this.changeHeader()}
+    {this.backgroundChange()}
   }
 
   // Code for the contact form submission given by Netlify documentation
