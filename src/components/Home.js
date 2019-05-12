@@ -11,6 +11,7 @@ export default class Home extends Component {
     $('.navtitle').text("Hi, I'm Emily")
     $('.navsubtitle, a#e, a#a, a#g').hide()
     $('.navsubtitlestick').text("This is me")
+    $('.bottom-navbar').show()
   }
 
   backgroundChange = () => {

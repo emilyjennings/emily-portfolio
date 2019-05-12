@@ -145,9 +145,15 @@ export default class Projects extends Component {
       </div>)
   }
 
+  bottomHide = () => {
+    $('.bottom-navbar').hide()
+  }
+
+
   componentDidMount(){
     {this.changeHeader()}
     {this.backgroundChange()}
+    {this.bottomHide()}
   }
 
   render() {

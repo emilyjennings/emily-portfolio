@@ -26,9 +26,9 @@ export default class Footer extends Component {
   footerShow = () => {
     $(window).scroll(function(){
       var scrollTop = $(window).scrollTop()
-      if (scrollTop < 1350) {
+      if (scrollTop < 900) {
         $(".bottom-navbar").css("opacity", ($(window).scrollTop() - 300) / 500)
-        $(".bottom-navbar").css("height", $(window).scrollTop() / 7)
+        $(".bottom-navbar").css("height", $(window).scrollTop() / 5)
         $(".row-left").css("padding-left", ($(window).scrollTop() / 7) + "px")
         $(".row-right").css("padding-right", ($(window).scrollTop() / 7) + "px")
       }
