@@ -184,7 +184,7 @@ button.hamburger {
 }
 
 button.hamburger:hover {
-  background: #35CDD1
+  background: #C4EFDA
 }
 
 .mobile-navlinks {
@@ -450,7 +450,6 @@ i {
   margin: 0;
   font-size: 1.3em;
   text-indent: 0px;
-  font-family: 'Noto Serif', serif;
   font-weight: bold;
   text-align: center;
   font-family: 'Pacifico', cursive;
@@ -484,52 +483,78 @@ i {
 }
 
 .timeline {
+  background-color: #C4EFDA;
+  background-image:
+    radial-gradient(#35CDD1 6%, transparent 0),
+    radial-gradient(#35CDD1 6%, transparent 0);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
   opacity: 0;
+  padding-top: 30px
+}
+
+.dcpic {
+  background-image: url("../src/components/img/childhood2.jpg");
+  background-position: 0% 20%;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  margin: 10px auto 0 auto;
+  -webkit-filter: sepia(1);
+  filter: sepia(1);
+  border-radius: 5px
+}
+
+.beginning {
+  border-radius: 4px;
+  width: 30%;
+  margin: auto;
+  display: block;
+  font-size: 20px;
+  padding: 20px;
+  font-family: 'Noto Serif', serif;
+  font-weight: bold;
+  clear:both;
+  background-color: #35CDD1
+}
+
+.row {
+  display: inline-block;
+  width: 50%
 }
 
 .event {
-  background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
+  background-color: #35CDD1;
   border-radius: 4px;
-  width: 20%;
-  margin: 10px 15%;
-  display: inline-block;
+  width: 70%;
+  margin: 0 15%;
   font-style: bold;
   font-size: 20px;
   padding: 20px;
   font-family: 'Noto Serif', serif;
   font-weight: bold;
+  font-size: 18px
 }
 
-/* .origin {
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 100px 0;
-  height: 800px;
-  padding: 5%
-} */
+.event-image {
+  background-size: cover;
+  width: 40%;
+  margin: 0 30%;
+  -webkit-filter: sepia(1);
+  filter: sepia(1);
+  height: 200px;
+  border-radius: 5px;
+  margin-top: 30px;  background-position: 0% 20%;
 
-/* .origin-text, .origin-image {
-  text-align: left;
-  width: 45%;
-  margin: 0 2.5%;
-  display: inline-block;
-  float: left;
-  font-size: 1.3em
-} */
+
+}
+
+#abroad {
+  background-image: url("../src/components/img/band.jpg");
+}
 
 p#indent {
   text-indent: 15px
-}
-
-.origin-image {
-  display: inline-block;
-  float: left;
-  height: 400px;
-  background: url("../src/components/img/sportsday.jpg");
-  background-position: 0% 20%;
-  background-size: cover;
-  border-radius: 5px;
 }
 
 .line {
@@ -539,6 +564,7 @@ p#indent {
   position: absolute;
   margin-left: 49.9%;
   margin-right: 49.9%;
+  z-index: 1
 }
 
 .skills {
@@ -559,16 +585,18 @@ p#indent {
   clear: both;
 }
 
-.bottomlinks {
+/* .bottomlinks {
   background-color: #C4EFDA;
   background-image:
     radial-gradient(#35CDD1 6%, transparent 0),
     radial-gradient(#35CDD1 6%, transparent 0);
   background-size: 30px 30px;
   background-position: 0 0, 15px 15px;
-  height: 300px;
-  bottom: 0
-}
+  height: 200px;
+  bottom: 0px;
+  opacity: 1;
+  z-index: 1
+} */
 
 
 /*Show Pages*/
@@ -654,10 +682,10 @@ p#indent {
   color: #35CDD1;
   background: #C4EFDA;
   background-image:
-    radial-gradient(#35CDD1 8%, transparent 0),
-    radial-gradient(#35CDD1 8%, transparent 0);
-  background-size: 10px 10px;
-  background-position: 0 0, 15px 15px;  font-family: 'Noto Serif', serif;
+    radial-gradient(#35CDD1 4%, transparent 0),
+    radial-gradient(#35CDD1 4%, transparent 0);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
 }
 
 .formcaption {

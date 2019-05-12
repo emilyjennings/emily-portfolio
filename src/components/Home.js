@@ -3,6 +3,7 @@ import $ from 'jquery'
 
 import profile from './img/profile.jpg'
 import Tiles from './Tiles'
+import BottomLinks from './BottomLinks'
 
 export default class Home extends Component {
 
@@ -37,6 +38,7 @@ export default class Home extends Component {
     });
   }
 
+//Not in use - for the bottons fading in
   fadeButtons = () => {
     setInterval(function(){
       $('a#a').fadeIn(0, function(){
@@ -61,6 +63,7 @@ export default class Home extends Component {
         <div className="homecaptionlast"><span id="okay">It's okay if you don't like my fonts.</span><span id="me"> This is me.</span></div>
 
         < Tiles />
+        // < BottomLinks />
       </div>
     );
   };

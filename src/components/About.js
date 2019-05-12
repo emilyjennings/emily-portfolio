@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
 
+import BottomLinks from './BottomLinks'
+
 export default class About extends Component {
 
 //changes what the subtitle and title say depending on page
@@ -13,8 +15,8 @@ export default class About extends Component {
 //cool scroll effect for the image
   parallaxBackground = () => {
     $(window).scroll(function(){
-      $(".story, .origin-image").css("background-position", "0% "  + (($(window).scrollTop() / 20) + 20) + "%");
-      // $("body").css("background-position", (($(window).scrollTop() / 200)) + "%" + (($(window).scrollTop() / 200)) + "%" );
+      $(".story, .dcpic, .event-image").css("background-position", "0% "  + (($(window).scrollTop() / 20) + 20) + "%");
+      // $("body").css("background-position", ($(window).scrollTop() / 200) + "% " + ($(window).scrollTop() / 100) + "%, 15px 15px");
     });
   }
 
@@ -22,42 +24,59 @@ export default class About extends Component {
     $("body").css({
       'background-color': '#262c2d',
       'background-image':
-        'none'
-
+        `none`
     });
+
+//For use later in case I want the whole background dots:
+    // $(window).scroll(function(){
+    //   if ($(window).scrollTop() > 300) {
+    //     $("body").css({
+    //       'background-color': '#C4EFDA',
+    //       'background-image':
+    //         `radial-gradient(#35CDD1 6%, transparent 0),
+    //         radial-gradient(#35CDD1 6%, transparent 0)`,
+    //       'background-size': '30px 30px',
+    //       'background-position': '0 0, 15px 15px'
+    //     }, 1000);
+    //   } else if ($(window).scrollTop() < 300) {
+    //     $("body").css({
+    //       'background-color': '#262c2d',
+    //       'background-image':
+    //         `radial-gradient(#35CDD1 3%, transparent 0),
+    //         radial-gradient(#35CDD1 3%, transparent 0)`,
+    //       'background-size': '30px 30px',
+    //       'background-position': '0 0, 15px 15px'
+    //     }, 1000);
+    //   }
+    // });
   }
 
 //Timeline div fades in on scroll
 timelineFadeIn = () => {
   $(window).scroll(function(){
-    if ($(window).scrollTop() > 10) {
-      $(".timeline").animate({
-        opacity: 1
-      }, 1000);
-    } else if ($(window).scrollTop() < 10) {
-      $(".timeline").animate({
-        opacity: 0
-      }, 1000);
-    }
+    var scrollTop = $(window).scrollTop()
+    if (scrollTop > 30) {
+      $('.timeline').animate({
+        opacity: '1',
+      }, 3000)
+    };
   });
 }
 
 //makes the line for the timeline get larger
-  lineGrow = () => {
-    $(window).scroll(function(){
-      $(".line").css("height", ($(window).scrollTop() / 1.3) - 120)
-    })
-    // $(window).scroll(function(){
-    //   $(".line").css("height", $(window).scrollTop() / 2)
-    // });
-  }
+  // lineGrow = () => {
+  //   $(window).scroll(function(){
+  //     if ($(window).scrollTop() > 50) {
+  //       $(".line").css("height", ($(window).scrollTop() / 2))
+  //     }
+  //   })
+  // }
 
   componentDidMount(){
     {this.changeHeader()}
     {this.parallaxBackground()}
-    // {this.backgroundChange()}
     {this.timelineFadeIn()}
-    {this.lineGrow()}
+    // {this.lineGrow()}
     {this.backgroundChange()}
   }
 
@@ -67,26 +86,34 @@ timelineFadeIn = () => {
       <div className="aboutpage">
         <div className="story">I am a human being that likes to do good for others.</div>
 
-        <div className="line"></div>
-
         <div className="timeline">
+
+          <div className="dcpic"></div>
+          <div className="beginning">I grew up in the suburbs of DC</div>
+
+
           <div className="row">
-            <div className="event" id="youth">I grew up in the suburbs of DC</div>
-            <div className="event-image"><img src="./img/adventure.JPG" alt="" /></div>
+            <div className="event-image" id="abroad"></div>
+            <div className="event" >In high school I was an exchange student in Ukraine and South Africa for long periods</div>
           </div>
           <div className="row">
-            <div className="event" id="school">In high school I was an exchange student in Ukraine and South Africa for long periods</div>
-            <div className="event-image"><img src="./img/adventure.JPG" alt="" /></div>
-          </div>
-          <div className="row"></div>
           <div className="event" id="college">I decided to go to college abroad and ended up in Dunedin, New Zealand at the University of Otago. I studied philosophy.</div>
+          </div>
+          <div className="row">
           <div className="event" id="youth">After working at some dead-end jobs in DC, I realized I wanted to try teaching. I taught middle school English in North Carolina for one year.</div>
+          </div>
+          <div className="row">
           <div className="event" id="jeju">I then moved to Korea to teach ESL. I did that for five years in the beautiful island of Jeju.</div>
+          </div>
+          <div className="row">
           <div className="event" id="philly">Back in the states, I worked at a coding bootcamp in Philly.</div>
+          </div>
+          <div className="row">
           <div className="event" id="dc">I moved back to DC, studied software engineering on my own while working, and now I'm a software engineer.</div>
+          </div>
         </div>
 
-        <div className="bottomlinks"></div>
+        < BottomLinks />
 
       </div>
     );
