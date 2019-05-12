@@ -14,7 +14,8 @@ a:visited {
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
+  color: #35CDD1
 }
 
 
@@ -482,7 +483,7 @@ i {
   background-size: cover;
 }
 
-.timeline {
+.timeline, .bottom {
   background-color: #C4EFDA;
   background-image:
     radial-gradient(#35CDD1 6%, transparent 0),
@@ -490,12 +491,21 @@ i {
   background-size: 30px 30px;
   background-position: 0 0, 15px 15px;
   opacity: 0;
-  padding-top: 30px
+  padding-top: 50px;
+  padding-bottom: 50px
+}
+
+.bottom {
+  opacity: 1
+}
+
+.timeline {
+  margin-bottom: 90px
 }
 
 .dcpic {
   background-image: url("../src/components/img/childhood2.jpg");
-  background-position: 0% 20%;
+  background-position: 0% 10%;
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -505,7 +515,7 @@ i {
   border-radius: 5px
 }
 
-.beginning {
+.beginning, .end {
   border-radius: 4px;
   width: 30%;
   margin: auto;
@@ -520,7 +530,8 @@ i {
 
 .row {
   display: inline-block;
-  width: 50%
+  width: 50%;
+  margin-top: 20px
 }
 
 .event {
@@ -538,25 +549,91 @@ i {
 
 .event-image {
   background-size: cover;
-  width: 40%;
-  margin: 0 30%;
-  -webkit-filter: sepia(1);
-  filter: sepia(1);
+  width: 200px;
+  margin: 0 auto;
+  /* -webkit-filter: sepia(1);
+  filter: sepia(1); */
   height: 200px;
-  border-radius: 5px;
-  margin-top: 30px;  background-position: 0% 20%;
-
-
+  border-radius: 5px 5px 0 0;
+  margin-top: 30px;
+  background-position: 0% 20%;
 }
 
 #abroad {
   background-image: url("../src/components/img/band.jpg");
 }
 
-p#indent {
-  text-indent: 15px
+#college {
+  background-image: url("../src/components/img/otago.jpg");
 }
 
+#teaching {
+  background-image: url("../src/components/img/kids.jpg");
+}
+
+#jeju {
+  background-image: url("../src/components/img/jeju.jpg");
+}
+
+#philly {
+  background-image: url("../src/components/img/Oldcity2.JPG");
+}
+
+#dc {
+  background-image: url("../src/components/img/dc.jpg");
+}
+
+.coding {
+  background-image: url("../src/components/img/code.png");
+  background-position: 0% 10%;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  margin: 10px auto 0 auto;
+  border-radius: 5px;
+  margin-top: 30px
+}
+
+.why {
+  border-radius: 4px;
+  width: 40%;
+  margin: auto;
+  display: block;
+  font-size: 20px;
+  padding: 20px;
+  font-weight: bold;
+  clear:both;
+  background-color: #35CDD1;
+  margin-bottom: 90px
+}
+
+.why-title, .more {
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  margin-bottom: 10px
+}
+
+.why-title {
+  margin-top: 90px;
+  width: 45%;
+  margin: auto;
+  display: block;
+  color: #35CDD1;
+}
+
+.more {
+  color: #C4EFDA;
+  margin-bottom: -12px;
+  opacity: 0;
+  margin-left: 10px
+}
+
+.why-text {
+  font-family: 'Noto Serif', serif;
+  text-align: justify;
+}
+
+/*
 .line {
   color: #2ec4f2;
   width: 4px;
@@ -565,7 +642,32 @@ p#indent {
   margin-left: 49.9%;
   margin-right: 49.9%;
   z-index: 1
+} */
+
+.bottom {
+  width: 100%
 }
+
+.bottom-link {
+  color: #35CDD1;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  margin-left: 20%;
+}
+
+.row1, .row2 {
+  display: inline-block;
+  width: 50%;
+  float: left;
+}
+
+.row2 {
+  margin-right: 20%;
+  float: right;
+}
+
+
+/* Skills */
 
 .skills {
   margin: 10%;
@@ -584,19 +686,6 @@ p#indent {
   float: left;
   clear: both;
 }
-
-/* .bottomlinks {
-  background-color: #C4EFDA;
-  background-image:
-    radial-gradient(#35CDD1 6%, transparent 0),
-    radial-gradient(#35CDD1 6%, transparent 0);
-  background-size: 30px 30px;
-  background-position: 0 0, 15px 15px;
-  height: 200px;
-  bottom: 0px;
-  opacity: 1;
-  z-index: 1
-} */
 
 
 /*Show Pages*/
@@ -737,6 +826,21 @@ button#submit:hover {
 form {
   z-index: 5
 }
+
+/* Misc */
+
+/* .bottomlinks {
+  background-color: #C4EFDA;
+  background-image:
+    radial-gradient(#35CDD1 6%, transparent 0),
+    radial-gradient(#35CDD1 6%, transparent 0);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  height: 200px;
+  bottom: 0px;
+  opacity: 1;
+  z-index: 1
+} */
 
 
 @media only screen and (max-width: 900px) {
