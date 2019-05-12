@@ -14,7 +14,7 @@ export default class About extends Component {
 
   }
 
-//cool scroll effect for the image
+//cool scroll effect for the images
   parallaxBackground = () => {
     $(window).scroll(function(){
       $(".story, .dcpic, .event-image").css("background-position", "0% "  + (($(window).scrollTop() / 20) + 20) + "%");
@@ -22,6 +22,7 @@ export default class About extends Component {
     });
   }
 
+// Makes the background get or lose polka dots
   backgroundChange = () => {
     $("body").css({
       'background-color': '#262c2d',
@@ -37,6 +38,11 @@ timelineFadeIn = () => {
     var scrollTop = $(window).scrollTop()
     if (scrollTop > 30) {
       $('.timeline, .more').animate({
+        opacity: '1',
+      }, 3000)
+    };
+    if (scrollTop > 3300) {
+      $('.why, .why-title').animate({
         opacity: '1',
       }, 3000)
     };

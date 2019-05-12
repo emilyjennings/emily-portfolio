@@ -12,6 +12,7 @@ export default class MobileNav extends Component {
           <Link to="/about">About</Link>
           <Link to="/projects">Projects</Link>
           <Link to="/contact">Contact</Link>
+          <a href="https://drive.google.com/file/d/1NpJu_3fS0LiS4zt-FisdtYUKYA2cJ0rM/view">Resume</a>
           <Link to="" className="cross">x</Link>
         </div>
       </div>

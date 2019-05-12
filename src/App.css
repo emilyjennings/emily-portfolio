@@ -612,7 +612,7 @@ i {
   font-weight: bold;
   clear:both;
   background-color: #35CDD1;
-  margin-bottom: 300px
+  margin-bottom: 300px;
 }
 
 .why-title, .more {
@@ -844,20 +844,7 @@ form {
   margin-bottom: 800px
 }
 
-/* Misc */
 
-/* .bottomlinks {
-  background-color: #C4EFDA;
-  background-image:
-    radial-gradient(#35CDD1 6%, transparent 0),
-    radial-gradient(#35CDD1 6%, transparent 0);
-  background-size: 30px 30px;
-  background-position: 0 0, 15px 15px;
-  height: 200px;
-  bottom: 0px;
-  opacity: 1;
-  z-index: 1
-} */
 
 
 @media only screen and (max-width: 900px) {
@@ -1034,7 +1021,32 @@ form {
   .story {
     font-size: 20px;
     margin: 50px 20px;
+  }
 
+  .aboutpage {
+    margin-top: 450px
+  }
+
+  .row {
+    display: block;
+    width: 100%;
+  }
+
+  .event {
+    margin: auto
+  }
+
+  .dcpic, .coding {
+    width: 65%
+  }
+
+  .beginning, .end {
+    width: 65%
+  }
+
+  .why, .why-title {
+    width: 75%;
+    opacity: 0
   }
 
 }
