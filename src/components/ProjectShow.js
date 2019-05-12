@@ -7,7 +7,6 @@ class ProjectShow extends Component {
   changeHeader = () => {
     $('.navtitle').text(this.props.cards[this.props.index].title)
     $('.navlinks').hide()
-    $('.bottom-navbar').show()
   }
 
   render() {

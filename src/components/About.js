@@ -11,7 +11,7 @@ export default class About extends Component {
     $('.navtitle').text("About Emily")
     $('.navsubtitle, .navsubtitlestick').text("100% Authentic.")
     $('.navsubtitle, .navsubtitlestick').show()
-    $('.bottom-navbar').show()
+
   }
 
 //cool scroll effect for the image

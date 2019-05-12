@@ -145,24 +145,23 @@ export default class Projects extends Component {
       </div>)
   }
 
-  bottomHide = () => {
-    $('.bottom-navbar').hide()
-  }
-
-
   componentDidMount(){
     {this.changeHeader()}
     {this.backgroundChange()}
-    {this.bottomHide()}
   }
 
   render() {
     return (
-      <div className="projectspage">
-          {this.state.index != null ? <ProjectShow index={this.state.index} cards={this.state.cards} /> : this.displayCards()}
+      <div>
+        <div className="projectspage">
+            {this.state.index != null ? <ProjectShow index={this.state.index} cards={this.state.cards} /> : this.displayCards()}
+        </div>
+        <div className="space">
+        </div>
       </div>
     );
   };
+
 
 
 }

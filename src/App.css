@@ -307,11 +307,16 @@ i {
   margin: 280px 0;
 }
 
+.space {
+  clear: both;
+  margin-bottom: 200px
+}
+
 .cardborder {
   display: inline-block;
   float: left;
   width: 33.33%;
-  font-style:
+  margin-bottom: 50px
 }
 
 .imageborder {
@@ -894,7 +899,7 @@ form {
   }
 
   .navbar {
-    height: 300px;
+    height: 320px;
     margin-top: 50px;
     padding-bottom: 20px
   }
@@ -930,7 +935,7 @@ form {
   }
 
   .projectspage {
-    margin: 400px auto;
+    margin: 450px auto;
   }
 
   .nav, button.hamburger, .mobile-navlinks, .mobile-navlinks a, .cross {
@@ -1018,5 +1023,18 @@ form {
     height: auto;
   }
 
+  .bottom-navbar {
+    display: none;
+  }
+
+  .space {
+    display: none
+  }
+
+  .story {
+    font-size: 20px;
+    margin: 50px 20px;
+
+  }
 
 }
