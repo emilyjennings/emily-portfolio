@@ -135,17 +135,6 @@ timelineFadeIn = () => {
           <div className="why-text">I am drawn toward helping others. I like to lift others up. Empathy is a strength I have which allows me to consider all sides of every story and do the right thing. I love to make connections with others and to hear new stories, which is why I enjoy travel and cultures. And I believe that my tech skills will allow me to enhance human connections and help the world come together to make great change in the environment and society.</div>
         </div>
 
-        <div className="bottom">
-          <div className="row1">
-            <div className="bottom-link"><Link to="https://drive.google.com/file/d/1NpJu_3fS0LiS4zt-FisdtYUKYA2cJ0rM/view?usp=sharing">Resume</Link></div>
-            <div className="bottom-link"><Link to="https://emily-jennings-blog.herokuapp.com/">Blog</Link></div>
-          </div>
-          <div className="row2">
-            <div className="bottom-link"><Link to="">Contact</Link></div>
-            <div className="bottom-link"><Link to="">Map</Link></div>
-          </div>
-        </div>
-
       </div>
     );
   };
@@ -170,5 +159,16 @@ timelineFadeIn = () => {
 //       <div className="skill-4-l">jQuery</div>
 //       <div className="skill-5-l">HTML/CSS</div>
 //     </div>
+//   </div>
+// </div>
+
+// <div className="bottom">
+//   <div className="row1">
+//     <div className="bottom-link"><Link to="https://drive.google.com/file/d/1NpJu_3fS0LiS4zt-FisdtYUKYA2cJ0rM/view?usp=sharing">Resume</Link></div>
+//     <div className="bottom-link"><Link to="https://emily-jennings-blog.herokuapp.com/">Blog</Link></div>
+//   </div>
+//   <div className="row2">
+//     <div className="bottom-link"><Link to="">Contact</Link></div>
+//     <div className="bottom-link"><Link to="">Map</Link></div>
 //   </div>
 // </div>

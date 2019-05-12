@@ -55,7 +55,7 @@ export default class Contact extends Component {
     const { name, email, message } = this.state;
     return (
       <div className="contactpage">
-        <div className="empathy">I want to connect with you and exchange stories. I'm not kidding. Contact me and let's talk.</div>
+        <div className="empathy">Leave me a message and let's talk.</div>
         <div className="contactcontainer">
           <div className="formcaption">I'll be in touch soon.</div>
           <form onSubmit={this.handleSubmit}>

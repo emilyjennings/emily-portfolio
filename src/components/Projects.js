@@ -11,6 +11,7 @@ import philosophy from '../img/philosophy.png'
 import quote from '../img/quote.png'
 import emilyjennings from '../img/emilyjennings.png'
 import blog from '../img/blog.png'
+import thisisemily from '../img/thisisemily.png'
 
 export default class Projects extends Component {
 
@@ -97,6 +98,16 @@ export default class Projects extends Component {
           image: emilyjennings,
           title: 'Emily Jennings Portfolio',
           created: 'December 2017 - April 2019',
+        },
+        8: {
+          index: 8,
+          link: "/",
+          desc: 'I made this site from scratch to showcase my skills and communicate my personality. I used extensive css animations and tricks, as well as React functionality and jQuery.',
+          github: "https://github.com/emilyjennings/emily-portfolio",
+          url: "/thisisemily",
+          image: thisisemily,
+          title: 'This is Emily (This site)',
+          created: 'April 2019 - May 2019',
         },
       },
       index: null,
