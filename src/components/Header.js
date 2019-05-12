@@ -42,15 +42,7 @@ export default class Header extends Component {
     });
   }
 
-  //scrolls to top when clicked
-  top = () => {
-    $("button.top").click(function(event){
-       $(window).scrollTop(0);
-    });
-  }
-
   componentDidMount(){
-    {this.top()}
     {this.navStick()}
     {this.scrollFade()}
     {this.hamMenu()}

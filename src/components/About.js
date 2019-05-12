@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
 
-import BottomLinks from './BottomLinks'
 import { Link } from "react-router-dom";
 
 
@@ -18,7 +17,7 @@ export default class About extends Component {
   parallaxBackground = () => {
     $(window).scroll(function(){
       $(".story, .dcpic, .event-image").css("background-position", "0% "  + (($(window).scrollTop() / 20) + 20) + "%");
-      // $("body").css("background-position", ($(window).scrollTop() / 200) + "% " + ($(window).scrollTop() / 100) + "%, 15px 15px");
+      $("#abroad, #college, #teaching, #jeju, #philly, #dc").css("background-position", "0% "  + (($(window).scrollTop() / 20)) + "%");
     });
   }
 
@@ -29,28 +28,6 @@ export default class About extends Component {
         `none`
     });
 
-//For use later in case I want the whole background dots:
-    // $(window).scroll(function(){
-    //   if ($(window).scrollTop() > 300) {
-    //     $("body").css({
-    //       'background-color': '#C4EFDA',
-    //       'background-image':
-    //         `radial-gradient(#35CDD1 6%, transparent 0),
-    //         radial-gradient(#35CDD1 6%, transparent 0)`,
-    //       'background-size': '30px 30px',
-    //       'background-position': '0 0, 15px 15px'
-    //     }, 1000);
-    //   } else if ($(window).scrollTop() < 300) {
-    //     $("body").css({
-    //       'background-color': '#262c2d',
-    //       'background-image':
-    //         `radial-gradient(#35CDD1 3%, transparent 0),
-    //         radial-gradient(#35CDD1 3%, transparent 0)`,
-    //       'background-size': '30px 30px',
-    //       'background-position': '0 0, 15px 15px'
-    //     }, 1000);
-    //   }
-    // });
   }
 
 //Timeline div fades in on scroll
@@ -65,20 +42,11 @@ timelineFadeIn = () => {
   });
 }
 
-//makes the line for the timeline get larger
-  // lineGrow = () => {
-  //   $(window).scroll(function(){
-  //     if ($(window).scrollTop() > 50) {
-  //       $(".line").css("height", ($(window).scrollTop() / 2))
-  //     }
-  //   })
-  // }
 
   componentDidMount(){
     {this.changeHeader()}
     {this.parallaxBackground()}
     {this.timelineFadeIn()}
-    // {this.lineGrow()}
     {this.backgroundChange()}
   }
 
@@ -135,40 +103,10 @@ timelineFadeIn = () => {
           <div className="why-text">I am drawn toward helping others. I like to lift others up. Empathy is a strength I have which allows me to consider all sides of every story and do the right thing. I love to make connections with others and to hear new stories, which is why I enjoy travel and cultures. And I believe that my tech skills will allow me to enhance human connections and help the world come together to make great change in the environment and society.</div>
         </div>
 
+
       </div>
     );
   };
 
 
 }
-
-// <div className="skills">
-//   <div className="skill-text">My skills</div>
-//   <div className="skills-container">
-//     <div className="skill-names">
-//       <div className="skill-1">Ruby on Rails</div>
-//       <div className="skill-2">Vanilla JavaScript</div>
-//       <div className="skill-3">React</div>
-//       <div className="skill-4">jQuery</div>
-//       <div className="skill-5">HTML/CSS</div>
-//     </div>
-//     <div className="skill-levels">
-//       <div className="skill-1-l">Ruby on Rails</div>
-//       <div className="skill-2-l">Vanilla JavaScript</div>
-//       <div className="skill-3-l">React</div>
-//       <div className="skill-4-l">jQuery</div>
-//       <div className="skill-5-l">HTML/CSS</div>
-//     </div>
-//   </div>
-// </div>
-
-// <div className="bottom">
-//   <div className="row1">
-//     <div className="bottom-link"><Link to="https://drive.google.com/file/d/1NpJu_3fS0LiS4zt-FisdtYUKYA2cJ0rM/view?usp=sharing">Resume</Link></div>
-//     <div className="bottom-link"><Link to="https://emily-jennings-blog.herokuapp.com/">Blog</Link></div>
-//   </div>
-//   <div className="row2">
-//     <div className="bottom-link"><Link to="">Contact</Link></div>
-//     <div className="bottom-link"><Link to="">Map</Link></div>
-//   </div>
-// </div>

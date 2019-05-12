@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import $ from 'jquery'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import BottomLinks from './BottomLinks'
 
 
 export default class Footer extends Component {
@@ -22,12 +23,26 @@ export default class Footer extends Component {
     });
   }
 
+  footerShow = () => {
+    $(window).scroll(function(){
+      var scrollTop = $(window).scrollTop()
+      if (scrollTop < 1350) {
+        $(".bottom-navbar").css("opacity", ($(window).scrollTop() - 300) / 500)
+        $(".bottom-navbar").css("height", $(window).scrollTop() / 7)
+        $(".row-left").css("padding-left", ($(window).scrollTop() / 7) + "px")
+        $(".row-right").css("padding-right", ($(window).scrollTop() / 7) + "px")
+      }
+    });
+  }
+
   componentDidMount() {
     {this.scrollTop()}
+    {this.footerShow()}
   }
 
   render() {
     return (
+      <div className="footer-wrapper">
         <div className="emily">
           <div className="socialmedia">
             <a href="https://twitter.com/Phillylosophy"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
@@ -35,10 +50,15 @@ export default class Footer extends Component {
             <a href="https://github.com/emilyjennings"><FontAwesomeIcon icon={['fab', 'github']} /></a>
           </div>
           <Link to="/about">Designed and Created by Emily</Link>
-            <div className="top">
-              <button id="top"><FontAwesomeIcon icon={'arrow-up'} /></button>
-            </div>
+          <div className="top">
+            <button id="top"><FontAwesomeIcon icon={'arrow-up'} /></button>
+          </div>
+
         </div>
+        <div className="bottom-navbar">
+          < BottomLinks />
+        </div>
+      </div>
     );
   }
 

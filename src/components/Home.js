@@ -63,7 +63,6 @@ export default class Home extends Component {
         <div className="homecaptionlast"><span id="okay">It's okay if you don't like my fonts.</span><span id="me"> This is me.</span></div>
 
         < Tiles />
-        // < BottomLinks />
       </div>
     );
   };
