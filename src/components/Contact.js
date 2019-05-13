@@ -56,30 +56,32 @@ export default class Contact extends Component {
     const { name, email, message } = this.state;
     return (
       <div className="contactpage">
-        <div className="empathy">Leave me a message and let's talk.</div>
         <div className="contactcontainer">
           <div className="formcaption">I'll be in touch soon.</div>
           <form onSubmit={this.handleSubmit}>
-            <p>
-              <label>
-                Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
-              </label>
-            </p>
-            <p>
-              <label>
-                Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
-              </label>
-            </p>
-            <p>
-              <label>
-                Message: <textarea name="message" value={message} onChange={this.handleChange} />
-              </label>
-            </p>
-            <p>
+            <div className="input-row-1">
+                <label>
+                  Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
+                </label>
+                <br></br>
+                <label>
+                  Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
+                </label>
+
+            </div>
+            <div className="input-row-2">
+
+                <label>
+                  Message: <textarea name="message" maxlength="140" value={message} onChange={this.handleChange} />
+                </label>
+
+            </div>
+
               <button id="submit" type="submit">Send</button>
-            </p>
+
           </form>
         </div>
+
         <div className="space"></div>
       </div>
     );
