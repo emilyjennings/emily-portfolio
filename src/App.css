@@ -864,7 +864,7 @@ form {
 
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
 
   .cardborder {
     width: 100%;
@@ -955,16 +955,13 @@ form {
     width: 80%
   }
 
-  .contactcontainer, .empathy {
-    width: 80%
-  }
-
-  .empathy {
-    margin-top: 400px
-  }
-
   .contactcontainer {
-    margin-top: 320px
+    width: 80%;
+    margin-top: 320px;
+  }
+
+  .formcaption {
+    word-spacing: -3px
   }
 
   .submit {
