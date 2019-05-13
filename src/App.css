@@ -859,8 +859,9 @@ form {
 
   .navtitle {
     width: 200px;
-    font-size: 35px;
+    font-size: 1.5em;
     margin: 20px auto 10px auto;
+    overflow: hidden;
   }
 
   .navsubtitle {
@@ -884,7 +885,7 @@ form {
   }
 
   .navbar {
-    height: 320px;
+    height: 300px;
     margin-top: 50px;
     padding-bottom: 20px
   }
@@ -1077,7 +1078,12 @@ form {
   }
 
   .homecaptionlast {
-    font-size: 29px
+    font-size: 29px;
+    margin-top: 25px
+  }
+
+  .tiles {
+    margin-top: 100px
   }
 
   .tile {
@@ -1101,6 +1107,20 @@ form {
 
   #tile-1:hover, #tile-2:hover, #tile-3:hover, #tile-4:hover, #tile-5:hover, #tile-6:hover {
     font-size: 1em
+  }
+
+  .desc {
+    width: auto
+  }
+
+  .link, .github, .goback {
+    width: 70%;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .buttons {
+    margin-bottom: 10px
   }
 
 }

@@ -120,6 +120,7 @@ export default class Projects extends Component {
     $('.navtitle').text("Stuff I Made")
     $('.navsubtitle, .navsubtitlestick').text("Projects")
     $('.navsubtitle, .navsubtitlestick').show()
+    $('.navlinks').show()
   }
 
   handleClick = (index) => {

@@ -20,6 +20,7 @@ export default class Contact extends Component {
     $('.navsubtitle, .navsubtitlestick').text("Hello out there")
     $('.navtitle').text("Contact Me")
     $('.navsubtitle, .navsubtitlestick').show()
+    $('.navlinks').show()
   }
 
   backgroundChange = () => {
