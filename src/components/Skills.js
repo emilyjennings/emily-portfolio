@@ -14,6 +14,7 @@ export default class Skills extends Component {
   render() {
     return (
       <div className="skills">
+        <div class="skills-summary">I’m a junior engineer but a mid-career professional. Programming is a passion that I discovered in the past few years, and I’m addicted. I’ve been a teacher, a philosopher, an event planner, an admissions manager, volunteered with non-profits, and lived abroad. Now I’m here to build great tech to make the world a nicer place to live, to have fun doing it, and to learn a ton.</div>
         <div className="skill-text">My skills</div>
         <div className="skills-container">
           <div className="skill-names">

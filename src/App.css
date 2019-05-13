@@ -145,22 +145,6 @@ a {
   color: #2ec4f2;
 }
 
-button.top {
-  text-align: center;
-  padding: 10px;
-  display: block;
-  margin: 30px auto;
-  font-size: 20px;
-  border: 3px solid #23C6B3;
-  border-radius: 80px;
-  background: #C4EFDA;
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  z-index: 100;
-  opacity: 0;
-}
-
 button.hamburger {
   position: fixed;
   top: 0;
@@ -225,7 +209,7 @@ button.hamburger:hover {
   color: #262c2d;
 }
 
-button.top {
+.top {
   padding: 10px;
   display: block;
   margin: 30px auto;
@@ -235,8 +219,8 @@ button.top {
   color: #35CDD1;
   border-radius: 80px;
   position: fixed;
-  bottom: 15px;
-  right: 15px;
+  bottom: 40px;
+  right: 20px;
   z-index: 100;
   opacity: 0;
   background: #C4EFDA;
@@ -248,23 +232,22 @@ button.top {
 
 }
 
-button.top:hover {
+.top:hover {
   background-color: #35CDD1;
   color: #C4EFDA;
   opacity: .5;
 }
 
-button#top {
-  visibility: hidden;
+div.top {
+  display: none
 }
 
 
 /* Footer */
 
 .emily {
-  padding: 10px 0 20px 0;
   position: fixed;
-  bottom: 0;
+  bottom: 52px;
   width: 100%;
   text-align: center;
   z-index: 1;
@@ -648,14 +631,26 @@ i {
 .bottom {
   width: 100%;
   opacity: 1;
-  padding-bottom: 600px;
-  padding-top: 50px
+  padding-bottom: 300px;
+  padding-top: 2px
 }
 
 .bottom-link a {
   color: #35CDD1;
   font-family: 'Pacifico', cursive;
   font-size: 20px;
+}
+
+.bottom-link a:hover {
+  color: #262c2d
+}
+
+.bottom-link {
+  display: inline-block;
+  float: left;
+  clear: both;
+  margin: 2px;
+  width: auto
 }
 
 .row-right {
@@ -668,7 +663,10 @@ i {
   display: inline-block;
   float: left;
   text-align: left;
-  max-padding: 200px
+}
+
+.mobile-row {
+  display: none
 }
 
 .bottom-navbar {
@@ -1010,8 +1008,37 @@ form {
     height: auto;
   }
 
-  .bottom-navbar {
-    display: none;
+  .bottom-link-left a {
+    display: inline-block;
+    overflow: hidden;
+    position: fixed;
+    left: 40px;
+    color: #35CDD1;
+    font-family: 'Pacifico', cursive;
+    font-size: 18px
+  }
+
+  .bottom-link-right a {
+    display: inline-block;
+    overflow: hidden;
+    position: fixed;
+    right: 40px;
+    color: #35CDD1;
+    font-family: 'Pacifico', cursive;
+    font-size: 18px
+  }
+
+  .bottom-link-left a:hover, .bottom-link-right a:hover {
+    color: #2ec4f2
+  }
+
+  .row-left, .row-right {
+    display: none
+  }
+
+  .mobile-row {
+    display: block;
+    width: 100%
   }
 
   .space {
@@ -1047,6 +1074,33 @@ form {
   .why, .why-title {
     width: 75%;
     opacity: 0
+  }
+
+  .homecaptionlast {
+    font-size: 29px
+  }
+
+  .tile {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+  }
+
+  .tile-1-text, .tile-2-text, .tile-3-text, .tile-4-text, .tile-5-text, .tile-6-text {
+    visibility: hidden;
+  }
+
+  .tile svg {
+    visibility: visible;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+    padding-left: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0
+  }
+
+  #tile-1:hover, #tile-2:hover, #tile-3:hover, #tile-4:hover, #tile-5:hover, #tile-6:hover {
+    font-size: 1em
   }
 
 }

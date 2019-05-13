@@ -50,7 +50,7 @@ export default class Contact extends Component {
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
-// contact form as per code given by EmailJS, thwe library used for this form
+// contact form as per code given by netlify's form docs
   render() {
     const { name, email, message } = this.state;
     return (

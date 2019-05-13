@@ -8,9 +8,17 @@ import BottomLinks from './BottomLinks'
 
 export default class Footer extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      scrollTop : "",
+      windowHeight: ""
+    }
+  }
+
   scrollTop = () => {
     $(".top").click(function(event){
-      $("html").animate({ scrollTop: 0 }, "slow")
+      $(window).scrollTop(0);
     });
 
     $(window).scroll(function(){
@@ -27,10 +35,10 @@ export default class Footer extends Component {
     $(window).scroll(function(){
       var scrollTop = $(window).scrollTop()
       if (scrollTop < 900) {
-        $(".bottom-navbar").css("opacity", ($(window).scrollTop() - 300) / 500)
-        $(".bottom-navbar").css("height", $(window).scrollTop() / 5)
-        $(".row-left").css("padding-left", ($(window).scrollTop() / 7) + "px")
-        $(".row-right").css("padding-right", ($(window).scrollTop() / 7) + "px")
+        $(".bottom-navbar").css("opacity", ($(window).scrollTop() - 300))
+        $(".bottom-navbar").css("height", $(window).scrollTop() / 20)
+        $(".row-left").css("padding-left", ($(window).scrollTop() / 4) + "px")
+        $(".row-right").css("padding-right", ($(window).scrollTop() / 4) + "px")
       }
     });
   }
@@ -51,9 +59,8 @@ export default class Footer extends Component {
           </div>
           <Link to="/about">Designed and Created by Emily</Link>
           <div className="top">
-            <button id="top"><FontAwesomeIcon icon={'arrow-up'} /></button>
+            <FontAwesomeIcon icon={'arrow-up'} />
           </div>
-
         </div>
         <div className="bottom-navbar">
           < BottomLinks />
