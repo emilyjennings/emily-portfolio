@@ -79,8 +79,8 @@ export default class Contact extends Component {
               <button id="submit" type="submit">Send</button>
             </p>
           </form>
-
         </div>
+        <div className="space"></div>
       </div>
     );
   };

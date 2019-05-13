@@ -750,7 +750,7 @@ i {
 
 .github, .link, .goback {
   font-family: 'Monoton', serif;
-  color: #C4EFDA;
+  color: #2ec4f2;
   background: #35CDD1;
   border-radius: 3px;
   display: inline-block;
@@ -1117,6 +1117,11 @@ form {
     width: 70%;
     display: block;
     margin: 10px auto;
+    color: #2ec4f2
+  }
+
+  .link:visited, .github:visited, .goback:visited {
+    color: #2ec4f2
   }
 
   .buttons {

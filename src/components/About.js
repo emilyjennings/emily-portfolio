@@ -110,6 +110,7 @@ timelineFadeIn = () => {
           <div className="why-text">I am drawn toward helping others. I like to lift others up. Empathy is a strength I have which allows me to consider all sides of every story and do the right thing. I love to make connections with others and to hear new stories, which is why I enjoy travel and cultures. And I believe that my tech skills will allow me to enhance human connections and help the world come together to make great change in the environment and society.</div>
         </div>
 
+        <div className="space"></div>
 
       </div>
     );
