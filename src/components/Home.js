@@ -3,7 +3,8 @@ import $ from 'jquery'
 
 import profile from './img/profile.jpg'
 import Tiles from './Tiles'
-import BottomLinks from './BottomLinks'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 export default class Home extends Component {
 
@@ -51,11 +52,38 @@ export default class Home extends Component {
     });
   }
 
+  scrolldown = () => {
+    $('.scrolldown').animate({
+      opacity: 1,
+    }, 500, function(){
+      $('.scrolldown').animate({
+        opacity: 0,
+      }, 500, function(){
+        $('.scrolldown').animate({
+          opacity: 1,
+        }, 500, function(){
+          $('.scrolldown').animate({
+            opacity: 0,
+          }, 500, function(){
+            $('.scrolldown').animate({
+              opacity: 1,
+            }, 500, function(){
+              $('.scrolldown').animate({
+                opacity: 0,
+              }, 500)
+            })
+          })
+        })
+      })
+    })
+  }
+
   componentDidMount(){
     {this.changeHeader()}
     {this.scrollFadeText()}
     {this.fadeButtons()}
     {this.backgroundChange()}
+    {this.scrolldown()}
   }
 
   render() {
@@ -64,6 +92,8 @@ export default class Home extends Component {
         <div className="homecaptionlast"><span id="okay">It's okay if you don't like my fonts.</span><span id="me"> This is me.</span></div>
 
         < Tiles />
+
+        <div className="scrolldown">< FontAwesomeIcon icon={'angle-double-down'} /></div>
       </div>
     );
   };

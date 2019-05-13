@@ -45,7 +45,6 @@ a {
   z-index: 2;
   padding-top: 5px;
   top: 0;
-
 }
 
 .navtitle {
@@ -63,15 +62,25 @@ a {
 }
 
 .navlinks a, .mobile-navlinks a {
-  margin: 15px;
   background-color: #e6f7ee;
   color: #35CDD1;
-  padding: 10px 20px;
+  border: 0.5px solid #35CDD1;
   text-decoration: none;
   border-radius: 5px;
   clear: both;
   font-family: 'Monoton', serif;
-  font-size: 20px;
+  font-size: 100%;
+  display: inline-block;
+  padding: 10px;
+  margin: 0 10px
+}
+
+.navlinks p {
+  margin: 0
+}
+
+.navlinks svg {
+  font-size: 20px
 }
 
 .navlinks a:hover, .mobile-navlinks a:hover {
@@ -125,8 +134,8 @@ a {
   height: 3px;
   background-color: #2ec4f2;
   border: 0 none;
-  margin-top: 10px;
-  margin-bottom: 40px;
+  margin-top: 0;
+  margin-bottom: 30px;
   border-radius: 3px
 }
 
@@ -447,6 +456,15 @@ i {
 
 .tile svg {
   font-size: 2em
+}
+
+.scrolldown {
+  color: #C4EFDA;
+  position: fixed;
+  bottom: 40px;
+  right: 35px;
+  font-size: 28px;
+  opacity: 0
 }
 
 
@@ -887,14 +905,14 @@ form {
     font-size: 20px;
   }
 
-  hr {
-    margin-bottom: 12px
+  .navbar hr {
+    margin: 20px auto 20px auto
   }
 
   .navlinks a {
     display: inline-block;
     padding: 5px;
-    margin: 5px auto;
+    margin: 0 auto 6px auto;
     font-size: 15px;
     width: 50%
   }
@@ -904,8 +922,8 @@ form {
   }
 
   .navbar {
-    height: 260px;
-    margin-top: 50px;
+    height: 300px;
+    margin-top: 20px;
     padding-bottom: 20px
   }
 
