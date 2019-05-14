@@ -767,7 +767,7 @@ i {
 
 .github, .link, .goback {
   font-family: 'Monoton', serif;
-  color: #2ec4f2;
+  color: #C4EFDA;
   background: #35CDD1;
   border-radius: 3px;
   display: inline-block;
@@ -780,7 +780,7 @@ i {
 }
 
 .buttons a:hover{
-  color: #C4EFDA;
+  color: #262c2d;
 }
 
 /* Contact Page (Empathy) */
@@ -1158,11 +1158,11 @@ form {
     width: 70%;
     display: block;
     margin: 10px auto;
-    color: #2ec4f2
+    color: #C4EFDA
   }
 
   .link:visited, .github:visited, .goback:visited {
-    color: #2ec4f2
+    color: #C4EFDA
   }
 
   .buttons {
