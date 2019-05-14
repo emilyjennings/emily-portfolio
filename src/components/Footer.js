@@ -18,7 +18,7 @@ export default class Footer extends Component {
 
   scrollTop = () => {
     $(".top").click(function(event){
-      $(window).scrollTop(0);
+      $.scrollTo(0, 1000);
     });
 
     $(window).scroll(function(){
