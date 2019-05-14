@@ -926,7 +926,7 @@ form {
     margin: auto 20%;
   }
 
-  .emily a:visited {
+  .emily a:visited, .emily a {
     color: #35CDD1
   }
 
