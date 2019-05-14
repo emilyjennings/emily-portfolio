@@ -461,10 +461,9 @@ i {
 .scrolldown {
   color: #C4EFDA;
   position: fixed;
-  bottom: 40px;
   right: 35px;
   font-size: 28px;
-  opacity: 0
+  bottom: 40px
 }
 
 
@@ -906,7 +905,7 @@ form {
   }
 
   .navbar hr {
-    margin: 20px auto 20px auto
+    margin: 10px auto 20px auto
   }
 
   .navlinks a {
@@ -918,11 +917,19 @@ form {
   }
 
   .emily {
-    font-size: 12px;
+    font-size: 10px;
+  }
+
+  .emily a:visited {
+    color: #35CDD1
+  }
+
+  .socialmedia a {
+    font-size: 20px
   }
 
   .navbar {
-    height: 300px;
+    height: 280px;
     margin-top: 20px;
     padding-bottom: 20px
   }
@@ -1044,9 +1051,10 @@ form {
     overflow: hidden;
     position: fixed;
     left: 40px;
+    margin-top: 5px;
     color: #35CDD1;
     font-family: 'Pacifico', cursive;
-    font-size: 18px
+    font-size: 15px
   }
 
   .bottom-link-right a {
@@ -1054,9 +1062,10 @@ form {
     overflow: hidden;
     position: fixed;
     right: 40px;
+    margin-top: 5px;
     color: #35CDD1;
     font-family: 'Pacifico', cursive;
-    font-size: 18px
+    font-size: 15px
   }
 
   .bottom-link-left a:hover, .bottom-link-right a:hover {
@@ -1113,12 +1122,13 @@ form {
   }
 
   .tiles {
-    margin-top: 100px
+    margin-top: 80px;
   }
 
   .tile {
     writing-mode: vertical-rl;
     text-orientation: sideways;
+    height: 190px
   }
 
   .tile-1-text, .tile-2-text, .tile-3-text, .tile-4-text, .tile-5-text, .tile-6-text {
@@ -1132,7 +1142,8 @@ form {
     text-align: center;
     padding-left: 10px;
     margin-bottom: 0;
-    padding-bottom: 0
+    padding-bottom: 0;
+    margin: 40px auto 0 auto
   }
 
   #tile-1:hover, #tile-2:hover, #tile-3:hover, #tile-4:hover, #tile-5:hover, #tile-6:hover {
@@ -1157,5 +1168,12 @@ form {
   .buttons {
     margin-bottom: 10px
   }
+
+  .top {
+    font-size: 28px;
+    padding: 1px 8px 4px 8px;
+    border: 2px solid #35CDD1
+  }
+
 
 }
