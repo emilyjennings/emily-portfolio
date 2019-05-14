@@ -65,7 +65,7 @@ export default class About extends Component {
     return (
       <div className="aboutpage">
 
-        <div className="story">I am a human being that likes to do good for others.</div>
+        <div className="story">I like to make things and help others.</div>
 
 
         <div className="more">A little more about me</div>
