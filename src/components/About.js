@@ -18,8 +18,9 @@ export default class About extends Component {
 //cool scroll effect for the images
   parallaxBackground = () => {
     $(window).scroll(function(){
-      $(".story, .dcpic, .event-image").css("background-position", "0% "  + (($(window).scrollTop() / 20) + 20) + "%");
-      $("#abroad, #college, #teaching, #jeju, #philly, #dc").css("background-position", "0% "  + (($(window).scrollTop() / 20)) + "%");
+      $(".story, #dcpic, #coding").css("background-position", "0% "  + (($(window).scrollTop() / 20) + 20) + "%");
+      $("#abroad, #college, #teaching").css("background-position", "0% "  + (($(window).scrollTop() / 20)) + "%");
+      $("#dc, #jeju, #philly").css("background-position", "0% "  + (($(window).scrollTop() / 60)) + "%");
     });
   }
 
@@ -71,8 +72,10 @@ export default class About extends Component {
         <div className="timeline">
 
           <Zoom>
-            <div className="dcpic"></div>
-            <div className="beginning">I was a DC suburbs kid in the 80s. I liked animals, drawing pictures, and playing with my dad's Apple Macintosh computer.</div>
+            <div className="row">
+              <div className="event-image" id="dcpic"></div>
+              <div className="event">I was a DC suburbs kid in the 80s. I liked animals, drawing pictures, and playing with my dad's Apple Macintosh computer.</div>
+            </div>
           </Zoom>
 
           <Zoom>
@@ -118,8 +121,10 @@ export default class About extends Component {
           </Zoom>
 
           <Zoom>
-            <div className="coding"></div>
-            <div className="end">And here we are in 2019: I made this website from scratch. I am a Ruby on Rails and React programmer. Never been happier.</div>
+            <div className="row">
+              <div className="event-image" id="coding"></div>
+              <div className="event">And here we are in 2019: I made this website from scratch. I am a Ruby on Rails and React programmer. Never been happier.</div>
+            </div>
           </Zoom>
 
         </div>

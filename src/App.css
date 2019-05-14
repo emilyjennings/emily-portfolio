@@ -465,25 +465,22 @@ i {
 }
 
 
-/* Aboutpage */
+/* Aboutpage and skills page */
 
-.story, .skills {
+.story {
   display: block;
   text-align: center;
   z-index: 1;
   margin: 300px 20%;
   border-radius: 20px;
-  padding: 60px;
+  padding: 30px;
   font-family: 'Noto Serif', serif;
   font-size: 30px;
   font-weight: bold;
   color: #C4EFDA;
-}
-
-.story {
   background-image: url("../src/components/img/bus.jpg");
-  background-position: 0% 20%;
   background-size: cover;
+  height: 220px
 }
 
 .timeline, .bottom {
@@ -500,37 +497,6 @@ i {
   margin-bottom: 90px;
   padding-top: 50px;
   padding-bottom: 50px
-}
-
-.dcpic {
-  background-image: url("../src/components/img/childhood2.jpg");
-  background-position: 0% 10%;
-  background-size: cover;
-  height: 200px;
-  width: 40%;
-  margin: 10px auto 0 auto;
-  -webkit-filter: sepia(1);
-  filter: sepia(1);
-  border-radius: 100px;
-}
-
-.beginning, .end {
-  border-radius: 4px;
-  width: 30%;
-  margin: auto;
-  display: block;
-  font-size: 20px;
-  padding: 30px;
-  font-family: 'Noto Serif', serif;
-  font-weight: bold;
-  clear:both;
-  background-color: #35CDD1;
-  color: #C4EFDA;
-  text-align: center;
-}
-
-.end {
-  margin-bottom: 20px
 }
 
 .row {
@@ -557,12 +523,15 @@ i {
   background-size: cover;
   width: 200px;
   margin: 0 auto;
-  height: 200px;
+  height: 280px;
   border-radius: 100px;
   margin-top: 30px;
   background-position: center top;
   width: 65%;
+}
 
+#dcpic {
+  background-image: url("../src/components/img/childhood2.jpg");
 }
 
 #abroad {
@@ -589,15 +558,8 @@ i {
   background-image: url("../src/components/img/dc.jpg");
 }
 
-.coding {
+#coding {
   background-image: url("../src/components/img/code.png");
-  background-position: 0% 10%;
-  background-size: cover;
-  height: 200px;
-  width: 40%;
-  margin: 10px auto 0 auto;
-  border-radius: 100px;
-  margin-top: 40px
 }
 
 .why {
@@ -1094,6 +1056,8 @@ form {
   .story {
     font-size: 20px;
     margin: 0 20px 70px 20px;
+    height: 190px;
+    padding-top: 10px
   }
 
   .aboutpage {
@@ -1187,5 +1151,9 @@ form {
 @media only screen and (min-width: 2000px) {
   .tile {
     height: 500px
+  }
+
+  .story {
+    height: 400px
   }
 }
