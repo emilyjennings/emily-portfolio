@@ -68,7 +68,7 @@ a {
   border-radius: 5px;
   clear: both;
   font-family: 'Monoton', serif;
-  font-size: 100%;
+  font-size: 1.2em;
   display: inline-block;
   padding: 10px;
   margin: 0 10px
@@ -909,7 +909,7 @@ form {
   }
 
   .navbar hr {
-    margin: 10px auto 20px auto
+    margin: 10px auto 10px auto
   }
 
   .navlinks a {
@@ -1093,11 +1093,11 @@ form {
 
   .story {
     font-size: 20px;
-    margin: 50px 20px;
+    margin: 0 20px 70px 20px;
   }
 
   .aboutpage {
-    margin-top: 450px
+    margin-top: 360px
   }
 
   .row {
@@ -1185,7 +1185,7 @@ form {
 }
 
 @media only screen and (min-width: 2000px) {
-  .tiles {
-    height: 700px
+  .tile {
+    height: 500px
   }
 }
