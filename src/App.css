@@ -257,7 +257,8 @@ div.top {
 .emily {
   position: fixed;
   bottom: 15px;
-  width: 100%;
+  width: 30%;
+  margin: 0 35%;
   text-align: center;
   z-index: 1;
   font-family: 'Pacifico', cursive;
@@ -900,8 +901,12 @@ form {
     overflow: hidden;
   }
 
-  .navsubtitle {
-    font-size: 20px;
+  .navsubtitle, .navsubtitlestick {
+    font-size: 13px;
+  }
+
+  .navstick {
+    height: 28px
   }
 
   .navbar hr {
@@ -912,7 +917,7 @@ form {
     display: inline-block;
     padding: 5px;
     margin: 0 auto 6px auto;
-    font-size: 15px;
+    font-size: 13px;
     width: 50%
   }
 
@@ -929,8 +934,8 @@ form {
   }
 
   .navbar {
-    height: 280px;
-    margin-top: 20px;
+    height: 265px;
+    margin-top: 30px;
     padding-bottom: 20px
   }
 
