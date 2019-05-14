@@ -15,7 +15,6 @@ a:visited {
 
 a {
   text-decoration: none;
-  color: #35CDD1
 }
 
 
@@ -48,7 +47,7 @@ a {
 }
 
 .navtitle {
-  font-size: 60px;
+  font-size: 55px;
   font-family: 'Monoton', serif;
 }
 
@@ -719,44 +718,39 @@ i {
 
 /*Show Pages*/
 
+.projectshowborder {
+  margin: 0
+}
+
 .showimg img {
   width: 100%;
-  margin: auto;
   border-radius: 10px;
 }
 
 .showimg {
   float: left;
   display: inline-block;
-  margin: 20px 4%;
-  width: 50%;
-}
-
-.desc-cont {
-  float: left;
-  display: inline-block;
-  margin: 20px 4%;
-  width: 30%;
+  width: 44%;
+  margin: 2%;
 }
 
 .desc {
+  float: left;
+  display: inline-block;
+  width: 44%;
   text-align: left;
   background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
   z-index: 1;
   border-radius: 10px;
-  padding: 30px;
   font-family: 'Noto Serif', serif;
-  font-weight: bold;
-  font-size: 20px;
-  width: 100%;
-  margin: auto;
+  font-size: 1em;
+  margin: 2%;
+  padding: 2%
 }
 
 .projectborder {
-  height: 500px;
-  overflow: scroll;
-  width: 90%;
-  margin: 20px auto;
+  margin: 20px 0;
+  height: auto
 }
 
 .buttons {
@@ -764,11 +758,11 @@ i {
   clear: both;
   margin: 40px auto 600px auto;
   text-align: center;
+  color: #C4EFDA;
 }
 
 .github, .link, .goback {
   font-family: 'Monoton', serif;
-  color: #C4EFDA;
   background: #35CDD1;
   border-radius: 3px;
   display: inline-block;
@@ -780,8 +774,12 @@ i {
   word-spacing: 0.2em
 }
 
-.buttons a:hover{
+.link a, .github a, .goback a {
   color: #262c2d;
+}
+
+.buttons a:hover{
+  color: #C4EFDA;
 }
 
 /* Contact Page (Empathy) */
@@ -896,9 +894,10 @@ form {
 
   .navtitle {
     width: 200px;
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin: 20px auto 10px auto;
     overflow: hidden;
+    width: 100%
   }
 
   .navsubtitle, .navsubtitlestick {
@@ -1171,7 +1170,7 @@ form {
   }
 
   .buttons {
-    margin-bottom: 10px
+    margin: 30px auto 30px auto
   }
 
   .top {

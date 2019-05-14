@@ -16,7 +16,7 @@ class ProjectShow extends Component {
       <div className="projectshowborder">
         <div className="projectborder">
           <div className="showimg"><img src={cards[index].image} /></div>
-          <div className="desc-cont"><div className="desc">{cards[index].desc}</div></div>
+          <div className="desc">{cards[index].desc}</div>
         </div>
         <div className="buttons">
           <div className="link"><a href={cards[index].link}>see it</a></div>

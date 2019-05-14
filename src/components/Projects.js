@@ -56,7 +56,7 @@ export default class Projects extends Component {
           github: "https://github.com/emilyjennings/nasa-stuff-react-project",
           url: "/nasa",
           image: nasa,
-          title: 'NASA stuff',
+          title: 'NASA Stuff',
           created: 'February 2019',
         },
         4: {
@@ -72,11 +72,11 @@ export default class Projects extends Component {
         5: {
           index: 5,
           link: "https://www.youtube.com/embed/eRu55RbndkU",
-          desc: 'This Sinatra project allows users to log in and submit thought experiment stories as part of a community. I made this because I have a strong interest and academic background in philosophy and one of my favorite parts of studying it was considering thought experiments to illustrate a point/argument. This was made in memory of my Master\'\s thesis supervisor and friend, Josh Parsons.',
+          desc: 'This Sinatra project allows users to log in and submit philosophical thought experiment stories as part of a community. I made this because I have a strong interest and academic background in philosophy and one of my favorite parts of studying it was considering thought experiments to illustrate a point/argument. This was made in memory of my Master\'\s thesis supervisor and friend, Josh Parsons.',
           github: "https://github.com/emilyjennings/Philosophy-Thought-Experiments-Sinatra-Project",
           url: "/philosophy",
           image: philosophy,
-          title: 'Philosophy Thought Experiments',
+          title: 'Philosophy Experiments',
           created: 'November 2018',
         },
         6: {
