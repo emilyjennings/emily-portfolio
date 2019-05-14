@@ -29,7 +29,7 @@ a {
   width: 60%;
   top: 0;
   z-index: 1;
-  margin: 20px 20%;
+  margin: 35px 20%;
   border-radius: 20px;
 }
 
@@ -381,11 +381,8 @@ i {
   display: block;
   width: 100%;
   margin: 0 auto;
-  top: 260px;
+  top: 280px;
   position: fixed;
-}
-
-.tiles {
 }
 
 .tile {
