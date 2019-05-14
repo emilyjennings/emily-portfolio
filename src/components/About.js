@@ -72,54 +72,54 @@ export default class About extends Component {
 
           <Zoom>
             <div className="dcpic"></div>
-            <div className="beginning">I grew up in the suburbs of DC.</div>
+            <div className="beginning">I was a DC suburbs kid in the 80s. I liked animals, drawing pictures, and playing with my dad's Apple Macintosh computer.</div>
           </Zoom>
 
           <Zoom>
             <div className="row">
               <div className="event-image" id="abroad"></div>
-              <div className="event">In my teens, I had the opportunity to live in Ukraine, South Africa and New Zealand.</div>
+              <div className="event">In my teens, I had the opportunity to live in Ukraine, South Africa and Brazil with host families. I learned first-hand about wealth disparity and what makes us all the same.</div>
             </div>
           </Zoom>
 
           <Zoom>
             <div className="row">
               <div className="event-image" id="college"></div>
-              <div className="event">In Dunedin, New Zealand at the University of Otago, I studied philosophy.</div>
+              <div className="event">At the University of Otago in Dunedin, New Zealand, I philosophized mostly at philosophy department happy hours. I wrote a dissertation on the possibility of artificial intelligence.</div>
             </div>
           </Zoom>
 
           <Zoom>
             <div className="row">
               <div className="event-image" id="teaching"></div>
-              <div className="event">A few years later, I got into teaching. I loved it.</div>
+              <div className="event">A few years later, I got into teaching. I loved it. I always wanted to do right by my students and make the best use of their time to gain skills for the real world.</div>
             </div>
           </Zoom>
 
           <Zoom>
             <div className="row">
               <div className="event-image" id="jeju"></div>
-              <div className="event">I moved to Korea to teach ESL in 2011. I did that for 5 years in the beautiful island of Jeju.</div>
+              <div className="event">I moved to Korea to teach ESL in 2011. I did that for 5 years in the beautiful island of Jeju. I designed fun and wacky lessons plans and I hiked the island's many trails. I watched every episode of HBO's Silicon Valley on maternity leave.</div>
             </div>
           </Zoom>
 
           <Zoom>
             <div className="row">
               <div className="event-image" id="philly"></div>
-              <div className="event">Back in the states in 2016, I worked at a coding bootcamp in Philly. I started learning to code.</div>
+              <div className="event">Back in the states in 2016, I decided not to be in the classroom anymore. I wanted to get into tech. I worked at a coding bootcamp in Philly, using my b ackground in education to help people change their lives. I started learning to code.</div>
             </div>
           </Zoom>
 
           <Zoom>
             <div className="row">
               <div className="event-image" id="dc"></div>
-              <div className="event">In 2018, I moved back to DC and studied software engineering on my own while working full time.</div>
+              <div className="event">In 2018, I moved back to DC and worked at yet another coding bootcamp. By then, I had realized I wanted to be like the people I was helping and that programming was my calling. So, I studied software engineering on my own while working full time. With a toddler.</div>
             </div>
           </Zoom>
 
           <Zoom>
             <div className="coding"></div>
-            <div className="end">And here we are in 2019: I made this website from scratch.</div>
+            <div className="end">And here we are in 2019: I made this website from scratch. I am a Ruby on Rails and React programmer. Never been happier.</div>
           </Zoom>
 
         </div>
