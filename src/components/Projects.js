@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import $ from 'jquery'
 
 import ProjectShow from './ProjectShow'
+import Zoom from 'react-reveal/Zoom';
+
 
 import register from '../img/register.png'
 import katie from '../img/katie-paints-portraits.png'
@@ -138,12 +140,14 @@ export default class Projects extends Component {
   // Used to render the gallery images
   displayCards = () => {
     return Object.values(this.state.cards).map(card =>
+      <Zoom>
       <div className="cardborder" id={card.name} onClick={() => this.handleClick(card.index)}>
         <div className="imageborder">
           <img src={card.image} alt="" />
         </div>
         <div className="caption">{card.title}</div>
-      </div>)
+      </div>
+    </Zoom>)
   }
 
   componentDidMount(){

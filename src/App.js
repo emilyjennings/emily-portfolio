@@ -6,7 +6,6 @@ import './App.css';
 
 import Footer from './components/Footer'
 import Header from './components/Header'
-
 import About from './components/About'
 import History from './components/History'
 import Contact from './components/Contact'
