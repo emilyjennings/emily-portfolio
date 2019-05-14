@@ -495,39 +495,37 @@ i {
 
 .timeline {
   margin-bottom: 90px;
-  padding-top: 50px;
-  padding-bottom: 50px
+  padding: 50px 30px
 }
 
 .row {
   display: inline-block;
-  width: 50%;
-  margin-top: 20px
+  width: 31.333%;
+  vertical-align: top;
+  margin: 10px 1% 20px 1%;
 }
 
 .event {
-  background-color: #35CDD1;
-  color: #C4EFDA;
-  border-radius: 4px;
-  width: 60%;
-  margin: 0 15%;
-  font-style: bold;
-  font-size: 20px;
-  padding: 30px;
+  font-weight: bold;
   font-family: 'Noto Serif', serif;
   font-weight: bold;
-  font-size: 18px
+  font-size: 18px;
+  line-height: 1.5em;
+  width: 80%;
+  margin: 20px 10%
+}
+
+.event-title {
+  color: #2ec4f2;
+  font-size: 25px;
+  font-family: 'Monoton', serif;
 }
 
 .event-image {
   background-size: cover;
-  width: 200px;
-  margin: 0 auto;
-  height: 280px;
-  border-radius: 100px;
-  margin-top: 30px;
-  background-position: center top;
-  width: 65%;
+  height: 400px;
+
+  border-radius: 100%;
 }
 
 #dcpic {
@@ -535,11 +533,15 @@ i {
 }
 
 #abroad {
-  background-image: url("../src/components/img/band.jpg");
+  background-image: url("../src/components/img/sa.jpg");
 }
 
 #college {
   background-image: url("../src/components/img/graduation.jpg");
+}
+
+#between {
+  background-image: url("../src/components/img/band.jpg");
 }
 
 #teaching {
@@ -551,11 +553,11 @@ i {
 }
 
 #philly {
-  background-image: url("../src/components/img/Oldcity2.JPG");
+  background-image: url("../src/components/img/PHILLY.jpg");
 }
 
 #dc {
-  background-image: url("../src/components/img/dc.jpg");
+  background-image: url("../src/components/img/roofdc.jpg");
 }
 
 #coding {
@@ -1070,7 +1072,7 @@ form {
   }
 
   .event {
-    margin: auto
+    margin: 20px 10% 50px 10%
   }
 
   .dcpic, .coding {

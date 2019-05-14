@@ -141,13 +141,13 @@ export default class Projects extends Component {
   displayCards = () => {
     return Object.values(this.state.cards).map(card =>
       <Zoom>
-      <div className="cardborder" id={card.name} onClick={() => this.handleClick(card.index)}>
-        <div className="imageborder">
-          <img src={card.image} alt="" />
+        <div className="cardborder" id={card.name} onClick={() => this.handleClick(card.index)}>
+          <div className="imageborder">
+            <img src={card.image} alt="" />
+          </div>
+          <div className="caption">{card.title}</div>
         </div>
-        <div className="caption">{card.title}</div>
-      </div>
-    </Zoom>)
+      </Zoom>)
   }
 
   componentDidMount(){
