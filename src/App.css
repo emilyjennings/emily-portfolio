@@ -922,6 +922,8 @@ form {
 
   .emily {
     font-size: 10px;
+    width: 60%;
+    margin: auto 20%;
   }
 
   .emily a:visited {
