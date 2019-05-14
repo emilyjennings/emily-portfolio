@@ -269,7 +269,7 @@ div.top {
   color: #35CDD1
 }
 
-.emily a:hover {
+.emily a:hover, .emily a {
   color: #C4EFDA
 }
 
