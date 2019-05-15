@@ -465,7 +465,7 @@ i {
 }
 
 
-/* Aboutpage and skills page */
+/* Aboutpage */
 
 .story {
   display: block;
@@ -664,19 +664,30 @@ i {
 .skills {
   margin: 10%;
   height: 400px;
-  padding-top: 20px
+  padding-top: 20px;
 }
 
-.skill-text {
+.skills-summary, .skill-label {
+  font-family: "Noto Serif", serif;
+  color: #35CDD1
+}
+
+.skills-summary {
+  margin-top: 200px
+}
+
+.skills-container {
+  margin-top: 50px
+}
+
+.skill {
+  opacity: 0.3;
+  font-family: "Pacifico", serif
+}
+
+.skill-label {
   width: 100%;
-  font-size: 1.2em;
-}
-
-.skill-levels, .skill-names {
-  display: inline-block;
-  width: 50%;
-  float: left;
-  clear: both;
+  font-size: 1.5em;
 }
 
 
