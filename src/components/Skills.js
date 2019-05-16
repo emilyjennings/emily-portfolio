@@ -14,25 +14,67 @@ export default class Skills extends Component {
     this.state = {
       skills: {
         Ruby: {
-          level: 3,
+          level: 4,
           leveltitle: "still new but pretty good",
           title: "Ruby",
           icon: "devicon-ruby-plain",
           id: "ruby"
         },
         Rails: {
-          level: 3,
+          level: 4,
           leveltitle: "getting the hang of it",
           title: "Rails",
           icon: "devicon-rails-plain",
           id: "rails"
         },
         JavaScript: {
-          level: 3,
-          leveltitle: "been doing it for 2+ years",
+          level: 5,
+          leveltitle: "been doing it for a couple years",
           title: "JavaScript",
           icon: "devicon-javascript-plain",
           id: "javascript"
+        },
+        React: {
+          level: 4,
+          leveltitle: "love it, getting better",
+          title: "React",
+          icon: "devicon-react-original",
+          id: "react"
+        },
+        css: {
+          level: 6,
+          leveltitle: "know my way around",
+          title: "CSS",
+          icon: "devicon-css3-plain",
+          id: "css"
+        },
+        git: {
+          level: 3,
+          leveltitle: "need to learn more",
+          title: "Git",
+          icon: "devicon-git-plain",
+          id: "git"
+        },
+        Github: {
+          level: 3,
+          leveltitle: "still learning",
+          title: "Github",
+          icon: "devicon-github-plain",
+          id: "github"
+        },
+        Heroku: {
+          level: 3,
+          leveltitle: "got some skills",
+          title: "Heroku",
+          icon: "devicon-heroku-original",
+          id: "heroku"
+        },
+        jQuery: {
+          level: 6,
+          leveltitle: "pretty good",
+          title: "jQuery",
+          icon: "devicon-jquery-plain",
+          id: "jquery"
         },
       }
     }
