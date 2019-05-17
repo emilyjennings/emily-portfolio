@@ -130,17 +130,7 @@ export default class Skills extends Component {
   }
 
   skillLevelMeasure = (level) => {
-    // const array = []
-    // let i
-    // for (i = 0; i < level; i++) {
-    //   array.push(1)
-    // }
-    //
-    // array.forEach(function() {
-    //   repeat();
-    // });
-    //
-    // function repeat(){(return (<span class="dot"></span>))}
+    return "-".repeat(level)
   }
 
   displayUnusualSkill = () => {
