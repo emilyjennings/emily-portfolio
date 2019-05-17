@@ -129,20 +129,32 @@ export default class Skills extends Component {
       </Zoom>)
   }
 
+  skillLevelMeasure = (level) => {
+    const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    let i;
+    for (i = 0; i < array.length; i++) {
+      if (level == array[9]) {
+        return (
+          <div className="levelup"><span class="dot"></span></div>
+        )
+      }
+    }
+  }
+
   displayUnusualSkill = () => {
     return Object.values(this.state.unskills).map(skill =>
       <Zoom>
         <div className="skill">
           <div className="skill-title" id={skill.id}>{skill.title}</div>
           <div className="skill-level-title">{skill.leveltitle}</div>
-          <div className="skill-level">{skill.level}</div>
+          <div className="skill-level">{this.skillLevelMeasure(skill.level)}</div>
         </div>
       </Zoom>)
   }
 
   backgroundChange = () => {
     $('body').css({
-      'background-color': '#C4EFDA',
+      'background-color': '#e6f7ee',
       'background-image':
         `radial-gradient(#35CDD1 6%, transparent 0),
         radial-gradient(#35CDD1 6%, transparent 0)`,
@@ -151,24 +163,41 @@ export default class Skills extends Component {
     })
   }
 
+  changeHeader = () => {
+    $('.navtitle').text("Skills")
+    $('.navsubtitle, .navsubtitlestick').text("What I can do")
+    $('.navsubtitle, .navsubtitlestick').show()
+    $('.navlinks').show()
+  }
+
+
 
   componentDidMount() {
     {this.backgroundChange()}
+    {this.changeHeader()}
   }
 
   render() {
     return (
       <div className="skills">
-        <div class="skills-summary">I’m a junior engineer but a mid-career professional. Programming is a passion that I discovered in the past few years, and I’m addicted. I’ve been a teacher, a philosopher, an event planner, an admissions manager, volunteered with non-profits, and lived abroad. Now I’m here to build great tech to make the world a nicer place to live, to have fun doing it, and to learn a ton.</div>
         <div className="skill-label">My skills</div>
-        <div className="skills-container">
-          {this.displayDevSkill()}
-        </div>
-        <div className="skills-container">
-          {this.displaySoftSkill()}
-        </div>
-        <div className="skills-container">
-          {this.displayUnusualSkill()}
+        <div className="skillbox">
+
+          <div class="skill-title-top">Tech Skills</div>
+          <div className="skills-container">
+            {this.displayDevSkill()}
+          </div>
+
+          <div class="skill-title-top">Soft Skills</div>
+          <div className="skills-container">
+            {this.displaySoftSkill()}
+          </div>
+
+          <div class="skill-title-top">Weird Skills</div>
+          <div className="skills-container">
+            {this.displayUnusualSkill()}
+          </div>
+
         </div>
         <div className="space"></div>
       </div>

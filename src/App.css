@@ -478,7 +478,7 @@ i {
   font-size: 30px;
   font-weight: bold;
   color: #C4EFDA;
-  background-image: url("../src/components/img/bus.jpg");
+  background-image: linear-gradient(rgba(44, 195, 242, 0.25), rgba(51, 204, 209, 0.25)), url("../src/components/img/bus.jpg");
   background-size: cover;
   height: 220px
 }
@@ -661,10 +661,12 @@ i {
 
 /* Skills */
 
-.skills {
-  margin: 10%;
-  height: 400px;
-  padding-top: 20px;
+.skillbox {
+  margin: 0 20px 0 20px;
+  color: #2ec4f2;
+  border: 1px solid #2ec4f2;
+  background-color: #e6f7ee;
+  border-radius: 8px
 }
 
 .skills-summary, .skill-label {
@@ -672,12 +674,8 @@ i {
   color: #35CDD1
 }
 
-.skills-summary {
-  margin-top: 200px
-}
-
 .skills-container {
-  margin-top: 50px
+  margin: 20px 10px
 }
 
 .skill {
@@ -687,7 +685,23 @@ i {
 
 .skill-label {
   width: 100%;
-  font-size: 1.5em;
+  font-size: 1.9em;
+  margin: 320px 25px -12px 25px;
+  font-family: "Pacifico", serif;
+  color: #2ec4f2;
+}
+
+.skill-title-top {
+  text-align: center;
+  font-size: 1.3em
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #2ec4f2;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 
