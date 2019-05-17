@@ -524,44 +524,44 @@ i {
 .event-image {
   background-size: cover;
   height: 400px;
-
   border-radius: 100%;
+  border: .8px solid #2ec4f2
 }
 
 #dcpic {
-  background-image: url("../src/components/img/childhood2.jpg");
+  background-image: linear-gradient(rgba(44, 195, 242, 0.25), rgba(51, 204, 209, 0.25)), url("../src/components/img/childhood2.jpg");
 }
 
 #abroad {
-  background-image: url("../src/components/img/sa.jpg");
+  background-image: linear-gradient(rgba(44, 195, 242, 0.25), rgba(51, 204, 209, 0.25)), url("../src/components/img/sa.jpg");
 }
 
 #college {
-  background-image: url("../src/components/img/graduation.jpg");
+  background-image: linear-gradient(rgba(44, 195, 242, 0.25), rgba(51, 204, 209, 0.25)), url("../src/components/img/graduation.jpg");
 }
 
 #between {
-  background-image: url("../src/components/img/band.jpg");
+  background-image: linear-gradient(rgba(44, 195, 242, 0.25), rgba(51, 204, 209, 0.25)), url("../src/components/img/band.jpg");
 }
 
 #teaching {
-  background-image: url("../src/components/img/udo.jpg");
+  background-image: linear-gradient(rgba(44, 195, 242, 0.25), rgba(51, 204, 209, 0.25)), url("../src/components/img/udo.jpg");
 }
 
 #jeju {
-  background-image: url("../src/components/img/homeboy.jpg");
+  background-image: linear-gradient(rgba(44, 195, 242, 0.25), rgba(51, 204, 209, 0.25)), url("../src/components/img/homeboy.jpg");
 }
 
 #philly {
-  background-image: url("../src/components/img/PHILLY.jpg");
+  background-image: linear-gradient(rgba(44, 195, 242, 0.25), rgba(51, 204, 209, 0.25)), url("../src/components/img/PHILLY.jpg");
 }
 
 #dc {
-  background-image: url("../src/components/img/roofdc.jpg");
+  background-image: linear-gradient(rgba(44, 195, 242, 0.25), rgba(51, 204, 209, 0.25)), url("../src/components/img/roofdc.jpg");
 }
 
 #coding {
-  background-image: url("../src/components/img/code.png");
+  background-image: linear-gradient(rgba(44, 195, 242, 0.25), rgba(51, 204, 209, 0.25)), url("../src/components/img/code.png");
 }
 
 .why {

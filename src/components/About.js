@@ -72,8 +72,9 @@ export default class About extends Component {
   parallaxBackground = () => {
     $(window).scroll(function(){
       $("#dcpic").css("background-position", "0% "  + (($(window).scrollTop() / 20) + 10) + "%");
-      $("#abroad, #college, #teaching, .story, #coding").css("background-position", "0% "  + (($(window).scrollTop() / 20)) + "%");
-      $("#dc, #jeju, #philly").css("background-position", "0% "  + (($(window).scrollTop() / 60)) + "%");
+      $("#abroad, #college, #teaching, .story, #coding").css("background-position", "50% "  + (($(window).scrollTop() / 20)) + "%");
+      $("#jeju").css("background-position", "0% "  + (($(window).scrollTop() / 60)) + "%");
+      $("#between, #dc, #philly").css("background-position", "50% "  + (($(window).scrollTop() / 60)) + "%");
     });
   }
 
