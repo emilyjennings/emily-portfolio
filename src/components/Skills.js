@@ -106,13 +106,18 @@ export default class Skills extends Component {
     }
   }
 
+
+  skillLevelMeasure = (level) => {
+    $(".dot").append("hi".repeat(level))
+  }
+
   displayDevSkill = () => {
     return Object.values(this.state.skills).map(skill =>
       <Zoom>
         <div className="skill">
           <div className="skill-title" id={skill.id}>{skill.title}</div>
           <div className="skill-level-title">{skill.leveltitle}</div>
-          <div className="skill-level">{skill.level}</div>
+          <div className="dot">{this.skillLevelMeasure(skill.level)}</div>
           <i className={skill.icon}></i>
         </div>
       </Zoom>)
@@ -124,13 +129,9 @@ export default class Skills extends Component {
         <div className="skill">
           <div className="skill-title" id={skill.id}>{skill.title}</div>
           <div className="skill-level-title">{skill.leveltitle}</div>
-          <div className="skill-level">{skill.level}</div>
+          <div className="skill-level">{this.skillLevelMeasure(skill.level)}</div>
         </div>
       </Zoom>)
-  }
-
-  skillLevelMeasure = (level) => {
-    return "-".repeat(level)
   }
 
   displayUnusualSkill = () => {

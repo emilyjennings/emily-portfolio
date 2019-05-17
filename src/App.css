@@ -707,7 +707,7 @@ i {
   font-size: 1.3em
 }
 
-#dot {
+.dot {
   height: 25px;
   width: 25px;
   background-color: #2ec4f2;
