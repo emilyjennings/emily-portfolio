@@ -145,7 +145,7 @@ export default class Projects extends Component {
           <div className="imageborder">
             <img src={card.image} alt="" />
           </div>
-          <div className="caption">{card.title}</div>
+          <div className="caption" onClick={() => this.handleClick(card.index)}>{card.title}</div>
         </div>
       </Zoom>)
   }

@@ -236,7 +236,7 @@ button.hamburger:hover {
     radial-gradient(#35CDD1 10%, transparent 0),
     radial-gradient(#35CDD1 10%, transparent 0);
   background-size: 10px 10px;
-  background-position: 0 0, 15px 15px;  font-family: 'Noto Serif', serif;
+  background-position: 0 0, 15px 15px;  font-family: 'Bitter', serif;
 
 }
 
@@ -335,7 +335,7 @@ i {
 
 .caption {
   color: black;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Bitter', serif;
   font-weight: bold;
   text-align: center;
   margin: 0 10px 20px 10px;
@@ -344,6 +344,13 @@ i {
   height: 50px;
   overflow: hidden;
   color: #C4EFDA;
+  text-decoration: underline solid #2ec4f2;
+  text-underline-position: under left;
+
+}
+
+.caption:hover {
+  text-decoration: overline dotted #2ec4f2;
 }
 
 /* Home Page */
@@ -364,7 +371,7 @@ i {
   top: 70px;
   font-size: 2em;
   color: #C4EFDA;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Bitter', serif;
   font-weight: bold;
 }
 
@@ -474,7 +481,7 @@ i {
   margin: 300px 20%;
   border-radius: 20px;
   padding: 30px;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Bitter', serif;
   font-size: 30px;
   font-weight: bold;
   color: #C4EFDA;
@@ -507,12 +514,14 @@ i {
 
 .event {
   font-weight: bold;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Bitter', serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 1.5em;
   width: 80%;
-  margin: 20px 10%
+  margin: 20px 10%;
+  border-left: 7px solid #2ec4f2;
+  padding-left: 2px
 }
 
 .event-title {
@@ -525,7 +534,8 @@ i {
   background-size: cover;
   height: 400px;
   border-radius: 100%;
-  border: .8px solid #2ec4f2
+  border: .8px solid #2ec4f2;
+  box-shadow: 2px 3px #2ec4f2;
 }
 
 #dcpic {
@@ -599,7 +609,7 @@ i {
 }
 
 .why-text {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Bitter', serif;
   text-align: justify;
   padding: 20px;
 }
@@ -662,15 +672,16 @@ i {
 /* Skills */
 
 .skillbox {
-  margin: 0 20px 0 20px;
+  margin: 0 30px 0 30px;
   color: #2ec4f2;
   border: 1px solid #2ec4f2;
   background-color: #e6f7ee;
-  border-radius: 8px
+  border-radius: 8px;
+  box-shadow: 3px 4px
 }
 
 .skills-summary, .skill-label {
-  font-family: "Noto Serif", serif;
+  font-family: "Bitter", serif;
   color: #35CDD1
 }
 
@@ -686,7 +697,7 @@ i {
 .skill-label {
   width: 100%;
   font-size: 1.9em;
-  margin: 320px 25px -12px 25px;
+  margin: 320px 35px -12px 35px;
   font-family: "Pacifico", serif;
   color: #2ec4f2;
 }
@@ -731,7 +742,7 @@ i {
   background-image: linear-gradient(to top, #35CDD1, #C4EFDA);
   z-index: 1;
   border-radius: 10px;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Bitter', serif;
   font-size: 1em;
   margin: 2%;
   padding: 2%
@@ -780,7 +791,7 @@ i {
   margin: 280px auto 100px auto;
   border-radius: 20px;
   padding: 20px;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Bitter', serif;
   font-size: 1.4em;
   font-weight: bold;
   color: #35CDD1;
@@ -883,8 +894,8 @@ form {
 
   .navtitle {
     width: 200px;
-    font-size: 1.8em;
-    margin: 20px auto 10px auto;
+    font-size: 2em;
+    margin: 20px auto 0 auto;
     overflow: hidden;
     width: 100%
   }
@@ -898,13 +909,13 @@ form {
   }
 
   .navbar hr {
-    margin: 10px auto 10px auto
+    margin: 12px auto 14px auto
   }
 
   .navlinks a {
     display: inline-block;
     padding: 5px;
-    margin: 0 auto 6px auto;
+    margin: 0 auto 4px auto;
     font-size: 13px;
     width: 50%
   }
@@ -926,7 +937,9 @@ form {
   .navbar {
     height: 265px;
     margin-top: 30px;
-    padding-bottom: 20px
+    padding-bottom: 20px;
+    width: 70%;
+    margin: 30px 15% auto 15%
   }
 
   .aboutimage {
@@ -1007,7 +1020,7 @@ form {
       radial-gradient(#35CDD1 8%, transparent 0),
       radial-gradient(#35CDD1 8%, transparent 0);
     background-size: 10px 10px;
-    background-position: 0 0, 15px 15px;  font-family: 'Noto Serif', serif;
+    background-position: 0 0, 15px 15px;  font-family: 'Bitter', serif;
   }
 
   .mobile-navlinks a {
