@@ -58,9 +58,6 @@ export default class Footer extends Component {
             <a href="https://github.com/emilyjennings"><FontAwesomeIcon icon={['fab', 'github']} /></a>
           </div>
           <Link to="/about">Designed and Created by Emily</Link>
-          <div className="top">
-            <FontAwesomeIcon icon={'arrow-up'} />
-          </div>
         </div>
         <div className="bottom-navbar">
           < BottomLinks />

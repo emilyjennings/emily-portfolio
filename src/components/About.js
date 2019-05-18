@@ -3,6 +3,8 @@ import $ from 'jquery'
 
 import { Link } from "react-router-dom";
 import Zoom from 'react-reveal/Zoom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 
 export default class About extends Component {
@@ -126,19 +128,34 @@ export default class About extends Component {
       <div className="aboutpage">
 
         <div className="story">I like to build things and help others.</div>
-
-
         <div className="more">A little more about me</div>
         <div className="timeline">
-        {this.displayTimeline()}
-
-
+          {this.displayTimeline()}
         </div>
 
         <Zoom>
           <div className="why-title">My 'why'</div>
           <div className="why">
             <div className="why-text">I am drawn toward helping others. I like to lift others up. Empathy is a strength I have which allows me to consider all sides of every story and do the right thing. I love to make connections with others and to hear new stories, which is why I enjoy travel and cultures. And I believe that my tech skills will allow me to enhance human connections and help the world come together to make great change in the environment and society.</div>
+          </div>
+        </Zoom>
+
+        <Zoom>
+          <div className="regrets">I am not ashamed</div>
+          <div className="timeline" id="regrets">
+            I could have studied computer science in college. But would I have enjoyed programming as much as I now do? I doubt it. The richness of experiences has led me here and now I love to build. I have a desire and the perspective to want to help global society. I don't think I could be as good a programmer without that.
+          </div>
+        </Zoom>
+
+
+        <Zoom>
+          <div className="personality-title">How I Operate</div>
+          <div className="personality">
+            <div className="personality-box">I don't give up. I could have stopped learning, I could have gone to sleep early or watched Netflix many nights, but instead I kept going to see it to the end.</div>
+            <div className="arrow"><FontAwesomeIcon icon="chevron-right"/></div>
+            <div className="personality-box">I come back to the problem over and over</div>
+            <div className="arrow"><FontAwesomeIcon icon="chevron-right"/></div>
+            <div className="personality-box">I find the solution through research and conversations</div>
           </div>
         </Zoom>
 

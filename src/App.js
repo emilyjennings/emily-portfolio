@@ -16,9 +16,9 @@ import Skills from './components/Skills'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faLaptopCode, faLightbulb, faSchool, faGlobeAsia, faPencilRuler, faBabyCarriage, faHandHoldingHeart, faSeedling, faUserAstronaut, faArrowUp, faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
+import { faLaptopCode, faLightbulb, faSchool, faGlobeAsia, faPencilRuler, faBabyCarriage, faHandHoldingHeart, faSeedling, faUserAstronaut, faHandPointUp, faAngleDoubleDown, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faTwitter, faLinkedin, faGithub, faLaptopCode, faLightbulb, faSchool, faGlobeAsia, faPencilRuler, faBabyCarriage, faHandHoldingHeart, faSeedling, faArrowUp, faUserAstronaut, faAngleDoubleDown)
+library.add(faTwitter, faLinkedin, faGithub, faLaptopCode, faLightbulb, faSchool, faGlobeAsia, faPencilRuler, faBabyCarriage, faHandHoldingHeart, faSeedling, faHandPointUp, faUserAstronaut, faAngleDoubleDown, faChevronRight )
 
 class App extends Component {
 

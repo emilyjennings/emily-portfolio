@@ -584,10 +584,10 @@ i {
   font-weight: bold;
   clear:both;
   background-color: #35CDD1;
-  margin-bottom: 300px;
+  margin-bottom: 60px
 }
 
-.why-title, .more {
+.why-title, .more, .personality-title, .regrets {
   font-family: 'Pacifico', cursive;
   font-size: 30px;
   margin-bottom: 10px
@@ -612,6 +612,52 @@ i {
   font-family: 'Bitter', serif;
   text-align: justify;
   padding: 20px;
+}
+
+.personality-title {
+  color: #2ec4f2;
+  margin-bottom: -12px;
+  opacity: 0;
+  margin-left: 10px
+}
+
+.personality {
+  margin: auto;
+}
+
+.personality-box {
+  font-family: "Bitter", serif;
+  color: #2ec4f2;
+  border: 1px solid #2ec4f2;
+  background-color: #e6f7ee;
+  border-radius: 8px;
+  box-shadow: 3px 4px;
+  display: inline-block;
+  width: 25%;
+  float: left;
+  padding: 10px
+}
+
+.arrow {
+  color: #2ec4f2;
+  margin: 1%;
+  display: inline-block;
+  width: auto;
+  float: left;
+  font-size: 4em
+}
+
+.regrets {
+  color: #C4EFDA;
+  margin-bottom: -12px;
+  margin-left: 10px;
+
+}
+
+#regrets {
+  font-family: "Bitter", serif;
+  font-size: 20px;
+  padding: 90px
 }
 
 
