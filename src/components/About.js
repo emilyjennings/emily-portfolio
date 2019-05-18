@@ -46,7 +46,7 @@ export default class About extends Component {
         philly: {
           title: "Philly",
           id: "philly",
-          text: "Back in the states in 2016, I wanted to get into tech. I worked at a coding bootcamp in Philly, using my background in education to help people change their lives. I started learning to code.",
+          text: "Back in the states in 2016, I wanted to get into tech. I worked at a coding bootcamp in Philly, using my background in education to help people change their lives. I started learning to code in whatever schedule motherhood would allow.",
         },
         dc: {
           title: "DC",
@@ -141,9 +141,12 @@ export default class About extends Component {
         </Zoom>
 
         <Zoom>
-          <div className="regrets">I am not ashamed</div>
-          <div className="timeline" id="regrets">
-            I could have studied computer science in college. But would I have enjoyed programming as much as I now do? I doubt it. The richness of experiences has led me here and now I love to build. I have a desire and the perspective to want to help global society. I don't think I could be as good a programmer without that.
+          <div className="regrets-title">No regrets</div>
+            <div className="regrets">
+              <div classname="regret-text">
+                Sometimes I wish that I had discovered my love of programming years ago. I could have studied computer science in college. But would I have enjoyed programming as much as I now do? I doubt it. Being a mom and being a teacher in particular allowed me to learn how technology truly helps humanity. The richness of experiences has led me here and now I love to build. I have a desire and the perspective to want to help global society. I don't think I could be as good a programmer without that.
+              </div>
+            <div className="regret-img"></div>
           </div>
         </Zoom>
 

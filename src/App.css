@@ -490,7 +490,7 @@ i {
   height: 220px
 }
 
-.timeline, .bottom {
+.timeline, .bottom, .regrets {
   background-color: #C4EFDA;
   background-image:
     radial-gradient(#35CDD1 6%, transparent 0),
@@ -587,7 +587,7 @@ i {
   margin-bottom: 60px
 }
 
-.why-title, .more, .personality-title, .regrets {
+.why-title, .more, .personality-title, .regrets-title {
   font-family: 'Pacifico', cursive;
   font-size: 30px;
   margin-bottom: 10px
@@ -648,16 +648,31 @@ i {
 }
 
 .regrets {
-  color: #C4EFDA;
-  margin-bottom: -12px;
-  margin-left: 10px;
-
+  opacity: 1;
+  font-family: "Bitter", serif;
+  font-weight: bold;
+  padding: 50px
 }
 
-#regrets {
-  font-family: "Bitter", serif;
-  font-size: 20px;
-  padding: 90px
+.regrets-title {
+  color: #2ec4f2;
+  margin-left: 10px;
+  margin-bottom: 1px;
+}
+
+.regret-text {
+  width: 70%
+}
+
+.regret-img {
+  background-image: linear-gradient(rgba(44, 195, 242, 0.25), rgba(51, 204, 209, 0.25)), url("../src/components/img/Hamdeok1.jpg");
+  width: 20%;
+  display: inline-block;
+  float: left;
+  background-size: cover;
+  border-radius: 100%;
+  border: .8px solid #2ec4f2;
+  box-shadow: 2px 3px #2ec4f2;
 }
 
 
