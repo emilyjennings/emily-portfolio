@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import $ from 'jquery'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 
 
@@ -29,7 +29,7 @@ export default class Skills extends Component {
         },
         JavaScript: {
           level: 5,
-          leveltitle: "been doing it for a couple years",
+          leveltitle: "comfortable",
           title: "JavaScript",
           icon: "devicon-javascript-plain",
           id: "javascript"
@@ -106,43 +106,69 @@ export default class Skills extends Component {
     }
   }
 
-
+  //How can I get the level and use that to determine the bar height?
+  //Had trouble figuring out how to insert html instead of a string of text
   skillLevelMeasure = (level) => {
-    $(".dot").append("hi".repeat(level))
+    let unit = ">"
+    return unit.repeat(level)
   }
+
+
+//Couldn't yet figure out how the divs can have different names with interpolation in the jquery selectors
+  // skillUp = (level, id) => {
+  //   switch(level) {
+  //     case 4:
+  //       $(".level-block-").animate({
+  //         width: "+=30px"
+  //       }, 2000)
+  //       break;
+  //     case 5:
+  //       $(".level-block").animate({
+  //         width: "+=40px"
+  //       }, 2000)
+  //       break;
+  //     default:
+  //       $(".level-block").animate({
+  //         width: "+=90px"
+  //       }, 2000)
+  //
+  //   }
+  //
+  // }
+  //
+
 
   displayDevSkill = () => {
     return Object.values(this.state.skills).map(skill =>
-      <Zoom>
-        <div className="skill">
-          <div className="skill-title" id={skill.id}>{skill.title}</div>
-          <div className="skill-level-title">{skill.leveltitle}</div>
-          <div className="dot">{this.skillLevelMeasure(skill.level)}</div>
-          <i className={skill.icon}></i>
-        </div>
-      </Zoom>)
+      <div className="skill">
+        <Fade><div className="skill-level">{this.skillLevelMeasure(skill.level)}</div></Fade>
+        <div className="skill-leveltitle">{skill.leveltitle}</div>
+        <div className="skill-title" id={skill.id}>{skill.title}</div>
+        <i className={skill.icon}></i>
+      </div>
+    )
   }
 
   displaySoftSkill = () => {
     return Object.values(this.state.softskills).map(skill =>
-      <Zoom>
+
         <div className="skill">
+          <div className={"skill-level-" + skill.level}></div>
           <div className="skill-title" id={skill.id}>{skill.title}</div>
           <div className="skill-level-title">{skill.leveltitle}</div>
-          <div className="skill-level">{this.skillLevelMeasure(skill.level)}</div>
         </div>
-      </Zoom>)
+      )
   }
 
   displayUnusualSkill = () => {
     return Object.values(this.state.unskills).map(skill =>
-      <Zoom>
+
         <div className="skill">
+          <div className={"skill-level-" + skill.level}></div>
           <div className="skill-title" id={skill.id}>{skill.title}</div>
           <div className="skill-level-title">{skill.leveltitle}</div>
-          <div className="skill-level">{this.skillLevelMeasure(skill.level)}</div>
         </div>
-      </Zoom>)
+      )
   }
 
   backgroundChange = () => {
@@ -163,8 +189,6 @@ export default class Skills extends Component {
     $('.navlinks').show()
   }
 
-
-
   componentDidMount() {
     {this.backgroundChange()}
     {this.changeHeader()}
@@ -173,20 +197,19 @@ export default class Skills extends Component {
   render() {
     return (
       <div className="skills">
-        <div className="skill-label">My skills</div>
         <div className="skillbox">
 
-          <div class="skill-title-top">Tech Skills</div>
+          <div class="skill-label">Tech Skills</div>
           <div className="skills-container">
             {this.displayDevSkill()}
           </div>
 
-          <div class="skill-title-top">Soft Skills</div>
+          <div class="skill-label">Soft Skills</div>
           <div className="skills-container">
             {this.displaySoftSkill()}
           </div>
 
-          <div class="skill-title-top">Weird Skills</div>
+          <div class="skill-label">Weird Skills</div>
           <div className="skills-container">
             {this.displayUnusualSkill()}
           </div>

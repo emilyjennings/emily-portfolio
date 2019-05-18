@@ -672,12 +672,7 @@ i {
 /* Skills */
 
 .skillbox {
-  margin: 0 30px 0 30px;
-  color: #2ec4f2;
-  border: 1px solid #2ec4f2;
-  background-color: #e6f7ee;
-  border-radius: 8px;
-  box-shadow: 3px 4px
+  margin: 300px 30px 0 30px;
 }
 
 .skills-summary, .skill-label {
@@ -686,12 +681,18 @@ i {
 }
 
 .skills-container {
-  margin: 20px 10px
+  margin: 0 30px;
 }
 
 .skill {
-  opacity: 0.3;
-  font-family: "Pacifico", serif
+  font-family: "Bitter", serif;
+  color: #2ec4f2;
+  border: 1px solid #2ec4f2;
+  background-color: #e6f7ee;
+  border-radius: 8px;
+  box-shadow: 3px 4px;
+  width: 30%;
+  float: left;
 }
 
 .skill-label {
@@ -707,13 +708,24 @@ i {
   font-size: 1.3em
 }
 
-.dot {
-  height: 25px;
-  width: 25px;
+.skill-level {
   background-color: #2ec4f2;
-  border-radius: 50%;
   display: inline-block;
+  color: #2ec4f2;
+  float: left;
 }
+
+.skill-leveltitle {
+  display: inline-block;
+  float: left;
+}
+
+.skill-title {
+  display: block;
+  float: none;
+  clear: both;
+}
+
 
 
 /*Show Pages*/
