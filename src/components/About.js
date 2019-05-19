@@ -155,13 +155,13 @@ export default class About extends Component {
         <Zoom>
           <div className="personality-title">How I Operate</div>
           <div className="personality">
-            <div className="personality-box">I like challenges. I like taking on projects that seem beyond my abilities, because I know that with determination, I'll get it done. There are few parts of any of my projects that were made without a toddler pulling on my limbs. I have grit.</div>
+            <div className="personality-box"><FontAwesomeIcon icon="fire"/> Challenges are fun. I like taking on projects that seem beyond my abilities. I know that I am determined enough to get it done, so I am not afraid. There are few parts of any of my projects that were made without a toddler pulling on my limbs. I have grit.</div>
             <div className="arrow"><FontAwesomeIcon icon="chevron-right"/></div>
             <div className="arrow-down"><FontAwesomeIcon icon="chevron-down"/></div>
-            <div className="personality-box">I am not particularly smart, I just don't give up and I try everything. I research. I talk to others. I read documentation and look at examples. I take mental breaks. I try things and then delete them and try again.</div>
+            <div className="personality-box"><FontAwesomeIcon icon="brain"/> I am not particularly smart, I just don't give up and I try everything. I research. I talk to others. I read documentation and look at examples. I take mental breaks. I try things and then delete them and try again.</div>
             <div className="arrow"><FontAwesomeIcon icon="chevron-right"/></div>
             <div className="arrow-down"><FontAwesomeIcon icon="chevron-down"/></div>
-            <div className="personality-box">Especially with coding, I am drawn back to it over and over until it's solved because I know the solution probably exists. When I can't find it, I pivot and re-assess my assumptions and the project's building blocks.</div>
+            <div className="personality-box"><FontAwesomeIcon icon="lightbulb"/> Especially with coding, I am drawn back to it over and over until it's solved because I know the solution probably exists. When I can't find it, I pivot and re-assess my assumptions and the project's building blocks.</div>
           </div>
         </Zoom>
 

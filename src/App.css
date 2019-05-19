@@ -641,6 +641,11 @@ i {
   float: left;
   padding: 4%;
   margin: 1%;
+  padding-bottom: 5%
+}
+
+.personality-box svg {
+  font-size: 50px
 }
 
 .arrow, .arrow-down {
@@ -776,13 +781,14 @@ i {
   margin: 300px 30px 0 30px;
 }
 
-.skills-summary, .skill-label {
-  font-family: "Bitter", serif;
-  color: #35CDD1
+.skills-container {
 }
 
-.skills-container {
-  margin: 0 30px;
+.col {
+  display: inline-block;
+  width: 46%;
+  float: left;
+  margin: 2%
 }
 
 .skill {
@@ -792,39 +798,32 @@ i {
   background-color: #e6f7ee;
   border-radius: 8px;
   box-shadow: 3px 4px;
-  width: 30%;
-  float: left;
+  float: center;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  padding: 5% 0
 }
 
 .skill-label {
-  width: 100%;
   font-size: 1.9em;
-  margin: 320px 35px -12px 35px;
-  font-family: "Pacifico", serif;
+  font-family: "Monoton", serif;
   color: #2ec4f2;
-}
-
-.skill-title-top {
-  text-align: center;
-  font-size: 1.3em
-}
-
-.skill-level {
-  background-color: #2ec4f2;
-  display: inline-block;
-  color: #2ec4f2;
-  float: left;
-}
-
-.skill-leveltitle {
-  display: inline-block;
-  float: left;
 }
 
 .skill-title {
   display: block;
   float: none;
   clear: both;
+}
+
+.skill-level {
+  background: #2ec4f2;
+  border-radius: 3px;
+}
+
+#skillicon {
+  font-size: 3em;
 }
 
 
@@ -1019,11 +1018,12 @@ form {
     font-size: 16px;
     width: 83%;
     margin: 0 auto;
-    padding: 5% 8%
+    padding: 5% 8%;
+    padding-bottom: 10%
   }
 
   #reinvent {
-    margin-top: 800px
+    margin-top: 900px
   }
 
   .event-image {
@@ -1032,6 +1032,42 @@ form {
 
   .imageborder {
     height: 100px
+  }
+
+  .navlinks a {
+    display: inline-block;
+    padding: 5px;
+    margin: 0 auto 4px auto;
+    font-size: 13px;
+    width: 50%
+  }
+
+  .navbar {
+    height: 265px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    width: 70%;
+    margin: 30px 15% auto 15%
+  }
+
+  .navtitle {
+    width: 200px;
+    font-size: 2em;
+    margin: 20px auto 0 auto;
+    overflow: hidden;
+    width: 100%
+  }
+
+  .navsubtitle, .navsubtitlestick {
+    font-size: 13px;
+  }
+
+  .story {
+    margin-top: 400px
+  }
+
+  .contactcontainer {
+    margin-top: 400px
   }
 }
 
@@ -1047,32 +1083,12 @@ form {
     margin-top: 200px;
   }
 
-  .navtitle {
-    width: 200px;
-    font-size: 2em;
-    margin: 20px auto 0 auto;
-    overflow: hidden;
-    width: 100%
-  }
-
-  .navsubtitle, .navsubtitlestick {
-    font-size: 13px;
-  }
-
   .navstick {
     height: 28px
   }
 
   .navbar hr {
     margin: 12px auto 14px auto
-  }
-
-  .navlinks a {
-    display: inline-block;
-    padding: 5px;
-    margin: 0 auto 4px auto;
-    font-size: 13px;
-    width: 50%
   }
 
   .emily {
@@ -1087,14 +1103,6 @@ form {
 
   .socialmedia a {
     font-size: 20px
-  }
-
-  .navbar {
-    height: 265px;
-    margin-top: 30px;
-    padding-bottom: 20px;
-    width: 70%;
-    margin: 30px 15% auto 15%
   }
 
   .aboutimage {
@@ -1268,6 +1276,10 @@ form {
     margin: 20px 10% 50px 10%
   }
 
+  .event-image {
+    height: 300px
+  }
+
   .dcpic, .coding {
     width: 65%
   }
@@ -1351,7 +1363,7 @@ form {
 
   .regret-image {
     width: 35%;
-    height: 150px
+    height: 140px
   }
 
   .imageborder {

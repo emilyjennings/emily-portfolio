@@ -12,13 +12,13 @@ export default class Skills extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      skills: {
+      'skills': {
         Ruby: {
           level: 4,
           leveltitle: "still new but pretty good",
           title: "Ruby",
           icon: "devicon-ruby-plain",
-          id: "ruby"
+          id: "ruby",
         },
         Rails: {
           level: 4,
@@ -78,6 +78,13 @@ export default class Skills extends Component {
           icon: "",
           id: "sewing"
         },
+        Programminginwild: {
+          level: 7,
+          leveltitle: "I can type with one hand while holding a small child",
+          title: "Programming in crazy environments",
+          icon: "",
+          id: "crazycoding"
+        },
       },
       softskills: {
         Empathy: {
@@ -106,69 +113,41 @@ export default class Skills extends Component {
     }
   }
 
-  //How can I get the level and use that to determine the bar height?
-  //Had trouble figuring out how to insert html instead of a string of text
-  skillLevelMeasure = (level) => {
-    let unit = ">"
-    return unit.repeat(level)
-  }
-
-
-//Couldn't yet figure out how the divs can have different names with interpolation in the jquery selectors
-  // skillUp = (level, id) => {
-  //   switch(level) {
-  //     case 4:
-  //       $(".level-block-").animate({
-  //         width: "+=30px"
-  //       }, 2000)
-  //       break;
-  //     case 5:
-  //       $(".level-block").animate({
-  //         width: "+=40px"
-  //       }, 2000)
-  //       break;
-  //     default:
-  //       $(".level-block").animate({
-  //         width: "+=90px"
-  //       }, 2000)
-  //
-  //   }
-  //
+  // I want to show skill levels through a number of stars or something
+  // Had trouble figuring out how to insert html (like a symbol) instead of a string of text
+  // skillLevelMeasure = (level) => {
+  //   let unit = "~ "
+  //   return unit.repeat(level)
   // }
-  //
+
 
 
   displayDevSkill = () => {
     return Object.values(this.state.skills).map(skill =>
       <div className="skill">
-        <Fade><div className="skill-level">{this.skillLevelMeasure(skill.level)}</div></Fade>
-        <div className="skill-leveltitle">{skill.leveltitle}</div>
+        <i className={skill.icon} id="skillicon"></i>
         <div className="skill-title" id={skill.id}>{skill.title}</div>
-        <i className={skill.icon}></i>
+        <div className="skill-leveltitle">{skill.leveltitle}</div>
       </div>
     )
   }
-
   displaySoftSkill = () => {
     return Object.values(this.state.softskills).map(skill =>
-
-        <div className="skill">
-          <div className={"skill-level-" + skill.level}></div>
-          <div className="skill-title" id={skill.id}>{skill.title}</div>
-          <div className="skill-level-title">{skill.leveltitle}</div>
-        </div>
-      )
+      <div className="skill">
+        <i className={skill.icon} id="skillicon"></i>
+        <div className="skill-title" id={skill.id}>{skill.title}</div>
+        <div className="skill-leveltitle">{skill.leveltitle}</div>
+      </div>
+    )
   }
-
-  displayUnusualSkill = () => {
+  displayWeirdSkill = () => {
     return Object.values(this.state.unskills).map(skill =>
-
-        <div className="skill">
-          <div className={"skill-level-" + skill.level}></div>
-          <div className="skill-title" id={skill.id}>{skill.title}</div>
-          <div className="skill-level-title">{skill.leveltitle}</div>
-        </div>
-      )
+      <div className="skill">
+        <i className={skill.icon} id="skillicon"></i>
+        <div className="skill-title" id={skill.id}>{skill.title}</div>
+        <div className="skill-leveltitle">{skill.leveltitle}</div>
+      </div>
+    )
   }
 
   backgroundChange = () => {
@@ -198,20 +177,25 @@ export default class Skills extends Component {
     return (
       <div className="skills">
         <div className="skillbox">
-
-          <div class="skill-label">Tech Skills</div>
-          <div className="skills-container">
-            {this.displayDevSkill()}
+          <div className="col">
+            <div class="skill-label">Tech Skills</div>
+            <div className="skills-container">
+              {this.displayDevSkill()}
+            </div>
           </div>
 
-          <div class="skill-label">Soft Skills</div>
-          <div className="skills-container">
-            {this.displaySoftSkill()}
+          <div className="col">
+            <div class="skill-label">Soft Skills</div>
+            <div className="skills-container">
+              {this.displaySoftSkill()}
+            </div>
           </div>
 
-          <div class="skill-label">Weird Skills</div>
-          <div className="skills-container">
-            {this.displayUnusualSkill()}
+          <div className="col">
+            <div class="skill-label">Weird Skills</div>
+            <div className="skills-container">
+              {this.displayWeirdSkill()}
+            </div>
           </div>
 
         </div>
