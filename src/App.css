@@ -1299,16 +1299,16 @@ form {
   }
 
   .regrets {
-    height: 700px;
-    padding: 10px
+    height: 650px;
+    padding: 5px
   }
 
   .regret-text {
-    font-size: 18px
+    font-size: 17px
   }
 
   .regret-image {
-    width: 40%;
+    width: 35%;
     height: 150px
   }
 
