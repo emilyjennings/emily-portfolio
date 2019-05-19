@@ -155,11 +155,13 @@ export default class About extends Component {
         <Zoom>
           <div className="personality-title">How I Operate</div>
           <div className="personality">
-            <div className="personality-box">I am faced with a problem to solve, and I plan out the way I would like to solve it. I then try to build a solution. I try to gather as much information as I can before starting so that a simple solution can be built quickly.</div>
+            <div className="personality-box">I like challenges. I like taking on projects that seem beyond my abilities, because I know that with determination, I'll get it done. There are few parts of any of my projects that were made without a toddler pulling on my limbs. I have grit.</div>
             <div className="arrow"><FontAwesomeIcon icon="chevron-right"/></div>
-            <div className="personality-box">If I fail at the first attempt, I try different solutions. I take mental breaks to decide what to try next. I research. I talk to others. I read documentation and look at examples. I try things and then delete them and try again.</div>
+            <div className="arrow-down"><FontAwesomeIcon icon="chevron-down"/></div>
+            <div className="personality-box">I am not particularly smart, I just don't give up and I try everything. I research. I talk to others. I read documentation and look at examples. I take mental breaks. I try things and then delete them and try again.</div>
             <div className="arrow"><FontAwesomeIcon icon="chevron-right"/></div>
-            <div className="personality-box">I don't give up. Especially with coding, I am drawn back to it over and over until it's solved because I know the solution exists. When I can't find it, I pivot and re-assess my assumptions and the project's building blocks.</div>
+            <div className="arrow-down"><FontAwesomeIcon icon="chevron-down"/></div>
+            <div className="personality-box">Especially with coding, I am drawn back to it over and over until it's solved because I know the solution probably exists. When I can't find it, I pivot and re-assess my assumptions and the project's building blocks.</div>
           </div>
         </Zoom>
 

@@ -643,7 +643,7 @@ i {
   margin: 1%;
 }
 
-.arrow {
+.arrow, .arrow-down {
   color: #2ec4f2;
   margin: 1%;
   display: inline-block;
@@ -653,6 +653,13 @@ i {
   height: 200px;
   vertical-align: middle;
   text-align: center;
+}
+
+.arrow-down {
+  width: 100%;
+  margin: auto;
+  display: none;
+  height: auto
 }
 
 .regrets-title {
@@ -1292,22 +1299,36 @@ form {
   }
 
   .regrets {
-    height: 410px
+    height: 600px;
+    padding: 10px
   }
 
   .regret-text {
-    font-size: 15px
+    font-size: 18px
   }
 
   .regret-image {
     width: 40%;
-    height: 200px
+    height: 150px
+  }
+
+  .arrow {
+    display: none
+  }
+
+  .arrow-down {
+    display: block;
   }
 
   .personality-box {
-    font-size: 12px;
-    width: 17%;
-    padding: 3%
+    font-size: 16px;
+    width: 83%;
+    margin: 0 auto;
+    padding: 5% 8%
+  }
+
+  #reinvent {
+    margin-top: 800px
   }
 
 
