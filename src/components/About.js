@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import Zoom from 'react-reveal/Zoom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-
-
 export default class About extends Component {
 
   constructor(props) {
@@ -76,7 +74,7 @@ export default class About extends Component {
       $("#dcpic").css("background-position", "0% "  + (($(window).scrollTop() / 20) + 10) + "%");
       $("#abroad, #college, #teaching, .story, #coding").css("background-position", "50% "  + (($(window).scrollTop() / 20)) + "%");
       $("#jeju").css("background-position", "0% "  + (($(window).scrollTop() / 60)) + "%");
-      $("#between, #dc, #philly").css("background-position", "50% "  + (($(window).scrollTop() / 60)) + "%");
+      $("#between, #dc").css("background-position", "50% "  + (($(window).scrollTop() / 60)) + "%");
     });
   }
 
@@ -142,11 +140,14 @@ export default class About extends Component {
 
         <Zoom>
           <div className="regrets-title">No regrets</div>
-            <div className="regrets">
-              <div classname="regret-text">
-                Sometimes I wish that I had discovered my love of programming years ago. I could have studied computer science in college. But would I have enjoyed programming as much as I now do? I doubt it. Being a mom and being a teacher in particular allowed me to learn how technology truly helps humanity. The richness of experiences has led me here and now I love to build. I have a desire and the perspective to want to help global society. I don't think I could be as good a programmer without that.
+          <div className="regrets">
+            <div className="regret-box">
+              <div className="regret-image">
               </div>
-            <div className="regret-img"></div>
+
+              <div className="regret-text">Sometimes I wish that I had discovered my love of programming years ago. I could have studied computer science in college. But would I have enjoyed programming as much as I now do? I doubt it. Being a mom and being a teacher in particular allowed me to learn how technology truly helps global society. The richness of experiences has led me here. I have a strong desire to build useful things. I don't think I could be as good a programmer without that.</div>
+            </div>
+
           </div>
         </Zoom>
 
@@ -154,13 +155,21 @@ export default class About extends Component {
         <Zoom>
           <div className="personality-title">How I Operate</div>
           <div className="personality">
-            <div className="personality-box">I don't give up. I could have stopped learning, I could have gone to sleep early or watched Netflix many nights, but instead I kept going to see it to the end.</div>
+            <div className="personality-box">I am faced with a problem to solve, and I plan out the way I would like to solve it. I then try to build a solution. I try to gather as much information as I can before starting so that a simple solution can be built quickly.</div>
             <div className="arrow"><FontAwesomeIcon icon="chevron-right"/></div>
-            <div className="personality-box">I come back to the problem over and over</div>
+            <div className="personality-box">If I fail at the first attempt, I try different solutions. I take mental breaks to decide what to try next. I research. I talk to others. I read documentation and look at examples. I try things and then delete them and try again.</div>
             <div className="arrow"><FontAwesomeIcon icon="chevron-right"/></div>
-            <div className="personality-box">I find the solution through research and conversations</div>
+            <div className="personality-box">I don't give up. Especially with coding, I am drawn back to it over and over until it's solved because I know the solution exists. When I can't find it, I pivot and re-assess my assumptions and the project's building blocks.</div>
           </div>
         </Zoom>
+
+        <Zoom>
+          <div className="why-title" id="reinvent">Reinvention</div>
+          <div className="why">
+            <div className="why-text">I am always growing and learning, and love to reinvent myself. Do you feel the same way? I'd love to talk.</div>
+          </div>
+        </Zoom>
+
 
         <div className="space"></div>
 

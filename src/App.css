@@ -616,13 +616,17 @@ i {
 
 .personality-title {
   color: #2ec4f2;
-  margin-bottom: -12px;
+  margin-bottom: 1px;
   opacity: 0;
-  margin-left: 10px
+  margin-left: 10px;
+  width: 100%;
+  clear: both;
 }
 
 .personality {
   margin: auto;
+  display: block;
+  width: 90%;
 }
 
 .personality-box {
@@ -633,9 +637,10 @@ i {
   border-radius: 8px;
   box-shadow: 3px 4px;
   display: inline-block;
-  width: 25%;
+  width: 18%;
   float: left;
-  padding: 10px
+  padding: 4%;
+  margin: 1%;
 }
 
 .arrow {
@@ -644,36 +649,64 @@ i {
   display: inline-block;
   width: auto;
   float: left;
-  font-size: 4em
-}
-
-.regrets {
-  opacity: 1;
-  font-family: "Bitter", serif;
-  font-weight: bold;
-  padding: 50px
+  font-size: 4em;
+  height: 200px;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .regrets-title {
-  color: #2ec4f2;
+  color: #C4EFDA;
   margin-left: 10px;
   margin-bottom: 1px;
 }
 
-.regret-text {
-  width: 70%
+.regrets {
+  height: 390px;
+  margin-bottom: 90px
 }
 
-.regret-img {
+.regret-box {
+  display: block;
+  color: black;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.regret-text {
+  font-family: 'Bitter', serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 10% 0;
+  border-left: 7px solid #2ec4f2;
+  padding-left: 2px;
+
+}
+
+.regret-image {
   background-image: linear-gradient(rgba(44, 195, 242, 0.25), rgba(51, 204, 209, 0.25)), url("../src/components/img/Hamdeok1.jpg");
-  width: 20%;
-  display: inline-block;
-  float: left;
+  width: 30%;
+  height: 250px;
   background-size: cover;
-  border-radius: 100%;
+  background-position: bottom;
+  display: inline-block;
+  float: right;
   border: .8px solid #2ec4f2;
   box-shadow: 2px 3px #2ec4f2;
+  border-radius: 10px;
+  margin: 7% 0 7% 30px
 }
+
+#reinvent {
+  margin-top: 400px;
+  margin-bottom: -10px;
+}
+
 
 
 /* Bottom Links */
@@ -1254,8 +1287,27 @@ form {
 
   .top {
     font-size: 28px;
-    padding: 1px 8px 4px 8px;
+    padding: 5px 12px;
     border: 2px solid #35CDD1
+  }
+
+  .regrets {
+    height: 410px
+  }
+
+  .regret-text {
+    font-size: 15px
+  }
+
+  .regret-image {
+    width: 40%;
+    height: 200px
+  }
+
+  .personality-box {
+    font-size: 12px;
+    width: 17%;
+    padding: 3%
   }
 
 
@@ -1268,5 +1320,9 @@ form {
 
   .story {
     height: 400px
+  }
+
+  .regret-image {
+    background-position: center
   }
 }
