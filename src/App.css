@@ -992,8 +992,50 @@ form {
 
 
 
-
 @media only screen and (max-width: 800px) {
+  .regrets {
+    height: 650px;
+    padding: 5px
+  }
+
+  .regret-text {
+    font-size: 22px
+  }
+
+  .regret-image {
+    width: 35%;
+    height: 180px
+  }
+
+  .arrow {
+    display: none
+  }
+
+  .arrow-down {
+    display: block;
+  }
+
+  .personality-box {
+    font-size: 16px;
+    width: 83%;
+    margin: 0 auto;
+    padding: 5% 8%
+  }
+
+  #reinvent {
+    margin-top: 800px
+  }
+
+  .event-image {
+    height: 200px
+  }
+
+  .imageborder {
+    height: 100px
+  }
+}
+
+@media only screen and (max-width: 500px) {
 
   .cardborder {
     width: 100%;
@@ -1299,7 +1341,7 @@ form {
   }
 
   .regrets {
-    height: 650px;
+    height: 610px;
     padding: 5px
   }
 
@@ -1312,27 +1354,13 @@ form {
     height: 150px
   }
 
-  .arrow {
-    display: none
-  }
-
-  .arrow-down {
-    display: block;
-  }
-
-  .personality-box {
-    font-size: 16px;
-    width: 83%;
-    margin: 0 auto;
-    padding: 5% 8%
-  }
-
-  #reinvent {
-    margin-top: 800px
+  .imageborder {
+    height: 130px
   }
 
 
 }
+
 
 @media only screen and (min-width: 2000px) {
   .tile {
