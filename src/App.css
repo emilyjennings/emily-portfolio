@@ -330,7 +330,7 @@ i {
   overflow: hidden;
   border: 1px solid #C4EFDA;
   border-radius: 5px;
-  animation-duration: 1s
+  -webkit-transition: transform 0.7s;
 }
 
 .imageborder img {
