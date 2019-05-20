@@ -96,7 +96,7 @@ export default class Skills extends Component {
       softskills: {
         Empathy: {
           level: 9,
-          leveltitle: "my stength",
+          leveltitle: "I connect with others easily",
           title: "Empathy",
           icon: "fas fa-hand-holding-heart",
           id: "empathy"
@@ -204,7 +204,7 @@ export default class Skills extends Component {
           </div>
 
           <div className="col">
-            <div class="skill-label">Unusual Skills</div>
+            <div class="skill-label">Life Skills</div>
             <div className="skills-container">
               {this.displayWeirdSkill()}
             </div>

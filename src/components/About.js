@@ -172,6 +172,12 @@ export default class About extends Component {
           </div>
         </Zoom>
 
+        <Zoom>
+          <div className="skill-button">
+          <Link to="/skills"><div className="skill-click">Click here to look at a list of my skills.</div></Link>
+          </div>
+        </Zoom>
+
 
         <div className="space"></div>
 

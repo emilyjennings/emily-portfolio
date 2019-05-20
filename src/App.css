@@ -217,7 +217,7 @@ button.hamburger:hover {
   color: #262c2d;
 }
 
-.top {
+.top, .skill-button {
   padding: 10px;
   display: block;
   margin: 30px auto;
@@ -240,7 +240,18 @@ button.hamburger:hover {
 
 }
 
-.top:hover {
+.skill-button {
+  position: relative;
+  font-size: 1.2em;
+  text-align: center;
+  width: 400px;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  margin-top: 200px
+}
+
+.top:hover, .skill-button:hover {
   background-color: #35CDD1;
   color: #C4EFDA;
   opacity: .5;
@@ -493,8 +504,8 @@ i {
 .timeline, .bottom, .regrets {
   background-color: #e6f7ee;
   background-image:
-    radial-gradient(#35CDD1 6%, transparent 0),
-    radial-gradient(#35CDD1 6%, transparent 0);
+    radial-gradient(#35CDD1 3%, transparent 0),
+    radial-gradient(#35CDD1 3%, transparent 0);
   background-size: 30px 30px;
   background-position: 0 0, 15px 15px;
   opacity: 0;
@@ -520,12 +531,12 @@ i {
   line-height: 1.5em;
   width: 80%;
   margin: 20px 10%;
-  border-left: 7px solid #2ec4f2;
+  border-left: 7px solid #35CDD1;
   padding-left: 2px
 }
 
 .event-title {
-  color: #2ec4f2;
+  color: #35CDD1;
   font-size: 25px;
   font-family: 'Monoton', serif;
 }
@@ -534,8 +545,8 @@ i {
   background-size: cover;
   height: 400px;
   border-radius: 100%;
-  border: .8px solid #2ec4f2;
-  box-shadow: 2px 3px #2ec4f2;
+  border: .8px solid #35CDD1;
+  box-shadow: 2px 3px #35CDD1;
 }
 
 #dcpic {
@@ -676,7 +687,7 @@ i {
 
 .regrets {
   height: 390px;
-  margin-bottom: 90px
+  margin-bottom: 90px;
 }
 
 .regret-box {
@@ -696,7 +707,7 @@ i {
   text-align: left;
   line-height: 1.5em;
   margin: 10% 0;
-  border-left: 7px solid #2ec4f2;
+  border-left: 7px solid #35CDD1;
   padding-left: 2px;
 
 }
@@ -709,8 +720,8 @@ i {
   background-position: bottom;
   display: inline-block;
   float: right;
-  border: .8px solid #2ec4f2;
-  box-shadow: 2px 3px #2ec4f2;
+  border: .8px solid #35CDD1;
+  box-shadow: 2px 3px #35CDD1;
   border-radius: 10px;
   margin: 7% 0 7% 30px
 }
@@ -724,12 +735,18 @@ i {
 
 /* Bottom Links */
 
+
 .bottom {
   width: 100%;
   opacity: 1;
   padding-bottom: 300px;
   padding-top: 2px;
-  z-index: 40
+  z-index: 40;
+  background-color: #C4EFDA;
+  background-image:
+    radial-gradient(#35CDD1 5%, transparent 0),
+    radial-gradient(#35CDD1 5%, transparent 0);
+
 }
 
 .bottom-link a {
@@ -796,7 +813,7 @@ i {
   font-family: "Bitter", serif;
   color: #2ec4f2;
   border: 1px solid #2ec4f2;
-  background-color: #e6f7ee;
+  background-image: linear-gradient(to top, #C4EFDA, #e6f7ee);
   border-radius: 8px;
   box-shadow: 3px 4px;
   float: center;
@@ -807,9 +824,9 @@ i {
 }
 
 .skill-label {
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: "Monoton", serif;
-  color: #2ec4f2;
+  color: #35CDD1;
 }
 
 .skill-title {
@@ -835,7 +852,7 @@ i {
 
 #skillicon {
   font-size: 3em;
-  color: #2ec4f2;
+  color: #35CDD1;
 }
 
 .skill-icon i {
@@ -1060,11 +1077,11 @@ form {
   }
 
   .navbar {
-    height: 275px;
+    height: 300px;
+    margin: 35px 15%;
     margin-top: 30px;
     padding-bottom: 20px;
     width: 70%;
-    margin: 30px 15% auto 15%
   }
 
   .navtitle {
@@ -1085,6 +1102,18 @@ form {
 
   .contactcontainer {
     margin-top: 430px
+  }
+
+  .tiles {
+    margin-top: 100px
+  }
+
+  .skill-label {
+    margin-top: 90px
+  }
+
+  .skill-level {
+    font-size: 2em
   }
 }
 
@@ -1316,7 +1345,7 @@ form {
   }
 
   .tiles {
-    margin-top: 80px;
+    margin-top: 90px;
   }
 
   .tile {
@@ -1385,6 +1414,21 @@ form {
 
   .imageborder {
     height: 130px
+  }
+
+  .col {
+    width: 100%
+  }
+
+  .col:last-child {
+    margin-bottom: 200px
+  }
+
+  .skill-button {
+    font-size: 1em;
+    width: 200px;
+    padding: 20px;
+    margin-top: 300px
   }
 
 
