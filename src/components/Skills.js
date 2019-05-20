@@ -169,11 +169,6 @@ export default class Skills extends Component {
   backgroundChange = () => {
     $('body').css({
       'background-color': '#e6f7ee',
-      'background-image':
-        `radial-gradient(#35CDD1 6%, transparent 0),
-        radial-gradient(#35CDD1 6%, transparent 0)`,
-      'background-size': '30px 30px',
-      'background-position': '0 0, 15px 15px',
     })
   }
 
