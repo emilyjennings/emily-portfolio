@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
-import { Link } from "react-router-dom";
 
 class ProjectShow extends Component {
 
@@ -15,7 +14,7 @@ class ProjectShow extends Component {
     return (
       <div className="projectshowborder">
         <div className="projectborder">
-          <div className="showimg"><img src={cards[index].image} /></div>
+          <div className="showimg"><img src={cards[index].image} alt="" /></div>
           <div className="desc">{cards[index].desc}</div>
         </div>
         <div className="buttons">

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import $ from 'jquery'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Fade from 'react-reveal/Fade';
 
 
@@ -131,34 +129,40 @@ export default class Skills extends Component {
 
   displayDevSkill = () => {
     return Object.values(this.state.skills).map(skill =>
-      <div className="skill">
-        <i className={skill.icon} id="skillicon"></i>
-        <div className="skill-title" id={skill.id}>{skill.title}</div>
-        <div className="skill-leveltitle">{skill.leveltitle}</div>
-        <div className="skill-level">{this.skillLevelMeasure(skill.level)}</div>
-      </div>
+      <Fade>
+        <div className="skill">
+          <i className={skill.icon} id="skillicon"></i>
+          <div className="skill-title" id={skill.id}>{skill.title}</div>
+          <div className="skill-leveltitle">{skill.leveltitle}</div>
+          <div className="skill-level">{this.skillLevelMeasure(skill.level)}</div>
+        </div>
+      </Fade>
     )
   }
   displaySoftSkill = () => {
     return Object.values(this.state.softskills).map(skill =>
-      <div className="skill">
-        <div className={skill.icon} id="skillicon"></div>
-        <div className="skill-title" id={skill.id}>{skill.title}</div>
-        <div className="skill-leveltitle">{skill.leveltitle}</div>
-        <div className="skill-level">{this.skillLevelMeasure(skill.level)}</div>
+      <Fade>
+        <div className="skill">
+          <div className={skill.icon} id="skillicon"></div>
+          <div className="skill-title" id={skill.id}>{skill.title}</div>
+          <div className="skill-leveltitle">{skill.leveltitle}</div>
+          <div className="skill-level">{this.skillLevelMeasure(skill.level)}</div>
 
-      </div>
+        </div>
+      </Fade>
     )
   }
   displayWeirdSkill = () => {
     return Object.values(this.state.unskills).map(skill =>
-      <div className="skill">
-        <div className={skill.icon} id="skillicon"></div>
-        <div className="skill-title" id={skill.id}>{skill.title}</div>
-        <div className="skill-leveltitle">{skill.leveltitle}</div>
-        <div className="skill-level">{this.skillLevelMeasure(skill.level)}</div>
+      <Fade>
+        <div className="skill">
+          <div className={skill.icon} id="skillicon"></div>
+          <div className="skill-title" id={skill.id}>{skill.title}</div>
+          <div className="skill-leveltitle">{skill.leveltitle}</div>
+          <div className="skill-level">{this.skillLevelMeasure(skill.level)}</div>
 
-      </div>
+        </div>
+      </Fade>
     )
   }
 
@@ -189,6 +193,7 @@ export default class Skills extends Component {
     return (
       <div className="skills">
         <div className="skillbox">
+
           <div className="col">
             <div class="skill-label">Tech Skills</div>
             <div className="skills-container">

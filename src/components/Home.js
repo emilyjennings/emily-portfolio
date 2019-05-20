@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
 
-import profile from './img/profile.jpg'
 import Tiles from './Tiles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
