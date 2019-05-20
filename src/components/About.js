@@ -178,6 +178,9 @@ export default class About extends Component {
           </div>
         </Zoom>
 
+        <div className="scrolldown">< FontAwesomeIcon icon={'angle-double-down'} /></div>
+
+
 
         <div className="space"></div>
 
