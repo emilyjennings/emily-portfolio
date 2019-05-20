@@ -671,6 +671,7 @@ i {
   color: #C4EFDA;
   margin-left: 10px;
   margin-bottom: 1px;
+  margin-top: 170px
 }
 
 .regrets {
@@ -1038,7 +1039,7 @@ form {
   }
 
   #reinvent {
-    margin-top: 900px
+    margin-top: 1000px
   }
 
   .event-image {
@@ -1369,7 +1370,7 @@ form {
 
   .regrets {
     height: 610px;
-    padding: 5px
+    padding: 5px;
   }
 
   .regret-text {
