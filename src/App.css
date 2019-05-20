@@ -1431,6 +1431,11 @@ form {
     margin-top: 300px
   }
 
+  .skill {
+    width: 80%;
+    margin: auto 2%;
+  }
+
 
 }
 
