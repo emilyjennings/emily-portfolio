@@ -491,7 +491,7 @@ i {
 }
 
 .timeline, .bottom, .regrets {
-  background-color: #C4EFDA;
+  background-color: #e6f7ee;
   background-image:
     radial-gradient(#35CDD1 6%, transparent 0),
     radial-gradient(#35CDD1 6%, transparent 0);
@@ -602,7 +602,7 @@ i {
 }
 
 .more {
-  color: #C4EFDA;
+  color:#e6f7ee;
   margin-bottom: -12px;
   opacity: 0;
   margin-left: 10px
@@ -668,7 +668,7 @@ i {
 }
 
 .regrets-title {
-  color: #C4EFDA;
+  color: #e6f7ee;
   margin-left: 10px;
   margin-bottom: 1px;
   margin-top: 170px
@@ -716,7 +716,7 @@ i {
 }
 
 #reinvent {
-  margin-top: 400px;
+  margin-top: 500px;
   margin-bottom: -10px;
 }
 
@@ -1053,13 +1053,14 @@ form {
   .navlinks a {
     display: inline-block;
     padding: 5px;
+    padding-top: 8px;
     margin: 0 auto 4px auto;
     font-size: 13px;
     width: 50%
   }
 
   .navbar {
-    height: 265px;
+    height: 275px;
     margin-top: 30px;
     padding-bottom: 20px;
     width: 70%;
@@ -1083,7 +1084,7 @@ form {
   }
 
   .contactcontainer {
-    margin-top: 400px
+    margin-top: 430px
   }
 }
 
@@ -1169,7 +1170,7 @@ form {
 
   .contactcontainer {
     width: 80%;
-    margin-top: 320px;
+    margin-top: 360px;
   }
 
   .formcaption {

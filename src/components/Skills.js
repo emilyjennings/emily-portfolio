@@ -55,6 +55,13 @@ export default class Skills extends Component {
           icon: "devicon-jquery-plain",
           id: "jquery"
         },
+        Python: {
+          level: 1,
+          leveltitle: "starting to learn it",
+          title: "Python",
+          icon: "devicon-python-plain",
+          id: "python"
+        },
       },
       unskills: {
         Korean: {
