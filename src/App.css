@@ -342,8 +342,6 @@ i {
 .imageborder:hover {
   transform: rotate(15deg);
   -webkit-transition: transform 0.7s;
-  -webkit-filter: sepia(1);
-  filter: sepia(1);
 }
 
 .caption {
