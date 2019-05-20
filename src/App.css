@@ -330,6 +330,7 @@ i {
   overflow: hidden;
   border: 1px solid #C4EFDA;
   border-radius: 5px;
+  animation-duration: 1s
 }
 
 .imageborder img {
@@ -340,6 +341,7 @@ i {
 
 .imageborder:hover {
   transform: rotate(15deg);
+  -webkit-transition: transform 0.7s;
   -webkit-filter: sepia(1);
   filter: sepia(1);
 }
@@ -799,9 +801,6 @@ i {
   margin: 300px 30px 0 30px;
 }
 
-.skills-container {
-}
-
 .col {
   display: inline-block;
   width: 46%;
@@ -811,8 +810,8 @@ i {
 
 .skill {
   font-family: "Bitter", serif;
-  color: #2ec4f2;
-  border: 1px solid #2ec4f2;
+  color: #039ba3;
+  border: 1px solid #039ba3;
   background-image: linear-gradient(to top, #C4EFDA, #e6f7ee);
   border-radius: 8px;
   box-shadow: 3px 4px;
@@ -826,7 +825,7 @@ i {
 .skill-label {
   font-size: 2em;
   font-family: "Monoton", serif;
-  color: #35CDD1;
+  color: #2ec4f2;
 }
 
 .skill-title {
@@ -852,7 +851,7 @@ i {
 
 #skillicon {
   font-size: 3em;
-  color: #35CDD1;
+  color: #2ec4f2;
 }
 
 .skill-icon i {
