@@ -15,28 +15,28 @@ export default class Skills extends Component {
       'skills': {
         Ruby: {
           level: 4,
-          leveltitle: "still new but pretty good",
+          leveltitle: "still new to it but it's comfortable",
           title: "Ruby",
           icon: "devicon-ruby-plain",
           id: "ruby",
         },
         Rails: {
           level: 4,
-          leveltitle: "getting the hang of it",
+          leveltitle: "made a few apps with it",
           title: "Rails",
           icon: "devicon-rails-plain",
           id: "rails"
         },
         JavaScript: {
           level: 5,
-          leveltitle: "comfortable",
+          leveltitle: "have used it for a couple years now",
           title: "JavaScript",
           icon: "devicon-javascript-plain",
           id: "javascript"
         },
         React: {
           level: 4,
-          leveltitle: "love it, getting better",
+          leveltitle: "love its organization, getting better at it",
           title: "React",
           icon: "devicon-react-original",
           id: "react"
@@ -50,7 +50,7 @@ export default class Skills extends Component {
         },
         jQuery: {
           level: 6,
-          leveltitle: "pretty good",
+          leveltitle: "pretty good at it for animations",
           title: "jQuery",
           icon: "devicon-jquery-plain",
           id: "jquery"
@@ -61,28 +61,28 @@ export default class Skills extends Component {
           level: 6,
           leveltitle: "speak it at home",
           title: "Korean",
-          icon: "",
+          icon: "fas fa-globe-asia",
           id: "korean"
         },
         Networking: {
           level: 10,
           leveltitle: "I just like meeting people",
           title: "Networking",
-          icon: "",
+          icon: "far fa-comments",
           id: "networking"
         },
         Sewing: {
           level: 7,
           leveltitle: "I make outfits from scratch",
           title: "Sewing",
-          icon: "",
+          icon: "fas fa-cut",
           id: "sewing"
         },
         Programminginwild: {
           level: 7,
           leveltitle: "I can type with one hand while holding a small child",
-          title: "Programming in crazy environments",
-          icon: "",
+          title: "Programming while parenting",
+          icon: "fas fa-baby",
           id: "crazycoding"
         },
       },
@@ -91,21 +91,21 @@ export default class Skills extends Component {
           level: 9,
           leveltitle: "my stength",
           title: "Empathy",
-          icon: "",
+          icon: "fas fa-hand-holding-heart",
           id: "empathy"
         },
         Planning: {
           level: 7,
           leveltitle: "lessons, programs and projects",
           title: "Planning",
-          icon: "",
+          icon: "fas fa-edit",
           id: "planning"
         },
         Creativity: {
           level: 10,
           leveltitle: "I just love putting a new spin on things",
           title: "Creativity",
-          icon: "",
+          icon: "fas fa-pencil-ruler",
           id: "creativity"
         },
 
@@ -115,10 +115,10 @@ export default class Skills extends Component {
 
   // I want to show skill levels through a number of stars or something
   // Had trouble figuring out how to insert html (like a symbol) instead of a string of text
-  // skillLevelMeasure = (level) => {
-  //   let unit = "~ "
-  //   return unit.repeat(level)
-  // }
+  skillLevelMeasure = (level) => {
+    let unit = "* "
+    return unit.repeat(level)
+  }
 
 
 
@@ -128,24 +128,29 @@ export default class Skills extends Component {
         <i className={skill.icon} id="skillicon"></i>
         <div className="skill-title" id={skill.id}>{skill.title}</div>
         <div className="skill-leveltitle">{skill.leveltitle}</div>
+        <div className="skill-level">{this.skillLevelMeasure(skill.level)}</div>
       </div>
     )
   }
   displaySoftSkill = () => {
     return Object.values(this.state.softskills).map(skill =>
       <div className="skill">
-        <i className={skill.icon} id="skillicon"></i>
+        <div className={skill.icon} id="skillicon"></div>
         <div className="skill-title" id={skill.id}>{skill.title}</div>
         <div className="skill-leveltitle">{skill.leveltitle}</div>
+        <div className="skill-level">{this.skillLevelMeasure(skill.level)}</div>
+
       </div>
     )
   }
   displayWeirdSkill = () => {
     return Object.values(this.state.unskills).map(skill =>
       <div className="skill">
-        <i className={skill.icon} id="skillicon"></i>
+        <div className={skill.icon} id="skillicon"></div>
         <div className="skill-title" id={skill.id}>{skill.title}</div>
         <div className="skill-leveltitle">{skill.leveltitle}</div>
+        <div className="skill-level">{this.skillLevelMeasure(skill.level)}</div>
+
       </div>
     )
   }
@@ -192,7 +197,7 @@ export default class Skills extends Component {
           </div>
 
           <div className="col">
-            <div class="skill-label">Weird Skills</div>
+            <div class="skill-label">Unusual Skills</div>
             <div className="skills-container">
               {this.displayWeirdSkill()}
             </div>

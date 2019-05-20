@@ -800,13 +800,13 @@ i {
   box-shadow: 3px 4px;
   float: center;
   text-align: center;
-  width: 70%;
-  margin: auto;
-  padding: 5% 0
+  width: 80%;
+  margin: 10px auto;
+  padding: 5%
 }
 
 .skill-label {
-  font-size: 1.9em;
+  font-size: 2.5em;
   font-family: "Monoton", serif;
   color: #2ec4f2;
 }
@@ -815,15 +815,30 @@ i {
   display: block;
   float: none;
   clear: both;
+  color: #35CDD1;
+  font-family: 'Bitter', serif;
+  font-size: 30px;
+  margin-top: 10px
 }
 
 .skill-level {
-  background: #2ec4f2;
-  border-radius: 3px;
+  font-size: 3em;
+  font-family: 'Black Ops One', serif;
+  word-spacing: -10px
+}
+
+.skill-leveltitle {
+  font-family: 'Pacifico', cursive;
+  font-size: 20px
 }
 
 #skillicon {
   font-size: 3em;
+  color: #2ec4f2;
+}
+
+.skill-icon i {
+  font-size: 40px
 }
 
 
