@@ -812,11 +812,11 @@ i {
 
 .skill {
   font-family: "Bitter", serif;
-  color: #039ba3;
-  border: 1px solid #039ba3;
+  color: #40abb7;
+  border: 1px solid #35CDD1;
   background-image: linear-gradient(to top, #C4EFDA, #e6f7ee);
   border-radius: 8px;
-  box-shadow: 3px 4px;
+  box-shadow: 3px 4px #35CDD1;
   float: center;
   text-align: center;
   width: 80%;
@@ -843,7 +843,8 @@ i {
 .skill-level {
   font-size: 3em;
   font-family: 'Black Ops One', serif;
-  word-spacing: -10px
+  word-spacing: -10px;
+  color: #35CDD1
 }
 
 .skill-leveltitle {
@@ -858,6 +859,10 @@ i {
 
 .skill-icon i {
   font-size: 40px
+}
+
+.skill-click:visited {
+  color: #259ca3
 }
 
 
@@ -1259,7 +1264,7 @@ form {
   .desc {
     width: 400px;
     font-size: 15px;
-    padding: 10px
+    padding: 15px
   }
 
   .projectborder {

@@ -168,7 +168,8 @@ export default class Skills extends Component {
 
   backgroundChange = () => {
     $('body').css({
-      'background-color': '#e6f7ee'
+      'background-color': '#e6f7ee',
+      'background-image': 'none',
     })
   }
 
