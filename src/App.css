@@ -202,9 +202,9 @@ button.hamburger:hover {
   background-position: 0 0, 15px 15px;  font-family: 'Monoton', serif;
 }
 
-.mobile-navlinks a {
+.mobile-navlinks a, .mobile-navlinks a:visited {
   display: inline-block;
-  color: #35CDD1;
+  color: #262c2d;
   text-align: center;
   background: none;
   padding: 0 20px;
@@ -214,7 +214,7 @@ button.hamburger:hover {
 
 .mobile-navlinks a:hover {
   background: none;
-  color: #262c2d;
+  color: #35CDD1;
 }
 
 .top, .skill-button {
@@ -1224,6 +1224,7 @@ form {
     top: 0;
     right: 0;
     margin: 0;
+    border: none;
     border-bottom: 1px solid #2ec4f2;
     border-radius: 0;
     line-height: 2.5em;
@@ -1238,7 +1239,7 @@ form {
     background-position: 0 0, 15px 15px;  font-family: 'Bitter', serif;
   }
 
-  .mobile-navlinks a {
+  .mobile-navlinks a, .mobile-navlinks a:visited {
     color: #35CDD1;
     text-align: center;
     background: none;
@@ -1248,7 +1249,7 @@ form {
   }
 
   .mobile-navlinks a:hover {
-    color: #35CDD1
+    color: #2ec4f2
   }
 
   a.cross {
@@ -1442,6 +1443,10 @@ form {
   .skill {
     width: 80%;
     margin: 10px 2%;
+  }
+
+  .skill-click a, .skill-click a:visited {
+    color: #2ec4f2
   }
 
 
