@@ -1257,7 +1257,9 @@ form {
   }
 
   .desc {
-    width: 400px
+    width: 400px;
+    font-size: 15px;
+    padding: 5px
   }
 
   .projectborder {
