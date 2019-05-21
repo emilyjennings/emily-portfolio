@@ -111,6 +111,45 @@ export default class About extends Component {
       </Zoom>)
   }
 
+  scrolldown = () => {
+    $('.scrolldown').animate({
+      bottom: '60px',
+    }, 500, function(){
+      $('.scrolldown').animate({
+        bottom: '40px',
+      }, 500, function(){
+        $('.scrolldown').animate({
+          bottom: '60px',
+        }, 500, function(){
+          $('.scrolldown').animate({
+            bottom: '40px',
+          }, 500, function(){
+            $('.scrolldown').animate({
+              bottom: '60px',
+            }, 500, function(){
+              $('.scrolldown').animate({
+                bottom: '40px',
+              }, 500, function(){
+                $('.scrolldown').animate({
+                  bottom: '60px',
+                }, 500, function(){
+                  $('.scrolldown').animate({
+                    bottom: '40px',
+                  }, 500)
+                })
+              })
+            })
+          })
+        })
+      })
+    })
+    $(window).scroll(function(){
+      $(".scrolldown").css("opacity", (1 / $(window).scrollTop() - 1))
+    });
+
+  }
+
+
 
 
   componentDidMount(){
@@ -118,6 +157,7 @@ export default class About extends Component {
     {this.parallaxBackground()}
     {this.elementsFadeIn()}
     {this.backgroundChange()}
+    {this.scrolldown()}
   }
 
 

@@ -257,6 +257,10 @@ button.hamburger:hover {
   opacity: .5;
 }
 
+.top:visited {
+  color: #35CDD1
+}
+
 div.top {
   display: none
 }
