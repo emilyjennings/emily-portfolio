@@ -139,6 +139,7 @@ export default class Skills extends Component {
       </Fade>
     )
   }
+  
   displaySoftSkill = () => {
     return Object.values(this.state.softskills).map(skill =>
       <Fade>
@@ -152,6 +153,7 @@ export default class Skills extends Component {
       </Fade>
     )
   }
+
   displayWeirdSkill = () => {
     return Object.values(this.state.unskills).map(skill =>
       <Fade>

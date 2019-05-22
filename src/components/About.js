@@ -149,9 +149,9 @@ export default class About extends Component {
 
   }
 
+//on click, the window goes to the top
   scrollTop = () => {
       $(window).scrollTop(0);
-
   }
 
 

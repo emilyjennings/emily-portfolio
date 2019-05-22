@@ -8,11 +8,11 @@ export default class MobileNav extends Component {
       <div>
         <button className="hamburger">&#9776;</button>
         <div className="mobile-navlinks">
-          <Link to="/about">About</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/skills">Skills</Link>
-          <Link to="/">Home</Link>
+          <Link to="/about" onClick={() => this.props.scrollTop()}>About</Link>
+          <Link to="/projects" onClick={() => this.props.scrollTop()}>Projects</Link>
+          <Link to="/contact" onClick={() => this.props.scrollTop()}>Contact</Link>
+          <Link to="/skills" onClick={() => this.props.scrollTop()}>Skills</Link>
+          <Link to="/" onClick={() => this.props.scrollTop()}>Home</Link>
           <Link to="" className="cross">x</Link>
         </div>
       </div>

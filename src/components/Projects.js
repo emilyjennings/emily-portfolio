@@ -125,9 +125,14 @@ export default class Projects extends Component {
     $('.navlinks').show()
   }
 
+//sets the state so the selected card can be sent to the projecshow component
+
   handleClick = (index) => {
     this.setState({index: index})
+    $(window).scrollTop(0);
   }
+
+//makes the background change style
 
   backgroundChange = () => {
     $("body").css({
