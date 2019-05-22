@@ -149,6 +149,11 @@ export default class About extends Component {
 
   }
 
+  scrollTop = () => {
+      $(window).scrollTop(0);
+
+  }
+
 
 
 
@@ -214,7 +219,7 @@ export default class About extends Component {
 
         <Zoom>
           <div className="skill-button">
-          <Link to="/skills"><div className="skill-click">Click here to look at a list of my skills.</div></Link>
+          <Link to="/skills"><div className="skill-click" onClick={() => this.scrollTop()}>Click here to look at a list of my skills.</div></Link>
           </div>
         </Zoom>
 

@@ -1272,6 +1272,10 @@ form {
     height: auto;
   }
 
+  .projectborder img {
+    margin: 3.2%
+  }
+
   .bottom-link-left a {
     display: inline-block;
     overflow: hidden;
@@ -1445,7 +1449,7 @@ form {
     margin: 10px 2%;
   }
 
-  .skill-click a, .skill-click a:visited {
+  .skill-button a, .skill-button a:visited {
     color: #2ec4f2
   }
 
