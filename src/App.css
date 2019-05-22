@@ -1083,7 +1083,7 @@ form {
   }
 
   .navbar {
-    height: 300px;
+    height: 290px;
     margin: 35px 15%;
     margin-top: 30px;
     padding-bottom: 20px;
@@ -1269,11 +1269,11 @@ form {
   }
 
   .projectborder {
-    height: auto;
+    width: 100%
   }
 
   .projectborder img {
-    margin: 3.2%
+    margin: 3.5%
   }
 
   .bottom-link-left a {
@@ -1358,7 +1358,7 @@ form {
   }
 
   .tiles {
-    margin-top: 90px;
+    margin-top: 80px;
   }
 
   .tile {
