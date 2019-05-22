@@ -4,7 +4,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import './App.css';
 
 import Footer from './components/Footer'
-import Header from './components/Header'
+import Header from './containers/Header'
 import About from './components/About'
 import Contact from './components/Contact'
 import ProjectShow from './components/ProjectShow'
