@@ -3,12 +3,12 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 import './App.css';
 
-import Footer from './components/Footer'
+import Footer from './containers/Footer'
 import Header from './containers/Header'
 import About from './components/About'
 import Contact from './components/Contact'
 import ProjectShow from './components/ProjectShow'
-import Home from './components/Home'
+import Home from './containers/Home'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 

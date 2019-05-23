@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import $ from 'jquery'
 
 import NavLinks from '../components/NavLinks'
-import MobileNav from '../components/MobileNav'
+import NavBar from '../components/NavBar'
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -65,7 +65,7 @@ export default class Header extends Component {
           </div>
 
           <div className="navstick">
-            <MobileNav />
+            <NavBar />
             <Link to="/"><div className="navsubtitlestick"></div></Link>
             <button className="top">
               <FontAwesomeIcon icon={'hand-point-up'} />
