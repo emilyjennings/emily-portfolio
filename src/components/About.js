@@ -213,13 +213,20 @@ export default class About extends Component {
         <Zoom>
           <div className="why-title" id="reinvent">Reinvention</div>
           <div className="why">
-            <div className="why-text">I am always growing and learning, and love to reinvent myself. Do you feel the same way? I'd love to talk.</div>
+            <div className="why-text">
+              I am always growing and learning, and love to reinvent myself. Do you feel the same way? I'd love to talk.
+              <br></br>
+              <br></br>
+              <div className="quote">"I'm in a new chapter in my life, and I'm not even trying to be who I was. It's so beautiful that children do that to you."
+              <br></br>
+              - Beyonce</div>
+            </div>
           </div>
         </Zoom>
 
         <Zoom>
           <div className="skill-button">
-          <Link to="/skills"><div className="skill-click" onClick={() => this.scrollTop()}>Click here to look at a list of my skills.</div></Link>
+          <Link to="/skills"><div className="skill-click" onClick={() => this.scrollTop()}>Click here to see a list of my skills</div></Link>
           </div>
         </Zoom>
 

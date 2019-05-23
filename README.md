@@ -1,5 +1,9 @@
 A React app I made to showcase my abilities and personality. Enjoy!
 
+### 5.21 notes :
+
+This website is ready. I spent time ironing out the details this week after getting feedback from others on social media about it. I am going to probably keep adding to it, but it's how I envisioned it to every detail.
+
 ### 5.1 notes :
 “I feel like I am in whole new chapter of my life and I am not even trying to be who I was. It’s beautiful that children do that to you.” - Beyonce
 
