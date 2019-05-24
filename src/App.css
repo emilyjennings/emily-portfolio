@@ -1465,14 +1465,29 @@ form {
 
 @media only screen and (min-width: 2000px) {
   .tile {
-    height: 500px
+    height: 500px;
+    font-size: 3em
   }
 
   .story {
-    height: 400px
+    height: 600px
   }
 
   .regret-image {
-    background-position: center
+    background-position: center;
+    height: 400px
   }
+
+  .skill-button a, .skill-button a:visited {
+    color: #2ec4f2
+  }
+
+  .regrets {
+    height: 700px
+  }
+
+  textarea {
+    height: 500px
+  }
+
 }

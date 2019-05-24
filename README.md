@@ -1,3 +1,5 @@
+# This is Emily
+
 A React app I made to showcase my abilities and personality. Enjoy!
 
 ### 5.21 notes :

@@ -12,7 +12,7 @@ import nasa from '../img/nasastuff2.png'
 import philosophy from '../img/philosophy.png'
 import quote from '../img/quote.png'
 import emilyjennings from '../img/emilyjennings.png'
-import blog from '../img/blog.png'
+import blog from '../img/myblog.png'
 import thisisemily from '../img/thisisemily.png'
 
 export default class Projects extends Component {
