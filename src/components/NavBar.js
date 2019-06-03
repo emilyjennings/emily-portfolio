@@ -12,6 +12,7 @@ export default class NavBar extends Component {
           <Link to="/projects" onClick={() => this.props.scrollTop()}>Projects</Link>
           <Link to="/contact" onClick={() => this.props.scrollTop()}>Contact</Link>
           <Link to="/skills" onClick={() => this.props.scrollTop()}>Skills</Link>
+          <a href="https://emily-jennings-blog.herokuapp.com/posts">Blog</a>
           <Link to="/" onClick={() => this.props.scrollTop()}>Home</Link>
           <Link to="" className="cross">x</Link>
         </div>

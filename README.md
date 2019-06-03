@@ -2,6 +2,12 @@
 
 A React app I made to showcase my abilities and personality. Enjoy!
 
+### 6.3 notes :
+
+This site has a lot of animations. For each one, I just researched how others made them happen and tried to implement that code into mine. I especially like the way the hover effect works in the projects page.
+
+I added a link to my new blog site I just made in Ruby on Rails, and added a skills page that showcases both tech and soft skills.
+
 ### 5.21 notes :
 
 This website is ready. I spent time ironing out the details this week after getting feedback from others on social media about it. I am going to probably keep adding to it, but it's how I envisioned it to every detail.
