@@ -14,6 +14,7 @@ import quote from '../img/quote.png'
 import emilyjennings from '../img/emilyjennings.png'
 import blog from '../img/myblog.png'
 import thisisemily from '../img/thisisemily.png'
+import elyseportfolio from '../img/elyseportfolio.png'
 
 export default class Projects extends Component {
 
@@ -111,6 +112,17 @@ export default class Projects extends Component {
           title: 'This is Emily (This site)',
           created: 'April 2019 - May 2019',
         },
+        9: {
+          index: 9,
+          link: "https://www.elyse.netlify.com",
+          desc: 'I made this professional portfolio site in React for my sister by direction of her styling and content requests.',
+          github: "https://github.com/emilyjennings/elyse-portfolio",
+          url: "/elyseportfolio",
+          image: elyseportfolio,
+          title: 'Elyse Portfolio',
+          created: 'July 2019 - August 2019',
+
+        }
       },
       index: null,
     }

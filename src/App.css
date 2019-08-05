@@ -173,7 +173,6 @@ button.hamburger {
     radial-gradient(#35CDD1 9%, transparent 0);
   background-size: 10px 10px;
   background-position: 0 0, 15px 15px;  font-family: 'Monoton', serif;
-
 }
 
 button.hamburger:hover {
