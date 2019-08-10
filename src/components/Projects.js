@@ -163,6 +163,7 @@ export default class Projects extends Component {
             <img src={card.image} alt="" />
           </div>
           <div className="caption" onClick={() => this.handleClick(card.index)}>{card.title}</div>
+          <div className="created">{card.created}</div>
         </div>
       </Zoom>)
   }
