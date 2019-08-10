@@ -12,22 +12,22 @@ export default class Skills extends Component {
     this.state = {
       'skills': {
         Ruby: {
-          level: 4,
+          level: 5,
           leveltitle: "still new to it but it's comfortable",
           title: "Ruby",
           icon: "devicon-ruby-plain",
           id: "ruby",
         },
         Rails: {
-          level: 4,
+          level: 5,
           leveltitle: "made a few apps with it",
           title: "Rails",
           icon: "devicon-rails-plain",
           id: "rails"
         },
         JavaScript: {
-          level: 5,
-          leveltitle: "have used it for a couple years now",
+          level: 6,
+          leveltitle: "used it for a couple years now and use it at work",
           title: "JavaScript",
           icon: "devicon-javascript-plain",
           id: "javascript"
@@ -40,7 +40,7 @@ export default class Skills extends Component {
           id: "react"
         },
         css: {
-          level: 7,
+          level: 6,
           leveltitle: "know my way around",
           title: "CSS",
           icon: "devicon-css3-plain",
@@ -55,7 +55,7 @@ export default class Skills extends Component {
         },
         Python: {
           level: 5,
-          leveltitle: "starting to learn it",
+          leveltitle: "learned it on the job",
           title: "Python",
           icon: "devicon-python-plain",
           id: "python"
