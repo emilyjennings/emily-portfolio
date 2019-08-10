@@ -114,8 +114,8 @@ export default class Projects extends Component {
         },
         9: {
           index: 9,
-          link: "https://www.elyse.netlify.com",
-          desc: 'I made this professional portfolio site in React for my sister by direction of her styling and content requests.',
+          link: "https://www.elysejennings.com",
+          desc: 'I made this professional curriculum vitae site in React for my sister by direction of her styling and content requests.',
           github: "https://github.com/emilyjennings/elyse-portfolio",
           url: "/elyseportfolio",
           image: elyseportfolio,

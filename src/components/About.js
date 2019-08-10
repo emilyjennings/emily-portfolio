@@ -54,7 +54,7 @@ export default class About extends Component {
         coding: {
           title: "Coding",
           id: "coding",
-          text: "And here we are in 2019: I made this website from scratch. I am a Ruby on Rails and React programmer. Never been happier.",
+          text: "And here we are in 2019: I made this website from scratch. I am a professional full stack Software Engineer. Never been happier.",
         }
       }
     }

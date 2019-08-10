@@ -54,7 +54,7 @@ export default class Skills extends Component {
           id: "jquery"
         },
         Python: {
-          level: 1,
+          level: 5,
           leveltitle: "starting to learn it",
           title: "Python",
           icon: "devicon-python-plain",
@@ -139,7 +139,7 @@ export default class Skills extends Component {
       </Fade>
     )
   }
-  
+
   displaySoftSkill = () => {
     return Object.values(this.state.softskills).map(skill =>
       <Fade>
