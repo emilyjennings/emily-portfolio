@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import $ from 'jquery'
 
 import { Link } from "react-router-dom";
-import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default class About extends Component {
@@ -102,13 +102,13 @@ export default class About extends Component {
 
   displayTimeline = () => {
     return Object.values(this.state.timeline).map(item =>
-      <Zoom>
+      <Fade up>
         <div className="row">
           <div className="event-title">{item.title}</div>
           <div className="event-image" id={item.id}></div>
           <div className="event">{item.text}</div>
         </div>
-      </Zoom>)
+      </Fade>)
   }
 
   scrolldown = () => {
@@ -176,14 +176,14 @@ export default class About extends Component {
           {this.displayTimeline()}
         </div>
 
-        <Zoom>
+        <Fade up>
           <div className="why-title">My 'why'</div>
           <div className="why">
             <div className="why-text">I am drawn toward helping others. I like to lift others up. Empathy is a strength I have which allows me to consider all sides of every story and do the right thing. I love to make connections with others and to hear new stories, which is why I enjoy travel and cultures. And I believe that my tech skills will allow me to enhance human connections and help the world come together to make great change in the environment and society.</div>
           </div>
-        </Zoom>
+        </Fade>
 
-        <Zoom>
+        <Fade up>
           <div className="regrets-title">No regrets</div>
           <div className="regrets">
             <div className="regret-box">
@@ -194,10 +194,10 @@ export default class About extends Component {
             </div>
 
           </div>
-        </Zoom>
+        </Fade>
 
 
-        <Zoom>
+        <Fade up>
           <div className="personality-title">How I Operate</div>
           <div className="personality">
             <div className="personality-box"><FontAwesomeIcon icon="fire"/> Challenges are fun. I like taking on projects that seem beyond my abilities. I know that I am determined enough to get it done, so I am not afraid. There are few parts of any of my projects that were made without a toddler pulling on my limbs. I have grit.</div>
@@ -208,9 +208,9 @@ export default class About extends Component {
             <div className="arrow-down"><FontAwesomeIcon icon="chevron-down"/></div>
             <div className="personality-box"><FontAwesomeIcon icon="lightbulb"/> Especially with coding, I am drawn back to it over and over until it's solved because I know the solution probably exists. When I can't find it, I pivot and re-assess my assumptions and the project's building blocks.</div>
           </div>
-        </Zoom>
+        </Fade>
 
-        <Zoom>
+        <Fade up>
           <div className="why-title" id="reinvent">Reinvention</div>
           <div className="why">
             <div className="why-text">
@@ -222,13 +222,13 @@ export default class About extends Component {
               - Beyonce</div>
             </div>
           </div>
-        </Zoom>
+        </Fade>
 
-        <Zoom>
+        <Fade up>
           <div className="skill-button">
           <Link to="/skills"><div className="skill-click" onClick={() => this.scrollTop()}>Click here to see a list of my skills</div></Link>
           </div>
-        </Zoom>
+        </Fade>
 
         <div className="scrolldown">< FontAwesomeIcon icon={'angle-double-down'} /></div>
 
