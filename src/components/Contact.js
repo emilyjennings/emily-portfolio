@@ -58,7 +58,8 @@ export default class Contact extends Component {
       <div className="contactpage">
         <div className="contactcontainer">
           <div className="formcaption">I'll be in touch soon.</div>
-          <form onSubmit={this.handleSubmit}>
+          <form name="contact" onSubmit={this.handleSubmit} data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
             <div className="input-row-1">
                 <label>
                   Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />

@@ -26,32 +26,9 @@ export default class Header extends Component {
     });
   }
 
-  hamMenu = () => {
-    //hides the hamburger menu at first until clicked
-    $(".mobile-navlinks").hide();
-    $(".hamburger").click(function(){
-      $(".mobile-navlinks").slideToggle("slow", function(){
-        $(".mobile-navlinks").show();
-        $(".cross").show();
-        $(".hamburger").fadeOut()
-      });
-    });
-
-    //on click, the menu displays
-    $(".cross").click(function(event){
-      event.preventDefault();
-      if ($(".cross").is(":visible")){
-        $(".mobile-navlinks").slideToggle("slow", function(){
-          $(".hamburger").fadeIn()
-        });
-      }
-    });
-  }
-
   componentDidMount(){
     {this.navStick()}
     {this.scrollFade()}
-    {this.hamMenu()}
   }
 
   render() {
