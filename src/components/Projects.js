@@ -15,6 +15,7 @@ import emilyjennings from '../img/emilyjennings.png'
 import blog from '../img/myblog.png'
 import thisisemily from '../img/thisisemily.png'
 import elyseportfolio from '../img/elyseportfolio.png'
+import heathersart from '../img/heathers-art.png'
 
 export default class Projects extends Component {
 
@@ -121,6 +122,17 @@ export default class Projects extends Component {
           image: elyseportfolio,
           title: 'Elyse Portfolio',
           created: 'July 2019 - August 2019',
+
+        },
+        10: {
+          index: 10,
+          link: "https://heather-cadalzo.netlify.com",
+          desc: 'This is a gallery website for another artist who got in touch with me about a website she needed to display her works. Made with React and some other libraries again!',
+          github: "https://github.com/emilyjennings/heathers-art",
+          url: "/heathersart",
+          image: heathersart,
+          title: "Heather's Art",
+          created: 'October 2019 - December 2019',
 
         }
       },
