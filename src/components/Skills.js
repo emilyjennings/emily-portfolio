@@ -12,14 +12,14 @@ export default class Skills extends Component {
     this.state = {
       'skills': {
         Ruby: {
-          level: 5,
+          level: 4,
           leveltitle: "still new to it but it's comfortable",
           title: "Ruby",
           icon: "devicon-ruby-plain",
           id: "ruby",
         },
         Rails: {
-          level: 5,
+          level: 4,
           leveltitle: "made a few apps with it",
           title: "Rails",
           icon: "devicon-rails-plain",

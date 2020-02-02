@@ -16,6 +16,7 @@ import blog from '../img/myblog.png'
 import thisisemily from '../img/thisisemily.png'
 import elyseportfolio from '../img/elyseportfolio.png'
 import heathersart from '../img/heathers-art.png'
+import makingmusic from '../img/making-music.png'
 
 export default class Projects extends Component {
 
@@ -133,6 +134,17 @@ export default class Projects extends Component {
           image: heathersart,
           title: "Heather's Art",
           created: 'October 2019 - December 2019',
+
+        },
+        11: {
+          index: 11,
+          link: "https://making-music",
+          desc: 'This is just me playing around with Tone.js. I wanted to make a way to play music!',
+          github: "https://making-music.netlify.com/",
+          url: "/making-music",
+          image: makingmusic,
+          title: "Making Music",
+          created: 'December 2020 - ongoing',
 
         }
       },

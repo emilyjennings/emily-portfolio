@@ -872,7 +872,7 @@ i {
   font-size: 40px
 }
 
-.skill-click:visited {
+.skill-click, .skill-click a:visited {
   color: #259ca3
 }
 

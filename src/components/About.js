@@ -54,7 +54,7 @@ export default class About extends Component {
         coding: {
           title: "Coding",
           id: "coding",
-          text: "And here we are in 2019: I made this website from scratch. I am a professional full stack Software Engineer. Never been happier.",
+          text: "In 2019 I made this website from scratch. I also became a professional full stack Software Engineer for the first time at GetUpside. In 2020, I am still having a blast, learning Python and Angular at work and using React for side projects.",
         }
       }
     }
