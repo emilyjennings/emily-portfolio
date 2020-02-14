@@ -226,7 +226,7 @@ export default class About extends Component {
 
         <Fade up>
           <div className="skill-button">
-          <Link to="/skills"><div className="skill-click" onClick={() => this.scrollTop()}>Click here to see a list of my skills</div></Link>
+            <Link to="/skills"><div className="skill-click" onClick={() => this.scrollTop()}>Click here to see a list of my skills</div></Link>
           </div>
         </Fade>
 

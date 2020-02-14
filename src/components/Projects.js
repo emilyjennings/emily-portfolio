@@ -138,9 +138,9 @@ export default class Projects extends Component {
         },
         11: {
           index: 11,
-          link: "https://making-music",
+          link: "https://making-music.netlify.com/",
           desc: 'This is just me playing around with Tone.js. I wanted to make a way to play music!',
-          github: "https://making-music.netlify.com/",
+          github: "https://github.com/emilyjennings/making-music",
           url: "/making-music",
           image: makingmusic,
           title: "Making Music",
