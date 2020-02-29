@@ -170,7 +170,7 @@ export default class About extends Component {
     return (
       <div className="aboutpage">
 
-        <div className="story">I build things and help humanity and to have fun.</div>
+        <div className="story">I build things to help humanity and to have fun.</div>
         <div className="more">A little more about me</div>
         <div className="timeline">
           {this.displayTimeline()}
