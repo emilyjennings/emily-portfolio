@@ -170,7 +170,7 @@ export default class About extends Component {
     return (
       <div className="aboutpage">
 
-        <div className="story">I like to build things and help others.</div>
+        <div className="story">I build things and help humanity and to have fun.</div>
         <div className="more">A little more about me</div>
         <div className="timeline">
           {this.displayTimeline()}
@@ -180,6 +180,20 @@ export default class About extends Component {
           <div className="why-title">My 'why'</div>
           <div className="why">
             <div className="why-text">I am drawn toward helping others. I like to lift others up. Empathy is a strength I have which allows me to consider all sides of every story and do the right thing. I love to make connections with others and to hear new stories, which is why I enjoy travel and cultures. And I believe that my tech skills will allow me to enhance human connections and help the world come together to make great change in the environment and society.</div>
+          </div>
+        </Fade>
+
+        <Fade up>
+          <div className="why-title">Issues I care about</div>
+          <div className="why">
+            <div className="why-text">Every day I think about:
+              <ul>
+                <li>The environment and how all of my actions affect it</li>
+                <li>How I can improve society's problems of racial and gender inequity</li>
+                <li>The way the education system helps our children thrive</li>
+                <li>Benefits and shortfalls of all the government systems I have lived under around the world</li>
+              </ul>
+            </div>
           </div>
         </Fade>
 
@@ -200,13 +214,13 @@ export default class About extends Component {
         <Fade up>
           <div className="personality-title">How I Operate</div>
           <div className="personality">
-            <div className="personality-box"><FontAwesomeIcon icon="fire"/> Challenges are fun. I like taking on projects that seem beyond my abilities. I know that I am determined enough to get it done, so I am not afraid. There are few parts of any of my projects that were made without a toddler pulling on my limbs. I have grit.</div>
+            <div className="personality-box"><FontAwesomeIcon icon="fire"/> Challenges are fun. I thrive when I am able to be creative. I know that I am determined enough to get it done, so I am not afraid. There are few parts of any of my side projects that I made when I was changing careers that were made without a toddler pulling on my limbs. I have grit.</div>
             <div className="arrow"><FontAwesomeIcon icon="chevron-right"/></div>
             <div className="arrow-down"><FontAwesomeIcon icon="chevron-down"/></div>
-            <div className="personality-box"><FontAwesomeIcon icon="brain"/> I am not particularly smart, I just don't give up and I try everything. I research. I talk to others. I read documentation and look at examples. I take mental breaks. I try things and then delete them and try again.</div>
+            <div className="personality-box"><FontAwesomeIcon icon="brain"/> My brain doesn't turn off till it's done. I try everything. I research. I talk to others. I read documentation and look at examples. I take mental breaks. I try things and then delete them and try again. Sometimes I am frustrated and I take a break and come back even stronger.</div>
             <div className="arrow"><FontAwesomeIcon icon="chevron-right"/></div>
             <div className="arrow-down"><FontAwesomeIcon icon="chevron-down"/></div>
-            <div className="personality-box"><FontAwesomeIcon icon="lightbulb"/> Especially with coding, I am drawn back to it over and over until it's solved because I know the solution probably exists. When I can't find it, I pivot and re-assess my assumptions and the project's building blocks.</div>
+            <div className="personality-box"><FontAwesomeIcon icon="lightbulb"/> Especially with coding, I am drawn back to it over and over until it's solved because I know the solution probably exists. When I can't find it, I pivot and re-assess my assumptions and the project's building blocks, purpose and trajectory.</div>
           </div>
         </Fade>
 
