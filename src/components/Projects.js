@@ -36,7 +36,7 @@ export default class Projects extends Component {
         },
         1: {
           index: 1,
-          link: 'https://katie-paints-portraits.herokuapp.com/',
+          link: 'https://http://katiepaintsportraits.com/',
           desc: "A simple art gallery site for my daughter's art teacher to showcase ands sell her art. The challenge here was finding a way to create a serverless contact form, and I implemented EmailJS for that. I worked closely with Katie, the 'client', to determine her needs and desires for the design of this site. It was my first time purchasing a domain name and deploying via Heroku for someone else. I figured out the most economical way for her to host a site, using a free Heroku app on my account with dynos that don't sleep through an add-on that checks status at regular intervals.",
           github: "https://github.com/emilyjennings/katies-art",
           url: "/katie",
