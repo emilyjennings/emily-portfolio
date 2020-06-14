@@ -7,27 +7,35 @@ import Fade from 'react-reveal/Fade';
 
 export default class Skills extends Component {
 
+  // Skills I have, personal and professional
   constructor(props) {
     super(props);
     this.state = {
       'skills': {
+        Python: {
+          level: 5,
+          leveltitle: "worked with it professionally for 1+ years",
+          title: "Python",
+          icon: "devicon-python-plain",
+          id: "python"
+        },
+        AWSCloud: {
+          level: 5,
+          leveltitle: "use it at work regularly",
+          title: "AWS Cloud Services",
+          icon: "fab fa-aws",
+          id: "aws"
+        },
         Ruby: {
-          level: 4,
-          leveltitle: "still new to it but it's comfortable",
-          title: "Ruby",
+          level: 3,
+          leveltitle: "a bit rusty but created several project",
+          title: "Ruby/Rails",
           icon: "devicon-ruby-plain",
           id: "ruby",
         },
-        Rails: {
-          level: 4,
-          leveltitle: "made a few apps with it",
-          title: "Rails",
-          icon: "devicon-rails-plain",
-          id: "rails"
-        },
         JavaScript: {
           level: 6,
-          leveltitle: "used it for a couple years now and use it at work",
+          leveltitle: "use it personally and professionally",
           title: "JavaScript",
           icon: "devicon-javascript-plain",
           id: "javascript"
@@ -47,18 +55,11 @@ export default class Skills extends Component {
           id: "css"
         },
         jQuery: {
-          level: 6,
+          level: 4,
           leveltitle: "pretty good at it for animations",
           title: "jQuery",
           icon: "devicon-jquery-plain",
           id: "jquery"
-        },
-        Python: {
-          level: 5,
-          leveltitle: "learned it on the job",
-          title: "Python",
-          icon: "devicon-python-plain",
-          id: "python"
         },
       },
       unskills: {
