@@ -17,6 +17,7 @@ import thisisemily from '../img/thisisemily.png'
 import elyseportfolio from '../img/elyseportfolio.png'
 import heathersart from '../img/heathers-art.png'
 import makingmusic from '../img/making-music.png'
+import awakening from '../img/awakeningjourneys.png'
 
 export default class Projects extends Component {
 
@@ -77,7 +78,7 @@ export default class Projects extends Component {
         5: {
           index: 5,
           link: "https://www.youtube.com/embed/eRu55RbndkU",
-          desc: 'This Sinatra project allows users to log in and submit philosophical thought experiment stories as part of a community. I made this because I have a strong interest and academic background in philosophy and one of my favorite parts of studying it was considering thought experiments to illustrate a point/argument. This was made in memory of my Master\'\s thesis supervisor and friend, Josh Parsons.',
+          desc: "This Sinatra project allows users to log in and submit philosophical thought experiment stories as part of a community. I made this because I have a strong interest and academic background in philosophy and one of my favorite parts of studying it was considering thought experiments to illustrate a point/argument. This was made in memory of my Master\'\s thesis supervisor and friend, Josh Parsons.",
           github: "https://github.com/emilyjennings/Philosophy-Thought-Experiments-Sinatra-Project",
           url: "/philosophy",
           image: philosophy,
@@ -144,8 +145,17 @@ export default class Projects extends Component {
           url: "/making-music",
           image: makingmusic,
           title: "Making Music",
-          created: 'December 2020 - ongoing',
-
+          created: 'December 2019 - ongoing',
+        },
+        12: {
+          index: 12,
+          link: "https://www.awakening-journeys.com/",
+          desc: "Website that I created to bring together a community of like-minded souls.",
+          github: "https://github.com/emilyjennings/awakening-journey",
+          url: "/awakening-journey",
+          image: awakening,
+          title: "Awakening Journeys",
+          created: 'November 2020 - ongoing',
         }
       },
       index: null,
