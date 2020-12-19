@@ -17,7 +17,7 @@ import thisisemily from '../img/thisisemily.png'
 import elyseportfolio from '../img/elyseportfolio.png'
 import heathersart from '../img/heathers-art.png'
 import makingmusic from '../img/making-music.png'
-import awakening from '../img/awakeningjourneys.png'
+import awakening from '../img/awakening.png'
 
 export default class Projects extends Component {
 
